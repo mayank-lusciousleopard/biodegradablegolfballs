@@ -1,0 +1,229 @@
+{{ 'section-image-banner.css' | asset_url | stylesheet_tag }}
+{% comment %} {{ 'root_banner.png' |  asset_img_url |  image_tag }} {% endcomment %}
+
+{%- if section.settings.image_height == 'adapt' and section.settings.image != blank -%}
+    {%- style -%}
+        @media screen and (max-width: 749px) {
+          #Banner-{{ section.id }}::before,
+          #Banner-{{ section.id }}.banner__media::before,
+          #Banner-{{ section.id }}:not(.banner--mobile-bottom) .banner__content::before {
+            padding-bottom: {{ 1 | divided_by: section.settings.image.aspect_ratio | times: 100 }}%;
+            content: '';
+            display: block;
+          }
+        }
+
+        @media screen and (min-width: 750px) {
+          #Banner-{{ section.id }}::before,
+          #Banner-{{ section.id }} .banner__media::before {
+            padding-bottom: {{ 1 | divided_by: section.settings.image.aspect_ratio | times: 100 }}%;
+            content: '';
+            display: block;
+          }
+        }
+    {%- endstyle -%}
+{%- endif -%}
+
+{%- style -%}
+    #Banner-{{ section.id }}::after {
+      opacity: {{ section.settings.image_overlay_opacity | divided_by: 100.0 }};
+    }
+{%- endstyle -%}
+
+{%- liquid
+    assign full_width = '100vw'
+    assign widths = '375, 550, 750, 1100, 1500, 1780, 2000, 3000, 3840'
+
+    if section.settings.image_behavior == 'ambient'
+        assign half_width = '60vw'
+        assign full_width = '120vw'
+        assign stacked_sizes = '(min-width: 750px) 60vw, 120vw'
+        assign widths = '450, 660, 900, 1320, 1800, 2136, 2400, 3600, 7680'
+    elsif section.settings.image_behavior == 'fixed' or section.settings.image_behavior == 'zoom-in'
+        assign half_width = '100vw'
+        assign stacked_sizes = '100vw'
+    else
+        assign half_width = '50vw'
+        assign stacked_sizes = '(min-width: 750px) 50vw, 100vw'
+    endif
+-%}
+
+<div
+    class='md:px-[80px] px-[16px]'
+    style='margin-top: {{ section.settings.margin_top }}px; margin-bottom: {{ section.settings.margin_bottom }}px;'
+>
+    <div class='w-full rounded-[16px] relative mx-auto h-[496px]'>
+        <div class='w-[100%] md:w-[60%] h-[496px] bg-linear-gradint-primary absolute z-[2] top-0 left-0 rounded-[16px] flex flex-col items-left justify-center px-[24px] md:px-[80px] gap-[0px] {% if forloop.index > 1 %} opacity-0{% endif %}'>
+            <div class='flex flex-col'>
+                <span id='title' class='text-text-inverse font-medium md:text-[56px] text-[32px] uppercase'>
+                    {{- block.settings.title }}
+                    <span class='hidden md:block'>{{ block.settings.subtitle }}</span>
+                </span>
+
+                <span id='title2' class='text-text-inverse font-bold md:text-[56px] text-[32px] uppercase mt-[-20px]'>
+                    {{- block.settings.title_2 -}}
+                </span>
+
+                <span id='subtitle' class='hidden md:!block text-text-inverse font-normal text-[18px]'>
+                    {{- block.settings.subtitle -}}
+                </span>
+            </div>
+            <p id='subtitle-text' class='text-text-inverse font-normal text-[18px] md:hidden'>
+                {{ block.settings.subtitle }}
+            </p>
+            <!-- Button element with dynamic link -->
+            <a
+                id='button-label'
+                href='{{ block.settings.button_link }}'
+                class='w-[202px] uppercase mt-[32px] gap-[8px] items-center justify-center bg-highlight-yellow rounded-[8px] flex flex-row font-bold text-[18px] py-[20px] !px-[32px] max-h-[64px]'
+            >
+                {{- block.settings.button_label }}
+                {% render 'icon-arrow-right' -%}
+            </a>
+        </div>
+        <div class='image-container relative w-full h-full'>
+            {% for block in section.blocks %}
+                <img
+                    src='{{ block.settings.image | image_url: width: 1280, height: 496 }}'
+                    class='w-full h-full rounded-[16px] object-cover banner-image absolute inset-0 transition-opacity duration-500 ease-in-out{% if forloop.index > 1 %} opacity-0{% endif %}'
+                >
+            {% endfor %}
+        </div>
+    </div>
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+      var images = document.querySelectorAll('.banner-image');
+
+      var titles = [];
+      var subtitles = [];
+      var title2s = [];
+      var subtitleTexts = [];
+      var buttonLabels = [];
+      var buttonLinks = [];
+
+      {% for block in section.blocks %}
+        titles.push("{{ block.settings.title | escape }}");
+        subtitles.push("{{ block.settings.subtitle | escape }}");
+        title2s.push("{{ block.settings.title_2 | escape }}");
+        subtitleTexts.push("{{ block.settings.subtitle | escape }}");
+        buttonLabels.push("{{ block.settings.button_label | escape }}");
+        buttonLinks.push("{{ block.settings.button_link | escape }}");
+      {% endfor %}
+
+      // Grab the necessary elements
+      var titleElement = document.getElementById('title');
+      var subtitleElement = document.getElementById('subtitle');
+      var title2Element = document.getElementById('title2');
+      var subtitleTextElement = document.getElementById('subtitle-text');
+      var buttonLabelElement = document.getElementById('button-label');
+
+      // Function to update the banner content (title, subtitle, button text, link)
+      function updateBannerContent(index) {
+        titleElement.innerText = titles[index];
+        subtitleElement.innerText = subtitles[index];
+        title2Element.innerText = title2s[index];
+        subtitleTextElement.innerText = subtitleTexts[index];
+
+        // Update button text
+        buttonLabelElement.childNodes[0].nodeValue = buttonLabels[index] + ' ';
+
+        // Update button link or remove if empty
+        if (buttonLinks[index].trim() !== '') {
+          buttonLabelElement.setAttribute('href', buttonLinks[index]);
+        } else {
+          buttonLabelElement.removeAttribute('href');
+        }
+      }
+
+      // Set initial content
+      updateBannerContent(0);
+
+      var currentIndex = 0;
+      var rotationDelay = {{ section.settings.rotation_delay | default: 5000 }};
+
+      // If there's more than one image, rotate them
+      if (images.length > 1) {
+        setInterval(function () {
+          // Hide the current image
+          images[currentIndex].classList.add('opacity-0');
+          // Move to the next index
+          currentIndex = (currentIndex + 1) % images.length;
+          // Show the new image
+          images[currentIndex].classList.remove('opacity-0');
+
+          // Update text/button for new index
+          updateBannerContent(currentIndex);
+        }, rotationDelay);
+      }
+    });
+</script>
+
+{% schema %}
+{
+    "name": "Image carousel with text",
+    "tag": "section",
+    "class": "section",
+    "settings": [
+        {
+            "type": "range",
+            "id": "margin_top",
+            "min": 0,
+            "max": 100,
+            "step": 4,
+            "unit": "px",
+            "label": "Top margin",
+            "default": 0
+        },
+        {
+            "type": "range",
+            "id": "margin_bottom",
+            "min": 0,
+            "max": 100,
+            "step": 4,
+            "unit": "px",
+            "label": "Bottom margin",
+            "default": 0
+        }
+    ],
+    "blocks": [
+        {
+            "type": "image",
+            "name": "Image",
+            "settings": [
+                {
+                    "type": "image_picker",
+                    "id": "image",
+                    "label": "Image"
+                },
+                {
+                    "type": "text",
+                    "id": "title",
+                    "label": "Title"
+                },
+                {
+                    "type": "text",
+                    "id": "title_2",
+                    "label": "Title 2"
+                },
+                {
+                    "type": "text",
+                    "id": "subtitle",
+                    "label": "Subtitle"
+                },
+                {
+                    "type": "text",
+                    "id": "button_label",
+                    "label": "Button Label"
+                },
+                {
+                    "type": "url",
+                    "id": "button_link",
+                    "label": "Button Link"
+                }
+            ]
+        }
+    ]
+}
+{% endschema %}

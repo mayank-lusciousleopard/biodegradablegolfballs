@@ -1,0 +1,76 @@
+{% comment %}
+  Renders a header drawer menu for mobile and desktop.
+
+  Usage:
+  {% render 'header-drawer' %}
+{% endcomment %}
+
+<header-drawer data-breakpoint="{% if section.settings.menu_type_desktop == 'drawer' %}desktop{% else %}tablet{% endif %}">
+  <details id="Details-menu-drawer-container" class="menu-drawer-container">
+    <summary
+      class="header__icon header__icon--menu header__icon--summary link focus-inset"
+      aria-label="{{ 'sections.header.menu' | t }}"
+    >
+      <span>
+        {% render 'icon-hamburger' %}
+        {% render 'icon-close' %}
+      </span>
+    </summary>
+    <div id="menu-drawer" class="gradient menu-drawer motion-reduce color-{{ section.settings.menu_color_scheme }}">
+      <div class="menu-drawer__inner-container">
+        <div class="menu-drawer__navigation-container">
+          <div class="menu-drawer__utility-links">
+            {%- if section.settings.enable_country_selector or section.settings.enable_language_selector -%}
+              <div class="menu-drawer__localization header__localization">
+                {%- if section.settings.enable_language_selector and localization.available_languages.size > 1 -%}
+                  <noscript>
+                    {%- form 'localization',
+                      id: 'HeaderLanguageMobileFormNoScriptDrawer',
+                      class: 'localization-form'
+                    -%}
+                      <div class="localization-form__select">
+                        <h2 class="visually-hidden" id="HeaderLanguageMobileLabelNoScriptDrawer">
+                          {{ 'localization.language_label' | t }}
+                        </h2>
+                        <select
+                          class="localization-selector link"
+                          name="locale_code"
+                          aria-labelledby="HeaderLanguageMobileLabelNoScriptDrawer"
+                        >
+                          {%- for language in localization.available_languages -%}
+                            <option
+                              value="{{ language.iso_code }}"
+                              lang="{{ language.iso_code }}"
+                              {%- if language.iso_code == localization.language.iso_code %}
+                                selected
+                              {% endif %}
+                            >
+                              {{ language.endonym_name | capitalize }}
+                            </option>
+                          {%- endfor -%}
+                        </select>
+                        {% render 'icon-caret' %}
+                      </div>
+                      <button class="button button--tertiary">{{ 'localization.update_language' | t }}</button>
+                    {%- endform -%}
+                  </noscript>
+
+                  <localization-form class="no-js-hidden">
+                    {%- form 'localization', id: 'HeaderLanguageMobileForm', class: 'localization-form' -%}
+                      <div>
+                        <h2 class="visually-hidden" id="HeaderLanguageMobileLabel">
+                          {{ 'localization.language_label' | t }}
+                        </h2>
+                        {%- render 'language-localization', localPosition: 'HeaderLanguageMobile' -%}
+                      </div>
+                    {%- endform -%}
+                  </localization-form>
+                {%- endif -%}
+              </div>
+            {%- endif -%}
+          </div>
+        </div>
+      </div>
+    </div>
+  </details>
+</header-drawer>

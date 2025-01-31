@@ -1,0 +1,535 @@
+<div class='px-[16px] md:px-[80px] mt-[16px] md:mt-[64px] md:mb-[128px] mb-[64px]'>
+    <input
+        type='file'
+        id='input-image'
+        style='display: none;'
+        accept='image/*'
+    >
+
+    <div class='grid grid-cols-1 lg:grid-cols-2 gap-[64px]'>
+        <div class='flex flex-col gap-[24px]'>
+            <p class='text-text-primary font-bold text-[32px]'>Personalize Biodegradable Golf Balls</p>
+
+            <div class='grid grid-cols-2 md:grid-cols-4'>
+                <div class='bg-surface-background rounded-[16px] px-[24px] py-[16px] flex items-center justify-center gap-[8px] flex-col'>
+                    {% render 'icon-present' %}
+                    <p class='text-text-primary text-[14px] font-bold text-center'>Great as a gift</p>
+                </div>
+                <div class='bg-surface-background rounded-[16px] px-[24px] py-[16px] flex items-center justify-center gap-[8px] flex-col'>
+                    {% render 'icon-palette' %}
+                    <p class='text-text-primary text-[14px] font-bold text-center'>Multi-color printing</p>
+                </div>
+                <div class='bg-surface-background rounded-[16px] px-[24px] py-[16px] flex items-center justify-center gap-[8px] flex-col'>
+                    {% render 'icon-truck' %}
+                    <p class='text-text-primary text-[14px] font-bold text-center'>2-3 days delivery</p>
+                </div>
+                <div class='bg-surface-background rounded-[16px] px-[24px] py-[16px] flex items-center justify-center gap-[8px] flex-col'>
+                    {% render 'icon-discount-small' %}
+                    <p class='text-text-primary text-[14px] font-bold text-center'>Quantity discount</p>
+                </div>
+            </div>
+
+            <p class='text-[18px] font-medium text-text-primary'>
+                Print your custom logo or saying on biodegradable golf balls! All custom golf balls are in-house which
+                give us the flexibility to have extremely fast turn-around times and monitor the quality of print.
+                <span class='font-bold'>For more information watch the video we created!</span>
+            </p>
+
+            {% comment %} FILES {% endcomment %}
+            <div class='flex flex-col gap-[48px]'>
+                <div class='gap-[24px] flex flex-col'>
+                    <p class='font-bold text-[24px] text-text-primary'>Customize printing</p>
+
+                    <div class='flex flex-col gap-[12px] items-start justify-start' id='image-upload-block'>
+                        <button
+                            class=' text-text-primary-active text-[16px] font-bold px-[24px] py-[12px] bg-surface-secondary-active rounded-[16px]'
+                            id='upload-image'
+                        >
+                            Upload your image
+                        </button>
+                        <p class='text-text-primary font-medium text-[14px]'>
+                            Upload an image in JPG or PNG format. 5 MB maximum file size.
+                        </p>
+                    </div>
+
+                    <div
+                        class='flex flex-row items-center bg-surface-background rounded-[16px] p-[16px] gap-[16px]'
+                        style='display: none;'
+                        id='image-info-box'
+                    >
+                        <img
+                            id='display-image'
+                            src=''
+                            alt='Uploaded Image'
+                            width='48px'
+                            height='48px'
+                            class='rounded-[8px]'
+                            style='display: none; '
+                        >
+
+                        <p class='flex flex-1 text-text-primary font-medium text-[14px]' id='filename'>filename</p>
+                        <span class='cursor-pointer' id='remove-image'>{% render 'icon-trash' %}</span>
+                    </div>
+                </div>
+
+                {% comment %} IMAGE PREVIEW MOBILE {% endcomment %}
+                <div
+                    class='flex lg:hidden bg-surface-background relative items-center justify-center rounded-[16px] max-h-[500px] mt-[32px] md:mt-0 p-[20px]'
+                >
+                    <p class='absolute top-[10px] left-[10px] md:top-[30px] md:left-[32px] font-bold text-[20px] text-text-primary'>
+                        Image preview
+                    </p>
+
+                    <img
+                        src='{{ "ball-with-image-upload.png" | asset_url }}'
+                        alt='Golf ball'
+                        class='max-h-[340px] max-w-[340px] rounded-[16px]'
+                        width='100%'
+                        height='100%'
+                    >
+
+                    <p class='absolute left-[40px] font-medium text-[18px] text-text-primary'>.75"</p>
+                    <p class='absolute top-[40px] font-medium text-[18px] text-text-primary'>.75"</p>
+
+                    <div class='absolute size-[200px] rounded-lg'>
+                        <img
+                            src='{{ "border-view.png" | asset_url }}'
+                            alt='Golf ball'
+                            class='rounded-lg'
+                            width='100%'
+                            height='100%'
+                        >
+                    </div>
+                    <div class='absolute size-[197px] rounded-lg'>
+                        <div class='relative'>
+                            <img
+                                src=''
+                                alt='Golf ball custom image'
+                                class='rounded-lg object-cover max-h-[197px] max-w-[197px]'
+                                width='100%'
+                                height='100%'
+                                id='ball-view-custom-image-mobile'
+                                style='display: none'
+                            >
+                        </div>
+                    </div>
+                </div>
+
+                {% comment %} AMOUNT SLIDER {% endcomment %}
+                <div class='flex flex-col'>
+                    <p class='text-text-primary font-bold text-[24px]'>Choose amount</p>
+
+                    <div class='flex flex-row gap-[16px] mt-[20px] h-[48px] items-center'>
+                        <div class='flex h-full items-center justify-center'>
+                            <p class='text-[14px] font-medium text-text-secondary'>12</p>
+                        </div>
+                        <div class='relative flex-1'>
+                            <!-- Range input to control the slider -->
+                            <input
+                                type='range'
+                                min='0'
+                                max='6'
+                                value='0'
+                                class='absolute z-[3] w-full h-[20px] opacity-0 cursor-pointer'
+                                id='amount-slider'
+                                oninput='updateSliderValue(this.value)'
+                            >
+                            <!-- Sliding indicator -->
+                            <div
+                                id='slider-indicator'
+                                class='absolute z-[2] bg-surface-primary-active rounded-full size-[48px] flex items-center justify-center top-[-13px]'
+                                style='left: calc((10 - 3) / (1008 - 3) * 100%);'
+                            >
+                                <span
+                                    id='slider-value'
+                                    class='font-bold text-[14px] text-center text-text-secondary-active'
+                                    >12</span
+                                >
+                            </div>
+                            <!-- Slider bar with notches -->
+                            <div class='bg-surface-secondary-active rounded-[12px] flex justify-between items-center flex-1 px-[8px] h-[24px]'>
+                                <span class='bg-brand-secondary size-[8px] rounded-full'></span>
+                                <span class='bg-brand-secondary size-[8px] rounded-full'></span>
+                                <span class='bg-brand-secondary size-[8px] rounded-full'></span>
+                                <span class='bg-brand-secondary size-[8px] rounded-full'></span>
+                                <span class='bg-brand-secondary size-[8px] rounded-full'></span>
+                                <span class='bg-brand-secondary size-[8px] rounded-full'></span>
+                                <span class='bg-brand-secondary size-[8px] rounded-full'></span>
+                            </div>
+                        </div>
+                        <div class='flex h-full items-center justify-center'>
+                            <p class='text-[14px] font-medium text-text-secondary'>1008</p>
+                        </div>
+                    </div>
+                    <div class='flex flex-col gap-[8px] mt-[10px]'>
+                        <p class='text-text-primary text-[14px] font-medium'>
+                            Custom amount please email us at
+                            <a
+                                href='mailto:hello@biodegradablegolfballs.com'
+                                class='text-brand-secondary font-bold'
+                            >
+                                hello@biodegradablegolfballs.com
+                            </a>
+                        </p>
+                    </div>
+
+                    <div class='mt-[48px]'>
+                        <p class='text-text-primary text-[24px] font-bold'>Select packaging type</p>
+
+                        <div class='grid grid-cols-2 md:grid-cols-4 gap-[16px] mt-[28px]'>
+                            <div class='flex flex-col items-center justify-center gap-[8px]'>
+                                <img
+                                    src='{{ "3-package.png" |  asset_url }}'
+                                    width='100%'
+                                    height='100%'
+                                    alt='3-ball-package'
+                                    class='rounded-[16px]'
+                                    id='active-box-0'
+                                    onClick='handleActiveBoxChange(0)'
+                                >
+                                <p
+                                    class='text-text-primary font-medium text-[14px]'
+                                    id='active-box-0-text'
+                                >
+                                    3 ball sleeve
+                                </p>
+                            </div>
+                            <div class='flex flex-col items-center justify-center gap-[8px]'>
+                                <img
+                                    src='{{ "24-package.png" |  asset_url }}'
+                                    width='100%'
+                                    height='100%'
+                                    alt='24-ball-package'
+                                    class='rounded-[16px]'
+                                    id='active-box-1'
+                                    onClick='handleActiveBoxChange(1)'
+                                >
+                                <p
+                                    class='text-text-primary font-medium text-[14px]'
+                                    id='active-box-1-text'
+                                >
+                                    24 balls package
+                                </p>
+                            </div>
+                            <div class='flex flex-col items-center justify-center gap-[8px]'>
+                                <img
+                                    src='{{ "96-package.png" |  asset_url }}'
+                                    width='100%'
+                                    height='100%'
+                                    alt='96-ball-package'
+                                    class='rounded-[16px]'
+                                    id='active-box-2'
+                                    onClick='handleActiveBoxChange(2)'
+                                >
+                                <p
+                                    class='text-text-primary font-medium text-[14px]'
+                                    id='active-box-2-text'
+                                >
+                                    96 balls package
+                                </p>
+                            </div>
+                            <div class='flex flex-col items-center justify-center gap-[8px]'>
+                                <img
+                                    src='{{ "no-package.png" |  asset_url }}'
+                                    width='100%'
+                                    height='100%'
+                                    alt='no-branding'
+                                    class='rounded-[16px]'
+                                    id='active-box-3'
+                                    onClick='handleActiveBoxChange(3)'
+                                >
+                                <p
+                                    class='text-text-primary text-[14px] font-medium'
+                                    id='active-box-3-text'
+                                >
+                                    No branding
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    {% comment %} PRICE {% endcomment %}
+                    <div class='flex flex-col gap-[24px] mt-[48px]'>
+                        <p class='text-text-primary font-bold text-[24px]'>Price</p>
+
+                        <div class='p-[32px] rounded-[16px] bg-surface-background flex flex-col gap-[8px]'>
+                            <div class='flex flex-row w-full justify-between items-center'>
+                                <p class='text-text-primary text-[16px] font-medium' id='receipt-balls'>12 balls</p>
+                                <p class='text-text-primary text-[16px] font-medium' id='receipt-balls-price'>$30.00</p>
+                            </div>
+                            <div class='flex flex-row w-full justify-between items-center'>
+                                <p class='text-text-primary text-[16px] font-medium'>Print setup on all orders</p>
+                                <p class='text-text-primary text-[16px] font-medium'>$75</p>
+                            </div>
+                            <div class='flex flex-row w-full justify-between items-center'>
+                                <p class='text-text-primary text-[20px] font-bold' id='receipt-total'>
+                                    Total with print
+                                </p>
+                                <p class='text-text-primary text-[20px] font-bold' id='receipt-total-price'>$82.50</p>
+                            </div>
+
+                            <button
+                                class='mt-[16px] font-bold text-text-secondary-active text-[16px] rounded-[8px] px-[24px] py-[12px] bg-surface-primary-active w-fit'
+                                onClick='addCustomProductToCart()'
+                            >
+                                Add to cart
+                            </button>
+                            currency: {{ cart.currency }}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        {% comment %} IMAGE PREVIEW PC {% endcomment %}
+        <div
+            class='hidden lg:!flex bg-surface-background relative items-center justify-center rounded-[16px] max-h-[500px] mt-[32px] md:mt-0 p-[20px]'
+        >
+            <p class='absolute top-[10px] left-[10px] md:top-[30px] md:left-[32px] font-bold text-[20px] text-text-primary'>
+                Image preview
+            </p>
+
+            <img
+                src='{{ "ball-with-image-upload.png" |  asset_url }}'
+                alt='Golf ball'
+                class='max-h-[340px] max-w-[340px] rounded-[16px]'
+                width='100%'
+                height='100%'
+            >
+
+            <p class='absolute left-[125px] font-medium text-[18px] text-text-primary'>.75"</p>
+            <p class='absolute top-[120px] font-medium text-[18px] text-text-primary'>.75"</p>
+
+            <div class='absolute size-[200px] rounded-lg'>
+                <img
+                    src='{{ "border-view.png" | asset_url }}'
+                    alt='Golf ball'
+                    class='rounded-lg'
+                    width='100%'
+                    height='100%'
+                >
+            </div>
+            <div class='absolute size-[197px] rounded-lg'>
+                <div class='relative'>
+                    <img
+                        src=''
+                        alt='Golf ball custom image'
+                        class='rounded-lg object-cover max-h-[197px] max-w-[197px]'
+                        width='100%'
+                        height='100%'
+                        id='ball-view-custom-image-pc'
+                        style='display: none'
+                    >
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    let activeBox = null;
+    alert('TEST');
+    const handleActiveBoxChange = (index) => {
+        const packages = ['3-ball-package', '24-ball-package', '96-ball-package', 'no-package'];
+        activeBox = packages[index];
+        const boxes = [
+            document.getElementById('active-box-0'),
+            document.getElementById('active-box-1'),
+            document.getElementById('active-box-2'),
+            document.getElementById('active-box-3'),
+        ];
+
+        const texts = [
+            document.getElementById('active-box-0-text'),
+            document.getElementById('active-box-1-text'),
+            document.getElementById('active-box-2-text'),
+            document.getElementById('active-box-3-text'),
+        ];
+
+        texts.forEach((text, i) => {
+            if (i === index) {
+                text.style.fontWeight = 700;
+            } else {
+                text.style.fontWeight = 500;
+            }
+        });
+
+        boxes.forEach((box, i) => {
+            if (i === index) {
+                box.style.border = '2px solid #B2D680';
+            } else {
+                box.style.border = 'none';
+            }
+        });
+    };
+
+    const elements = {
+        uploadImage: document.getElementById('upload-image'),
+        inputImage: document.getElementById('input-image'),
+        displayImage: document.getElementById('display-image'),
+        removeImage: document.getElementById('remove-image'),
+        imageInfoBox: document.getElementById('image-info-box'),
+        ballImageSrcPc: document.getElementById('ball-view-custom-image-pc'),
+        ballImageSrcMobile: document.getElementById('ball-view-custom-image-mobile'),
+        imageUploadBlock: document.getElementById('image-upload-block'),
+        fileName: document.getElementById('filename'),
+    };
+
+    elements.uploadImage.addEventListener('click', () => {
+        elements.inputImage.click();
+    });
+
+    elements.removeImage.addEventListener('click', () => {
+        elements.displayImage.src = '';
+        elements.displayImage.style.display = 'none';
+        elements.imageInfoBox.style.display = 'none';
+        elements.ballImageSrcPc.style.display = 'none';
+        elements.ballImageSrcMobile.style.display = 'none';
+        elements.inputImage.value = '';
+        elements.ballImageSrcPc.src = '';
+        elements.ballImageSrcMobile.src = '';
+        elements.imageUploadBlock.style.display = 'flex';
+    });
+
+    elements.inputImage.addEventListener('change', (event) => {
+        const file = event.target.files[0];
+        if (file) {
+            // --- FILE SIZE CHECK (1 MB) ---
+            if (file.size > 1024 * 1024) {
+                alert('File is too large. Please upload an image under 1MB.');
+                elements.inputImage.value = '';
+                return;
+            }
+
+            const reader = new FileReader();
+            reader.onload = function (e) {
+                console.log(file.name);
+                elements.displayImage.src = e.target.result;
+                elements.displayImage.style.display = 'block';
+                elements.imageInfoBox.style.display = 'flex';
+                elements.ballImageSrcMobile.src = e.target.result;
+                elements.ballImageSrcPc.src = e.target.result;
+                elements.ballImageSrcPc.style.display = 'block';
+                elements.ballImageSrcMobile.style.display = 'block';
+                elements.imageUploadBlock.style.display = 'none';
+                elements.fileName.innerText = file.name;
+            };
+            reader.readAsDataURL(file);
+        }
+    });
+
+    function updateSliderValue(value) {
+        const values = [12, 24, 96, 144, 288, 576, 1008];
+        document.getElementById('slider-value').innerText = values[value];
+
+        const min = 0;
+        const max = 6;
+        const percent = ((value - min) / (max - min)) * 100;
+        // Adjust the percent to be within 3% to 97% range
+        const adjustedPercent = 3 + percent * 0.94;
+        document.getElementById('slider-indicator').style.left = `calc(${adjustedPercent}% - 24px)`;
+
+        updatePrices();
+    }
+
+    // Example conversion rates (these should be dynamically fetched from a reliable source)
+    const conversionRates = {
+        USD: 1,
+        CAD: 1.25, // Example rate: 1 USD = 1.25 CAD
+    };
+
+    // Function to get the current currency from the cart or a global setting
+    function getCurrentCurrency() {
+        // This is a placeholder. Replace with actual logic to get the currency.
+        // For debugging, let's log the currency.
+        const currency = 'CAD'; // or 'USD'
+        console.log('Current currency:', currency);
+        return currency;
+    }
+
+    // Function to convert price based on the current currency
+    function convertPrice(priceInUSD) {
+        const currency = getCurrentCurrency();
+        const rate = conversionRates[currency];
+        return (priceInUSD * rate).toFixed(2);
+    }
+
+    // Function to update prices and currency symbols
+    function updatePrices() {
+        const currency = getCurrentCurrency();
+        const balls = document.getElementById('slider-value').innerText;
+        const priceInUSD = balls * 2.5;
+        const convertedPrice = convertPrice(priceInUSD);
+
+        const currencySymbol = currency === 'CAD' ? 'C$' : '$';
+
+        console.log('Converted price:', convertedPrice, 'Currency symbol:', currencySymbol);
+
+        document.getElementById('receipt-balls').innerText = `${balls} balls`;
+        document.getElementById('receipt-balls-price').innerText = `${currencySymbol}${convertedPrice}`;
+        document.getElementById('receipt-total').innerText = 'Total with print';
+        document.getElementById('receipt-total-price').innerText = `${currencySymbol}${parseFloat(
+            convertedPrice
+        ).toFixed(2)}`;
+    }
+
+    // Call updatePrices initially and whenever necessary
+    document.addEventListener('DOMContentLoaded', updatePrices);
+    document.getElementById('amount-slider').addEventListener('input', updatePrices);
+
+    function addCustomProductToCart() {
+        const amount = parseInt(document.getElementById('slider-value').innerText);
+        const price = (amount * 2.5).toFixed(2);
+        const total = parseFloat(price).toFixed(2);
+        const packaging = activeBox || 'no-package';
+        const customImageSrcPc = document.getElementById('ball-view-custom-image-pc').src || '';
+        const customImageSrcMobile = document.getElementById('ball-view-custom-image-mobile').src || '';
+
+        const properties = {
+            'Number of Balls': amount,
+            'Packaging Type': packaging,
+            '_Custom Image PC': customImageSrcPc,
+            '_Custom Image Mobile': customImageSrcMobile,
+        };
+
+        const payload = {
+            items: [
+                {
+                    // Replace with your product variant ID for custom printing
+                    id: 41413117083761,
+                    quantity: amount,
+                    properties: properties,
+                },
+            ],
+        };
+
+        fetch('/cart/add.js', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+                Accept: 'application/json',
+            },
+            body: JSON.stringify(payload),
+        })
+            .then((response) => {
+                if (!response.ok) {
+                    return response.json().then((err) => {
+                        throw err;
+                    });
+                }
+                return response.json();
+            })
+            .then((data) => {
+                console.log('Product added to cart:', data);
+                document.getElementById('global-cart-drawer').classList.remove('!hidden');
+            })
+            .catch((error) => {
+                console.error('Error adding product to cart:', error);
+                if (error.description === 'Cart is too large.') {
+                    alert('Uploaded image is too large. Please try again with a smaller image.');
+                } else {
+                    alert('There was an error adding the product to your cart. Please try again.');
+                }
+            });
+    }
+</script>

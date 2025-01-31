@@ -1,0 +1,786 @@
+{% comment %}theme-check-disable UndefinedObject{% endcomment %}
+{{ 'section-footer.css' | asset_url | stylesheet_tag }}
+{{ 'component-newsletter.css' | asset_url | stylesheet_tag }}
+{{ 'component-list-menu.css' | asset_url | stylesheet_tag }}
+{{ 'component-list-payment.css' | asset_url | stylesheet_tag }}
+{{ 'component-list-social.css' | asset_url | stylesheet_tag }}
+{%- if section.settings.enable_country_selector or section.settings.enable_language_selector -%}
+    {{ 'component-localization-form.css' | asset_url | stylesheet_tag }}
+{%- endif -%}
+
+{% comment %}
+    <script src='https://www.google.com/recaptcha/api.js?render=NEW_V3_SITE_KEY' async defer></script>
+    <script>
+        grecaptcha.ready(() => {
+            console.log('ready');
+            grecaptcha.execute('6LfV-l4qAAAAAAc1ISKVM0_kYXAHG91bWQb0PASO', { action: 'submit' }).then((token) => {
+                console.log('recatpcha token', token);
+                document.getElementById('recaptcha_token').value = token;
+            });
+        });
+    </script>
+    <form id='my_form' method='POST'>
+        <input type='hidden' id='recaptcha_token' name='g-recaptcha-response'>
+        <!-- Your other form fields -->
+    </form>
+{% endcomment %}
+
+<section
+    id='footer'
+    class='{% if section.settings.section_margin_top != blank %}mt-[{{ section.settings.section_margin_top }}px]{% endif %} {% if section.settings.section_margin_bottom != blank %}mb-[{{ section.settings.section_margin_bottom }}px]{% endif %}'
+>
+    <div>
+        {% comment %} {# ------------------------------------- NEWSLETTER SIGNUP SECTION ------------------------------------- #} {% endcomment %}
+        <div class='w-full md:px-[80px] mb-[120px] px-[16px] {{ class }}'>
+            <div class='rounded-[16px] bg-surface-primary-active shadow-md px-[24px] py-[32px] flex items-center justify-center flex-col'>
+                {% comment %} {# Small Logo #} {% endcomment %}
+                <div class='block relative md:hidden mt-[-70px]'>
+                    <img
+                        src='{{ "logo-ball-small.png" | asset_url }}'
+                        alt='Logo Ball'
+                        class='w-[80px] h-[80px]'
+                        width='80'
+                        height='80'
+                    >
+                </div>
+                {% comment %} {# Big Logo #} {% endcomment %}
+                <div class='hidden md:!block relative mt-[-90px]'>
+                    <img
+                        src='{{ "logo-ball-big.png" | asset_url }}'
+                        alt='Logo Ball'
+                        class='w-[120px] h-[120px] rounded-[16px]'
+                        width='120'
+                        height='120'
+                    >
+                </div>
+
+                <div class='flex flex-col gap-[8px] justify-center items-center mt-[20px]'>
+                    <p class='text-text-inverse text-[24px] font-bold'>
+                        {{ section.settings.newsletter_title }}
+                    </p>
+                    <p class='text-text-inverse text-[18px] font-medium'>
+                        {{ section.settings.newsletter_subtitle }}
+                    </p>
+                </div>
+
+                {% comment %} {# Newsletter Form #} {% endcomment %}
+                <form
+                    accept-charset='UTF-8'
+                    class='flex gap-[16px] w-full items-center justify-center mt-[32px] flex-col md:flex-row'
+                >
+                    <div class='bg-surface-primary flex items-center px-[16px] py-[6px] rounded-[8px] gap-[8px] max-w-none md:max-w-[320px] flex-1 w-full md:w-auto'>
+                        {% render 'icon-mail' %}
+                        <input
+                            type='email'
+                            name='contact[email]'
+                            id='newsletter-email'
+                            placeholder='{{ section.settings.email_placeholder }}'
+                            class='outline-none flex-1 shadow-none h-[36px]'
+                            required
+                            autocomplete='email'
+                        >
+                    </div>
+                    <button
+                        type='button'
+                        onclick='handleSubscribeEmail()'
+                        id='subscribe-button'
+                        class='bg-surface-secondary-active rounded-[8px] py-[12px] px-[24px] text-center font-bold text-[16px] text-text-primary w-full md:w-auto '
+                    >
+                        {{ section.settings.subscribe_button_text }}
+                    </button>
+
+                    <input type='hidden' name='form_type' value='customer'>
+                    <input type='hidden' name='utf8' value='✓'>
+                </form>
+
+                {% comment %} {# Success Message #} {% endcomment %}
+                <div
+                    class='!hidden flex items-center justify-center w-auto mt-[20px] bg-brand-secondary text-text-primary px-[20px] py-[8px] rounded-[10px]'
+                    id='show-email-added'
+                >
+                    <p>Your email has been added to our list. Thank you!</p>
+                </div>
+
+                {% comment %} {# reCAPTCHA #} {% endcomment %}
+                {% comment %}
+                    <div
+                        class='g-recaptcha mt-[10px]'
+                        data-sitekey='6LfV-l4qAAAAAAc1ISKVM0_kYXAHG91bWQb0PASO'
+                        data-callback='onRecaptchaSuccessSubscribeForm'
+                    ></div>
+                {% endcomment %}
+            </div>
+        </div>
+
+        {% comment %} {# ------------------------------------- CONTACT FORM SECTION ------------------------------------- #} {% endcomment %}
+        <div class='mb-[128px] px-[16px] md:px-[80px]'>
+            <form
+                id='contact_form'
+                action='/contact#contact_form'
+                method='post'
+                accept-charset='UTF-8'
+                class='bg-surface-secondary rounded-[16px] px-[24px] lg:px-[160px] py-[80px] flex flex-col gap-[32px]'
+            >
+                <p class='text-text-primary font-bold text-[32px] text-center'>
+                    {{ section.settings.contact_form_title }}
+                </p>
+
+                {% comment %} {# Inputs Row #} {% endcomment %}
+                <div class='grid grid-cols-1 md:grid-cols-3 gap-[32px]'>
+                    <div class='bg-white px-[16px] py-[12px] rounded-[8px] relative'>
+                        <input
+                            type='text'
+                            name='contact[name]'
+                            placeholder='{{ section.settings.name_placeholder }}'
+                            class='w-full h-[36px] outline-none shadow-none'
+                            required
+                        >
+                        <p class='hidden text-red-600 text-[12px] mt-[4px]' data-error-name></p>
+                    </div>
+
+                    <div class='bg-white px-[16px] py-[12px] rounded-[8px] relative'>
+                        <input
+                            type='email'
+                            name='contact[email]'
+                            placeholder='{{ section.settings.email_placeholder }}'
+                            class='w-full h-[36px] outline-none shadow-none'
+                            required
+                            autocomplete='email'
+                        >
+                        <p class='hidden text-red-600 text-[12px] mt-[4px]' data-error-email></p>
+                    </div>
+
+                    <div class='bg-white px-[16px] py-[12px] rounded-[8px] relative'>
+                        <input
+                            type='tel'
+
+                            name='contact[phone]'
+                            placeholder='{{ section.settings.phone_placeholder }}'
+                            class='w-full h-[36px] outline-none shadow-none'
+                            required
+                        >
+                        <p class='hidden text-red-600 text-[12px] mt-[4px]' data-error-phone></p>
+                    </div>
+                </div>
+
+                <div class='bg-white px-[16px] py-[12px] rounded-[8px] relative'>
+                    <textarea
+                        name='contact[body]'
+                        placeholder='{{ section.settings.subject_placeholder }}'
+                        class='w-full outline-none shadow-none resize-none'
+                        rows='4'
+                        required
+                    ></textarea>
+                    <p class='hidden text-red-600 text-[12px] mt-[4px]' data-error-message></p>
+                </div>
+
+                <p class='text-text-primary-active font-medium text-[12px] text-center'>
+                    {{ section.settings.recaptcha_text }}
+                </p>
+
+                {% comment %} {# reCAPTCHA #} {% endcomment %}
+                {% comment %}
+                    <div
+                        class='g-recaptcha mt-[10px] mx-auto'
+                        data-sitekey='6LfV-l4qAAAAAAc1ISKVM0_kYXAHG91bWQb0PASO'
+                        data-callback='onRecaptchaSuccessContactForm'
+                    ></div>
+                {% endcomment %}
+
+                <button
+                    type='submit'
+
+                    id='send-button'
+                    class='bg-surface-primary-active rounded-[8px] px-[24px] py-[12px] text-[16px] font-bold text-text-secondary-active w-fit mx-auto '
+                >
+                    {{ section.settings.send_button_text }}
+                </button>
+
+                <input type='hidden' name='form_type' value='contact'>
+                <input type='hidden' name='utf8' value='✓'>
+            </form>
+        </div>
+
+        {% comment %} {# ------------------------------------- FOOTER SECTION ------------------------------------- #} {% endcomment %}
+        <footer
+            class='bg-surface-primary-active md:p-[80px] py-[64px] px-[24px] flex flex-col items-center justify-center w-full gap-[80px]'
+        >
+            {% comment %} {# Desktop Socials (larger screens) #} {% endcomment %}
+            <div class='flex-row items-center gap-[64px] hidden md:!flex'>
+                {%- if section.settings.tiktok_url != blank -%}
+                    <a href='{{ section.settings.tiktok_url }}' target='_blank' rel='noopener'>
+                        {% render 'icon-tiktok' %}
+                    </a>
+                {%- endif -%}
+
+                {%- if section.settings.facebook_url != blank -%}
+                    <a href='{{ section.settings.facebook_url }}' target='_blank' rel='noopener'>
+                        {% render 'icon-facebook' %}
+                    </a>
+                {%- endif -%}
+
+                {%- if section.settings.instagram_url != blank -%}
+                    <a href='{{ section.settings.instagram_url }}' target='_blank' rel='noopener'>
+                        {% render 'icon-instagram' %}
+                    </a>
+                {%- endif -%}
+
+                {% comment %} {# Center Logo #} {% endcomment %}
+                <a href='{{ routes.root_url }}' rel='noopener'>
+                    {% render 'logo-lg-white' %}
+                </a>
+
+                {%- if section.settings.x_url != blank -%}
+                    <a href='{{ section.settings.x_url }}' target='_blank' rel='noopener'>
+                        {% render 'icon-x' %}
+                    </a>
+                {%- endif -%}
+
+                {%- if section.settings.whatsapp_url != blank -%}
+                    <a href='{{ section.settings.whatsapp_url }}' target='_blank' rel='noopener'>
+                        {% render 'icon-whatsapp' %}
+                    </a>
+                {%- endif -%}
+
+                {%- if section.settings.youtube_url != blank -%}
+                    <a href='{{ section.settings.youtube_url }}' target='_blank' rel='noopener'>
+                        {% render 'icon-youtube' %}
+                    </a>
+                {%- endif -%}
+            </div>
+
+            {% comment %} {# Mobile Socials (smaller screens) #} {% endcomment %}
+            <div class='flex items-center md:hidden flex-col gap-[64px]'>
+                {% render 'logo-lg-white' %}
+                <div class='flex flex-row justify-evenly items-center w-full'>
+                    {%- if section.settings.tiktok_url != blank -%}
+                        <a href='{{ section.settings.tiktok_url }}' target='_blank' rel='noopener'>
+                            {% render 'icon-tiktok' %}
+                        </a>
+                    {%- endif -%}
+                    {%- if section.settings.facebook_url != blank -%}
+                        <a href='{{ section.settings.facebook_url }}' target='_blank' rel='noopener'>
+                            {% render 'icon-facebook' %}
+                        </a>
+                    {%- endif -%}
+                    {%- if section.settings.instagram_url != blank -%}
+                        <a href='{{ section.settings.instagram_url }}' target='_blank' rel='noopener'>
+                            {% render 'icon-instagram' %}
+                        </a>
+                    {%- endif -%}
+                    {%- if section.settings.x_url != blank -%}
+                        <a href='{{ section.settings.x_url }}' target='_blank' rel='noopener'>
+                            {% render 'icon-x' %}
+                        </a>
+                    {%- endif -%}
+                    {%- if section.settings.whatsapp_url != blank -%}
+                        <a href='{{ section.settings.whatsapp_url }}' target='_blank' rel='noopener'>
+                            {% render 'icon-whatsapp' %}
+                        </a>
+                    {%- endif -%}
+                    {%- if section.settings.youtube_url != blank -%}
+                        <a href='{{ section.settings.youtube_url }}' target='_blank' rel='noopener'>
+                            {% render 'icon-youtube' %}
+                        </a>
+                    {%- endif -%}
+                </div>
+            </div>
+
+            {% comment %} {# Menu Blocks #} {% endcomment %}
+            <div class='grid grid-cols-1 lg:grid-cols-4 w-full gap-[32px]'>
+                {% for block in section.blocks %}
+                    {% case block.type %}
+                        {% when 'link_list' %}
+                            <div
+                                class='
+                                    flex flex-col gap-[24px] items-center md:items-start w-full
+                                    {% if forloop.index > 1 %}mt-[64px] md:mt-0{% endif %}
+                                '
+                            >
+                                <p class='uppercase text-text-inverse font-bold text-[14px]'>
+                                    {{ block.settings.title }}
+                                </p>
+                                {% for link in block.settings.menu.links %}
+                                    <a
+                                        href='{{ link.url }}'
+                                        class='uppercase text-text-secondary-active font-medium text-[14px]'
+                                    >
+                                        {{ link.title }}
+                                    </a>
+                                {% endfor %}
+                            </div>
+                    {% endcase %}
+                {% endfor %}
+            </div>
+
+            {% comment %} {# Bottom area #} {% endcomment %}
+            <div class='flex items-center justify-center gap-[32px] flex-col'>
+                <p class='text-text-secondary font-medium text-[12px]'>
+                    {{ section.settings.copyright_text }}
+                </p>
+                <div class='flex flex-row justify-evenly items-center w-full'>
+                    <a
+                        href='{{ section.settings.tos_url }}'
+                        class='text-center font-medium text-[12px] text-text-secondary-active'
+                    >
+                        {{ section.settings.tos_label }}
+                    </a>
+                    <a
+                        href='{{ section.settings.privacy_policy_url }}'
+                        class='text-center font-medium text-[12px] text-text-secondary-active'
+                    >
+                        {{ section.settings.privacy_policy_label }}
+                    </a>
+                </div>
+            </div>
+
+            <div>
+                {% render 'logo-carbon-neutral' %}
+            </div>
+        </footer>
+    </div>
+</section>
+
+{% comment %} {# --------------------------------------- NEWSLETTER SUBSCRIPTION (Klaviyo API) --------------------------------------- {% endcomment %}
+{% comment %} #} {% endcomment %}
+
+<script>
+    function onRecaptchaSuccessSubscribeForm(token) {
+        document.getElementById('send-button').classList.remove('opacity-40');
+        document.getElementById('send-button').disabled = false;
+    }
+
+    function onRecaptchaSuccessContactForm(token) {
+        document.getElementById('send-button').classList.remove('opacity-40');
+        document.getElementById('send-button').disabled = false;
+    }
+
+    const handleSubscribeEmail = () => {
+        const email = document.getElementById('newsletter-email').value;
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!emailRegex.test(email)) {
+            alert('Please enter a valid email address.');
+            return;
+        }
+
+        fetch('https://a.klaviyo.com/client/subscriptions?company_id=Uz3a73', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+                Authorization: `Klaviyo-API-Key Uz3a73`,
+                revision: '2024-07-15',
+            },
+            body: JSON.stringify({
+                data: {
+                    type: 'subscription',
+                    attributes: {
+                        profile: {
+                            data: {
+                                type: 'profile',
+                                attributes: { email },
+                            },
+                        },
+                    },
+                    relationships: {
+                        list: {
+                            data: {
+                                type: 'list',
+                                id: 'TVbRn6',
+                            },
+                        },
+                    },
+                },
+            }),
+        })
+            .then((response) => {
+                const showAlert = document.getElementById('show-email-added');
+                showAlert.classList.remove('!hidden');
+
+                if (!response.ok) {
+                    console.error('Error:', response.status, response.statusText);
+                } else {
+                    console.log('Success:', response);
+                }
+            })
+            .catch((error) => {
+                console.error('Error:', error);
+            });
+    };
+</script>
+
+{% comment %} {# --------------------------------------- CONTACT FORM VALIDATION --------------------------------------- #} {% endcomment %}
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const contactForm = document.getElementById('contact_form');
+        const sendButton = document.getElementById('send-button');
+
+        const nameField = contactForm.querySelector('input[name="contact[name]"]');
+        const emailField = contactForm.querySelector('input[name="contact[email]"]');
+        const phoneField = contactForm.querySelector('input[name="contact[phone]"]');
+        const messageField = contactForm.querySelector('textarea[name="contact[body]"]');
+
+        const errorName = contactForm.querySelector('[data-error-name]');
+        const errorEmail = contactForm.querySelector('[data-error-email]');
+        const errorPhone = contactForm.querySelector('[data-error-phone]');
+        const errorMessage = contactForm.querySelector('[data-error-message]');
+
+        // Email validation function
+        function isValidEmail(email) {
+            // Basic regex for demonstration: you may want a more robust pattern.
+            return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+        }
+
+        contactForm.addEventListener('submit', function (e) {
+            let hasError = false;
+
+            // Clear previous errors
+            errorName.classList.add('hidden');
+            errorEmail.classList.add('hidden');
+            errorPhone.classList.add('hidden');
+            errorMessage.classList.add('hidden');
+
+            // Validate Name
+            if (nameField.value.trim().length < 2) {
+                errorName.textContent = 'Please enter at least 2 characters for your name.';
+                errorName.classList.remove('hidden');
+                hasError = true;
+            }
+
+            // Validate Email
+            if (!isValidEmail(emailField.value.trim())) {
+                errorEmail.textContent = 'Please enter a valid email address.';
+                errorEmail.classList.remove('hidden');
+                hasError = true;
+            }
+
+            // (Optional) Validate phone - you can add a pattern if needed
+            // if (phoneField.value && !/^\+?\d+$/.test(phoneField.value.trim())) {
+            //   errorPhone.textContent = 'Please enter a valid phone number.';
+            //   errorPhone.classList.remove('hidden');
+            //   hasError = true;
+            // }
+
+            // Validate Message
+            if (messageField.value.trim().length < 10) {
+                errorMessage.textContent = 'Please enter at least 10 characters in your message.';
+                errorMessage.classList.remove('hidden');
+                hasError = true;
+            }
+
+            if (hasError) {
+                // Stop form from submitting if we have errors
+                e.preventDefault();
+                return false;
+            }
+
+            // If we get here, the form is valid and reCAPTCHA is presumably complete
+            // The form will submit to /contact#contact_form as intended
+        });
+    });
+</script>
+
+{% schema %}
+{
+    "name": "Footer",
+    "blocks": [
+        {
+            "type": "link_list",
+            "name": "Menu",
+            "settings": [
+                {
+                    "type": "text",
+                    "id": "title",
+                    "label": "Heading",
+                    "default": "Quick links"
+                },
+                {
+                    "type": "link_list",
+                    "id": "menu",
+                    "label": "Menu",
+                    "default": "footer"
+                }
+            ]
+        }
+    ],
+    "settings": [
+        {
+            "type": "text",
+            "id": "tiktok_url",
+            "label": "TikTok URL",
+            "default": "biodegradablegolfballs"
+        },
+        {
+            "type": "text",
+            "id": "facebook_url",
+            "label": "Facebook URL",
+            "default": "biodegradablegolfballs"
+        },
+        {
+            "type": "text",
+            "id": "instagram_url",
+            "label": "Instagram URL",
+            "default": "biodegradablegolfballs"
+        },
+        {
+            "type": "text",
+            "id": "logo_url",
+            "label": "Logo URL",
+            "default": "biodegradablegolfballs"
+        },
+        {
+            "type": "text",
+            "id": "x_url",
+            "label": "X URL",
+            "default": "biodegradablegolfballs"
+        },
+        {
+            "type": "text",
+            "id": "whatsapp_url",
+            "label": "WhatsApp URL",
+            "default": "biodegradablegolfballs"
+        },
+        {
+            "type": "text",
+            "id": "youtube_url",
+            "label": "YouTube URL",
+            "default": "biodegradablegolfballs"
+        },
+        {
+            "type": "text",
+            "id": "newsletter_title",
+            "default": "Subscribe to the ECO-friendly newsletter",
+            "label": "Newsletter Title"
+        },
+        {
+            "type": "text",
+            "id": "newsletter_subtitle",
+            "default": "Be the first to receive up-to-date information once a week at most.",
+            "label": "Newsletter Subtitle"
+        },
+        {
+            "type": "text",
+            "id": "email_placeholder",
+            "default": "Your email",
+            "label": "Email Placeholder"
+        },
+        {
+            "type": "text",
+            "id": "subscribe_button_text",
+            "default": "Subscribe",
+            "label": "Subscribe Button Text"
+        },
+        {
+            "type": "text",
+            "id": "contact_form_title",
+            "default": "DROP US A LINE",
+            "label": "Contact Form Title"
+        },
+        {
+            "type": "text",
+            "id": "name_placeholder",
+            "default": "Name",
+            "label": "Name Placeholder"
+        },
+        {
+            "type": "text",
+            "id": "phone_placeholder",
+            "default": "Phone",
+            "label": "Phone Placeholder"
+        },
+        {
+            "type": "text",
+            "id": "subject_placeholder",
+            "default": "Subject",
+            "label": "Subject Placeholder"
+        },
+        {
+            "type": "text",
+            "id": "recaptcha_text",
+            "default": "THIS SITE IS PROTECTED BY RECAPTCHA AND THE GOOGLE PRIVACY POLICY AND TERMS OF SERVICE APPLY.",
+            "label": "Recaptcha Text"
+        },
+        {
+            "type": "text",
+            "id": "send_button_text",
+            "default": "Send",
+            "label": "Send Button Text"
+        },
+        {
+            "type": "text",
+            "id": "contact_us_title",
+            "default": "contact us",
+            "label": "Contact Us Title"
+        },
+        {
+            "type": "text",
+            "id": "contact_us_subtitle",
+            "default": "contact us",
+            "label": "Contact Us Subtitle"
+        },
+        {
+            "type": "text",
+            "id": "shopping_info",
+            "default": "shopping info",
+            "label": "Shopping Info"
+        },
+        {
+            "type": "text",
+            "id": "phone_number",
+            "default": "(604) 600-4347",
+            "label": "Phone Number"
+        },
+        {
+            "type": "text",
+            "id": "email_label",
+            "default": "email",
+            "label": "Email Label"
+        },
+        {
+            "type": "text",
+            "id": "navigation_title",
+            "default": "navigation",
+            "label": "Navigation Title"
+        },
+        {
+            "type": "text",
+            "id": "cart_label",
+            "default": "cart",
+            "label": "Cart Label"
+        },
+        {
+            "type": "text",
+            "id": "checkout_label",
+            "default": "checkout",
+            "label": "Checkout Label"
+        },
+        {
+            "type": "text",
+            "id": "wholesale_inquiry_label",
+            "default": "wholesale inquiry",
+            "label": "Wholesale Inquiry Label"
+        },
+        {
+            "type": "text",
+            "id": "shipping_info_label",
+            "default": "shipping information",
+            "label": "Shipping Info Label"
+        },
+        {
+            "type": "text",
+            "id": "get_to_know_us_title",
+            "default": "get to know us",
+            "label": "Get to Know Us Title"
+        },
+        {
+            "type": "text",
+            "id": "media_label",
+            "default": "media",
+            "label": "Media Label"
+        },
+        {
+            "type": "text",
+            "id": "about_us_label",
+            "default": "about us",
+            "label": "About Us Label"
+        },
+        {
+            "type": "text",
+            "id": "eco_blog_label",
+            "default": "our eco blog",
+            "label": "Eco Blog Label"
+        },
+        {
+            "type": "text",
+            "id": "faqs_label",
+            "default": "faqs",
+            "label": "FAQs Label"
+        },
+        {
+            "type": "text",
+            "id": "amazon_walmart_title",
+            "default": "amazon & wallmart",
+            "label": "Amazon & Walmart Title"
+        },
+        {
+            "type": "text",
+            "id": "amazon_usa_label",
+            "default": "amazon usa",
+            "label": "Amazon USA Label"
+        },
+        {
+            "type": "text",
+            "id": "amazon_canada_label",
+            "default": "amazon canada",
+            "label": "Amazon Canada Label"
+        },
+        {
+            "type": "text",
+            "id": "amazon_uk_label",
+            "default": "amazon uk",
+            "label": "Amazon UK Label"
+        },
+        {
+            "type": "text",
+            "id": "walmart_usa_label",
+            "default": "walmart usa",
+            "label": "Walmart USA Label"
+        },
+        {
+            "type": "text",
+            "id": "copyright_text",
+            "default": "© 2024 COPYRIGHT BIODEGRADABLE GOLF BALLS.",
+            "label": "Copyright Text"
+        },
+        {
+            "type": "text",
+            "id": "tos_label",
+            "default": "T.O.S",
+            "label": "Terms of Service Label"
+        },
+        {
+            "type": "text",
+            "id": "privacy_policy_label",
+            "default": "PRIVACY POLICY",
+            "label": "Privacy Policy Label"
+        },
+        {
+            "type": "checkbox",
+            "id": "enable_country_selector",
+            "default": true,
+            "label": "Enable Country Selector"
+        },
+        {
+            "type": "checkbox",
+            "id": "enable_language_selector",
+            "default": true,
+            "label": "Enable Language Selector"
+        },
+        {
+            "type": "range",
+            "id": "section_margin_top",
+            "min": 0,
+            "max": 100,
+            "step": 4,
+            "unit": "px",
+            "label": "Section Top Margin",
+            "default": 0
+        },
+        {
+            "type": "range",
+            "id": "section_margin_bottom",
+            "min": 0,
+            "max": 100,
+            "step": 4,
+            "unit": "px",
+            "label": "Section Bottom Margin",
+            "default": 0
+        }
+    ],
+    "presets": [
+        {
+            "name": "Default",
+            "category": "Footer"
+        }
+    ]
+}
+{% endschema %}

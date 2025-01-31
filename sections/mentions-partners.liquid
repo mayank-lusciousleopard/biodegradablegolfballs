@@ -1,0 +1,161 @@
+<section class='mt-[{{ section.settings.section_margin_top }}px] mb-[{{ section.settings.section_margin_bottom }}px]'>
+  <div class='overflow-hidden px-[16px] md:px-[80px] mt-[16px]'>
+    <div class='w-full flex flex-row gap-[8px]'>
+      <div class='flex-1 w-full py-[16px] bg-surface-secondary flex items-center justify-center rounded-[16px] gap-[8px] flex-col md:flex-row px-[8px]'>
+        {% render 'icon-water' %}
+        <p class='text-text-primary font-bold text-[12px] md:text-[16px] uppercase text-center'>{{ section.settings.first_feature_text }}</p>
+      </div>
+
+      <div class='flex-1 w-full py-[16px] bg-surface-secondary flex items-center justify-center rounded-[16px] gap-[8px] flex-col md:flex-row px-[8px]'>
+        {% render 'icon-leaf' %}
+        <p class='text-text-primary font-bold text-[12px] md:text-[16px] uppercase text-center'>{{ section.settings.second_feature_text }}</p>
+      </div>
+
+      <div class='flex-1 w-full py-[16px] bg-surface-secondary flex items-center justify-center rounded-[16px] gap-[8px] flex-col md:flex-row px-[8px]'>
+        {% render 'icon-drop' %}
+        <p class='text-text-primary font-bold text-[12px] md:text-[16px] uppercase text-center'>{{ section.settings.third_feature_text }}</p>
+      </div>
+    </div>
+    <div class='flex flex-row items-center w-full mt-[36px] gap-[32px] md:gap-[64px] overflow-hidden'>
+      <div class='flex flex-col w-[173px] shrink-0 max-w-[99px] md:max-w-[173px]'>
+        <span class='text-text-primary font-medium text-[18px]'>{{ section.settings.title_line_1 }}</span>
+        <span class='text-text-primary font-medium text-[18px]'>{{ section.settings.title_line_2 }}</span>
+      </div>
+
+      <div class='logos'>
+        <div class='logo-container'>
+          {% if section.settings.predefined_logos %}
+            {% render 'logo-bbc' %}
+            {% render 'logo-cfox' %}
+            {% render 'logo-ssc' %}
+            {% render 'logo-volvo' %}
+            {% render 'logo-fids' %}
+            {% render 'logo-fun-air' %}
+            {% render 'logo-liv-golf' %}
+            {% render 'logo-cnn' %}
+            {% render 'logo-bbc' %}
+            {% render 'logo-cfox' %}
+            {% render 'logo-ssc' %}
+            {% render 'logo-volvo' %}
+            {% render 'logo-fids' %}
+            {% render 'logo-fun-air' %}
+            {% render 'logo-liv-golf' %}
+            {% render 'logo-cnn' %}
+          {% endif %}
+          {% for block in section.blocks %}
+            <img src='{{ block.settings.image | image_url: width: 100 }}' alt='{{ block.settings.image.alt }}'>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+
+  .logos {
+    display: flex;
+    flex-shrink: 0;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    gap: 64px;
+    animation: scroll 20s linear infinite;
+  }
+</style>
+
+{% schema %}
+  {
+    "name": "Mentions/partners",
+    "tag": "section",
+    "class": "section",
+    "settings": [
+      {
+        "type": "range",
+        "id": "section_margin_top",
+        "label": "Section Top Margin",
+        "min": 0,
+        "max": 100,
+        "step": 4,
+        "default": 16,
+        "unit": "px"
+      },
+      {
+        "type": "range",
+        "id": "section_margin_bottom",
+        "label": "Section Bottom Margin",
+        "min": 0,
+        "max": 100,
+        "step": 4,
+        "default": 0,
+        "unit": "px"
+      },
+      {
+        "type": "text",
+        "id": "first_feature_text",
+        "label": "First Feature Text",
+        "default": "DISSOLVING"
+      },
+      {
+        "type": "text",
+        "id": "second_feature_text",
+        "label": "Second Feature Text",
+        "default": "NON-TOXIC"
+      }, {
+        "type": "text",
+        "id": "third_feature_text",
+        "label": "Third Feature Text",
+        "default": "WATER SOLUBLE"
+      }, {
+        "type": "text",
+        "id": "title_line_1",
+        "label": "Title Line 1",
+        "default": "Mentions, partners"
+      }, {
+        "type": "text",
+        "id": "title_line_2",
+        "label": "Title Line 2",
+        "default": "& customers"
+      }, {
+        "type": "checkbox",
+        "id": "predefined_logos",
+        "label": "Predefined Logos",
+        "default": true
+      }
+    ],
+    "blocks": [
+      {
+        "name": "Image",
+        "type": "image_picker",
+        "limit": 12,
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Image"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Mentions/partners",
+        "category": "Custom Content"
+      }
+    ]
+  }
+{% endschema %}

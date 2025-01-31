@@ -1,0 +1,39 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "custom_css": [],
+      "settings": {
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "rich_text_U3chEV": {
+      "type": "rich-text",
+      "settings": {
+        "content": "<h2>Biodegradable Golf Balls<\/h2><p><strong>Golf balls that dissolve in water away to nothing – guilt free and responsible golfing perfect for:<\/strong><\/p><ul><li>Yacht Golf<\/li><li>Water Front Golf Driving Ranges<\/li><li>Cruise Ships<\/li><li>Yachts<\/li><li>Resorts<\/li><li>Waterfront \/ Beachfront Property<\/li><\/ul><p>Biodegradable Golf Canada is experiencing the same guilt and anxiety as almost everyone else in North America – plastic pollution is out of control has created a <a href=\"https:\/\/www.cnn.com\/2018\/03\/23\/world\/plastic-great-pacific-garbage-patch-intl\/index.html\">Trash Island in the North Pacific<\/a> more than double the size of Texas, actively killing marine life from rare sea birds like the Albatross to more common but critical animals like whales.<\/p><p>One of the <a href=\"https:\/\/www.theplasticpick-up.org\/\">worst plastic pollution sources<\/a> is, surprisingly, golf! Standard golf balls are easily carried around the ocean by tides and currents, getting bashed against ocean floor rocks and flaking off into toxic microplastics (plastic fragments smaller than 5 millimeters or less than 1\/8th of an inch) that enter fishes gills and the global water supply, making real people sick.<\/p><p>These golf balls don’t just come from driving directly into the ocean, either – golf courses that use nearby streams and rivers as water traps contribute to the problem as well.<\/p><p>We want to join in to fight plastic pollution, and solve this problem by providing guilt-free golfing through our <a href=\"\/products\/biodegradable-golf-balls\" title=\"Biodegradable Golf Balls - 24 Pack\">biodegradable golf balls<\/a>.<\/p>",
+        "margin_top": 20,
+        "margin_bottom": 20,
+        "margin_left": 0,
+        "margin_right": 0,
+        "text_size": 12
+      }
+    },
+    "rich_text_XzN69K": {
+      "type": "rich-text",
+      "settings": {
+        "content": "<p><strong>Our biodegradable golf balls are composed of non-toxic ingredients:<\/strong><\/p><ul><li>PVA<\/li><li>Calcium Carbonate<\/li><li>Glycerin<\/li><\/ul>",
+        "margin_top": 20,
+        "margin_bottom": 100,
+        "margin_left": 0,
+        "margin_right": 0,
+        "text_size": 12
+      }
+    }
+  },
+  "order": [
+    "main",
+    "rich_text_U3chEV",
+    "rich_text_XzN69K"
+  ]
+}

@@ -1,0 +1,97 @@
+{
+  "sections": {
+    "custom_liquid_zHEXdL": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "{% render 'breadcrumbs' ,links:'Products', class:' px-[16px] md:px-[80px]' %}",
+        "color_scheme": "",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "main": {
+      "type": "main-list-collections",
+      "settings": {
+        "title": "",
+        "sort": "alphabetical",
+        "image_ratio": "square",
+        "columns_desktop": 3,
+        "columns_mobile": "2"
+      }
+    },
+    "featured_collection_yyVp4f": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Bestsellers",
+        "heading_size": "h1",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "bestsellers",
+        "products_to_show": 4,
+        "columns_desktop": 3,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "color_scheme": "",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_quick_add": true,
+        "show_rating": true,
+        "enable_quick_add": false,
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "featured_collection_dfAJBN": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Discounted",
+        "heading_size": "h1",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "cheap-biodegradable-golf-balls",
+        "products_to_show": 4,
+        "columns_desktop": 3,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "color_scheme": "",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_quick_add": true,
+        "show_rating": true,
+        "enable_quick_add": false,
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "custom_liquid_mtkRDJ": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "{% render 'action-cards',\n        text: 'Wholesale event packages::Save more then <bold>$150.00<\/bold>|\n        Biodegradable Golf Balls::Starting at <strong>$5.00<\/strong> per ball|\n        Custom printing:Print your balls with your own design.:Starting at <strong>$5.50<\/strong> per ball', title:'Other products and services'\n    %}",
+        "color_scheme": "",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    }
+  },
+  "order": [
+    "custom_liquid_zHEXdL",
+    "main",
+    "featured_collection_yyVp4f",
+    "featured_collection_dfAJBN",
+    "custom_liquid_mtkRDJ"
+  ]
+}

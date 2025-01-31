@@ -1,0 +1,205 @@
+<section id='wholesale-info'>
+  <div class='px-[16px] md:px-[80px] my-[16px] md:my-[64px] w-full'>
+    <p class='font-bold text-text-primary text-[24px] md:text-[32px]'>Wholesale offer</p>
+    <p class='text-text-primary text-[24px] font-medium mt-[8px] md:text-[32px]'>
+      Sustainable Solution for Your Business
+    </p>
+
+    <div class='grid grid-cols-1 lg:grid-cols-2 gap-[16px] md:gap-[64px] mt-[16px] md:mt-[19px]'>
+      <div>
+        <div class='grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-[16px] md:gap-[16px] lg:gap-[64px]'>
+          <div class='bg-surface-background w-full flex items-center justify-center flex-col py-[16px] h-[104px] rounded-[16px] gap-[8px]  text-center'>
+            {% render 'icon-present' %}
+            <p class='text-text-primary font-bold text-[14px]'>Great as a gift</p>
+          </div>
+          <div class='bg-surface-background w-full flex items-center justify-center flex-col py-[16px] h-[104px] rounded-[16px] gap-[8px]  text-center'>
+            {% render 'icon-palette' %}
+            <p class='text-text-primary font-bold text-[14px]'>Multi-color printing</p>
+          </div>
+          <div class='bg-surface-background w-full flex items-center justify-center flex-col py-[16px] h-[104px] rounded-[16px] gap-[8px]  text-center'>
+            {% render 'icon-truck' %}
+            <p class='text-text-primary font-bold text-[14px]'>2-3 days delivery</p>
+          </div>
+          <div class='bg-surface-background w-full flex items-center justify-center flex-col py-[16px] h-[104px] rounded-[16px] gap-[8px]  text-center'>
+            {% render 'icon-discount-small' %}
+            <p class='text-text-primary font-bold text-[14px]'>Quantity discount</p>
+          </div>
+        </div>
+        <div class='grid grid-cols-2 sm:grid-cols-2 gap-[16px] md:gap-[64px]'>
+          <div class='w-full col-span-4 grid grid-cols-1 md:grid-cols-2 gap-[16px]'>
+            <div class='relative w-full max-h-[200px]'>
+              <div class='absolute top-0 left-0 w-full h-full z-10'>
+                <div class='bg-linear-gradient-secondary opacity-70 w-full h-full rounded-[16px]'>
+                  <span></span>
+                </div>
+                <div class='relative top-[-100px]'>
+                  <p class='text-text-inverse font-bold text-[24px] text-center'>
+                    Wholesale event packages
+                  </p>
+                </div>
+              </div>
+              <img
+                src='{{ 'whole-sale-img-1.png' | asset_url }}'
+                alt='Wholesale info'
+                class='w-full h-full object-cover rounded-[16px]'
+                width='100%'
+                height='100%'>
+            </div>
+
+            <div class='relative w-full max-h-[200px]'>
+              <div class='absolute top-0 left-0 w-full h-full z-10'>
+                <div class='bg-linear-gradient-secondary opacity-70 w-full h-full rounded-[16px]'>
+                  <span></span>
+                </div>
+                <div class='relative top-[-100px]'>
+                  <p class='text-text-inverse font-bold text-[24px] text-center'>Custom printing</p>
+                  <p class='text-text-inverse font-medium text-[18px] text-center'>
+                    Print your own design
+                  </p>
+                </div>
+              </div>
+              <img
+                src='{{ 'whole-sale-img-2.png' | asset_url }}'
+                alt='Wholesale info'
+                class='w-full h-full object-cover rounded-[16px]'
+                width='100%'
+                height='100%'>
+            </div>
+          </div>
+
+          <div class='col-span-4 flex flex-col gap-[24px]'>
+            <p class='text-text-primary text-[18px] font-medium'>
+              We are proud to offer you an innovative and sustainable solution for your golf business. Our                            
+                            biodegradable balls are made from materials that easily decompose in water, meaning they
+                            leave no unwanted waste in the environment.
+            </p>
+            <p class='text-text-primary text-[18px] font-medium'>
+              This eco-friendly approach not only helps protect the environment but also brings many                            
+                            benefits to your business. The balls are of high quality and deliver excellent performance
+                            during play. Through our wholesale offer, you can acquire these balls in larger quantities
+                            at competitive prices. Additionally, as a wholesale customer, you will have access to our
+                            outstanding customer service and flexible ordering options. Join us in supporting
+                            sustainability in the golf industry while gaining advantages for your wholesale business.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <form class='w-full bg-surface-secondary flex flex-col items-center justify-center rounded-[16px] py-[32px] px-[24px] lg:px-[80px] md:py-[80px] gap-[32px] h-fit'>
+        <p class='text-text-primary text-[24px] font-bold uppercase'>WHOLESALE INQUIRY</p>
+
+        <div class='flex flex-col w-full gap-[16px]'>
+          <input
+            type='text'
+            name='name'
+            placeholder='Name'
+            class='py-[6px] h-[48px] px-[16px] rounded-[8px] bg-surface-primary border-tertiary border-[1px] outline-none shadow-none w-full'>
+          <input
+            type='text'
+            name='company'
+            placeholder='Company'
+            class='py-[6px] h-[48px] px-[16px] rounded-[8px] bg-surface-primary border-tertiary border-[1px] outline-none shadow-none w-full'>
+          <input
+            type='email'
+            name='email'
+            placeholder='Email'
+            class='py-[6px] h-[48px] px-[16px] rounded-[8px] bg-surface-primary border-tertiary border-[1px] outline-none shadow-none w-full'>
+          <input
+            type='tel'
+            name='phone'
+            placeholder='Phone'
+            class='py-[6px] h-[48px] px-[16px] rounded-[8px] bg-surface-primary border-tertiary border-[1px] outline-none shadow-none w-full'>
+          <input
+            type='number'
+            name='amount'
+            placeholder='Amount of golf balls needed'
+            class='py-[6px] h-[48px] px-[16px] rounded-[8px] bg-surface-primary border-tertiary border-[1px] outline-none shadow-none w-full'>
+          <textarea
+            type='text'
+            name='message'
+            placeholder='Message'
+            class='py-[6px] h-[80px] px-[16px] rounded-[8px] bg-surface-primary border-tertiary border-[1px] outline-none shadow-none w-full resize-none'></textarea>
+        </div>
+
+        <button type='submit' class='w-fit bg-surface-primary-active text-text-secondary-active font-bold text-[16px] rounded-[8px] px-[24px] py-[12px]'>
+          Send
+        </button>
+      </form>
+    </div>
+  </div>
+  <div class="mx-4">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div class="bg-surface-secondary rounded-lg shadow-md">
+        <img
+          src="{{ "wholesale-card-placeholder.png" | asset_url }}"
+          alt="Image description"
+          class="w-full h-auto rounded-t-lg">
+        <div class="p-6">
+          <h3 class="text-xl font-semibold mb-2">Do Biodegradable Golf Balls allow for the resale of your product?</h3>
+          <p>Yup! We have a comprehensive wholesale backend that we offer to select candidates after completing our wholesale signup form...</p>
+        </div>
+      </div>
+      <div class="bg-surface-secondary rounded-lg shadow-md">
+        <img
+          src="{{ "wholesale-card-placeholder.png" | asset_url }}"
+          alt="Image description"
+          class="w-full h-auto rounded-t-lg">
+        <div class="p-6">
+          <h3 class="text-xl font-semibold mb-2">Do Biodegradable Golf Balls allow for the resale of your product?</h3>
+          <p>Yup! We have a comprehensive wholesale backend that we offer to select candidates after completing our wholesale signup form...</p>
+        </div>
+      </div>
+      <div class="bg-surface-secondary rounded-lg shadow-md">
+        <img
+          src="{{ "wholesale-card-placeholder.png" | asset_url }}"
+          alt="Image description"
+          class="w-full h-auto rounded-t-lg">
+        <div class="p-6">
+          <h3 class="text-xl font-semibold mb-2">Do Biodegradable Golf Balls allow for the resale of your product?</h3>
+          <p>Yup! We have a comprehensive wholesale backend that we offer to select candidates after completing our wholesale signup form...</p>
+        </div>
+      </div>
+      <div class="bg-surface-secondary rounded-lg shadow-md">
+        <img
+          src="{{ "wholesale-card-placeholder.png" | asset_url }}"
+          alt="Image description"
+          class="w-full h-auto rounded-t-lg">
+        <div class="p-6">
+          <h3 class="text-xl font-semibold mb-2">Do Biodegradable Golf Balls allow for the resale of your product?</h3>
+          <p>Yup! We have a comprehensive wholesale backend that we offer to select candidates after completing our wholesale signup form...</p>
+        </div>
+      </div>
+      <div class="bg-surface-secondary rounded-lg shadow-md">
+        <img
+          src="{{ "wholesale-card-placeholder.png" | asset_url }}"
+          alt="Image description"
+          class="w-full h-auto rounded-t-lg">
+        <div class="p-6">
+          <h3 class="text-xl font-semibold mb-2">Do Biodegradable Golf Balls allow for the resale of your product?</h3>
+          <p>Yup! We have a comprehensive wholesale backend that we offer to select candidates after completing our wholesale signup form...</p>
+        </div>
+      </div>
+      <div class="bg-surface-secondary rounded-lg shadow-md">
+        <img
+          src="{{ "wholesale-card-placeholder.png" | asset_url }}"
+          alt="Image description"
+          class="w-full h-auto rounded-t-lg">
+        <div class="p-6">
+          <h3 class="text-xl font-semibold mb-2">Do Biodegradable Golf Balls allow for the resale of your product?</h3>
+          <p>Yup! We have a comprehensive wholesale backend that we offer to select candidates after completing our wholesale signup form...</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="w-full my-[32px] md:my-[64px]">
+    {% assign faqs_json = '
+                                                                                                                                                 Minimum order quantity:To qualify for wholesale, order quantities need to be 1,000 balls or over.;
+                                                                                                                                                 Lead times?:These balls are designed for a specific purpose and are ideal for environmentally friendly practices but may not perform exactly like traditional golf balls in all settings;
+                                                                                                                                                 Do you ship wholesale orders internationally?:Yes, we ship worldwide. Please contact us for more information on international shipping rates and delivery times.
+                                                                                                                                                ' %}
+
+    {% render 'faq'
+      , faqs: faqs_json %}
+  </div>
+
+</section>

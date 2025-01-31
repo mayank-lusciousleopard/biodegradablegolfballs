@@ -1,0 +1,394 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "slideshow_PP4fGy": {
+      "type": "slideshow",
+      "blocks": {
+        "slide_x79aQX": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/golf-practice-mat_bio-balls.jpg",
+            "heading": "Image slide",
+            "heading_size": "h1",
+            "subheading": "Tell your brand's story through images",
+            "button_label": "Button label",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "show_text_box": true,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "",
+            "text_alignment_mobile": "center"
+          }
+        },
+        "slide_pHwAYk": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Golfer_christmas_gifts.jpg",
+            "heading": "Image slide",
+            "heading_size": "h1",
+            "subheading": "Tell your brand's story through images",
+            "button_label": "Button label",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "show_text_box": true,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "",
+            "text_alignment_mobile": "center"
+          }
+        }
+      },
+      "block_order": [
+        "slide_x79aQX",
+        "slide_pHwAYk"
+      ],
+      "settings": {
+        "layout": "full_bleed",
+        "slide_height": "medium",
+        "slider_visual": "counter",
+        "auto_rotate": false,
+        "change_slides_speed": 5,
+        "image_behavior": "none",
+        "show_text_below": true,
+        "accessibility_info": "Slideshow about our brand"
+      }
+    },
+    "featured_product_i9jatH": {
+      "type": "featured-product",
+      "blocks": {
+        "text_K6kb7a": {
+          "type": "text",
+          "settings": {
+            "text": "{{ section.settings.product.vendor }}",
+            "text_style": "uppercase"
+          }
+        },
+        "title_my93DV": {
+          "type": "title",
+          "settings": {
+            "heading_size": "h1"
+          }
+        },
+        "price_TQTHQE": {
+          "type": "price",
+          "settings": {}
+        },
+        "variant_picker_FnaREd": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button"
+          }
+        },
+        "quantity_selector_Rmkn4Y": {
+          "type": "quantity_selector",
+          "settings": {}
+        },
+        "buy_buttons_TYHDtb": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true,
+            "show_gift_card_recipient": true
+          }
+        },
+        "share_DhbxVC": {
+          "type": "share",
+          "settings": {
+            "share_label": "Share"
+          }
+        }
+      },
+      "block_order": [
+        "text_K6kb7a",
+        "title_my93DV",
+        "price_TQTHQE",
+        "variant_picker_FnaREd",
+        "quantity_selector_Rmkn4Y",
+        "buy_buttons_TYHDtb",
+        "share_DhbxVC"
+      ],
+      "settings": {
+        "product": "golf-driver-bullet-b52-bomber",
+        "color_scheme": "",
+        "secondary_background": false,
+        "media_size": "medium",
+        "constrain_to_viewport": true,
+        "media_fit": "contain",
+        "media_position": "left",
+        "image_zoom": "lightbox",
+        "hide_variants": false,
+        "enable_video_looping": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "collage_9GeA6K": {
+      "type": "collage",
+      "blocks": {
+        "image_QpE93e": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Sustainanble_golf_products.jpg"
+          }
+        },
+        "product_Vy484a": {
+          "type": "product",
+          "settings": {
+            "product": "biodegradable-golf-balls-golf-shirt",
+            "second_image": false
+          }
+        },
+        "collection_8AmKtA": {
+          "type": "collection",
+          "settings": {
+            "collection": "cheap-biodegradable-golf-balls"
+          }
+        }
+      },
+      "block_order": [
+        "image_QpE93e",
+        "product_Vy484a",
+        "collection_8AmKtA"
+      ],
+      "settings": {
+        "heading": "Multimedia collage",
+        "heading_size": "h1",
+        "desktop_layout": "left",
+        "mobile_layout": "column",
+        "card_styles": "product-card-wrapper",
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "collection_list_yTbJCt": {
+      "type": "collection-list",
+      "blocks": {
+        "featured_collection_6eEtft": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "eco-friendly-golf-balls"
+          }
+        },
+        "featured_collection_G9egKx": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "accessories"
+          }
+        },
+        "featured_collection_CCxc4D": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "cheap-biodegradable-golf-balls"
+          }
+        }
+      },
+      "block_order": [
+        "featured_collection_6eEtft",
+        "featured_collection_G9egKx",
+        "featured_collection_CCxc4D"
+      ],
+      "settings": {
+        "title": "Collections",
+        "heading_size": "h1",
+        "image_ratio": "square",
+        "columns_desktop": 3,
+        "color_scheme": "",
+        "show_view_all": false,
+        "columns_mobile": "2",
+        "columns_tablet": "3",
+        "swipe_on_mobile": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "multicolumn_wDBFkW": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_QRdTcA": {
+          "type": "column",
+          "settings": {
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_jPwHLP": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Golfer_christmas_gifts.jpg",
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_F4zVXk": {
+          "type": "column",
+          "settings": {
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_HbfXRn": {
+          "type": "column",
+          "settings": {
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_QRdTcA",
+        "column_jPwHLP",
+        "column_F4zVXk",
+        "column_HbfXRn"
+      ],
+      "settings": {
+        "title": "Multicolumn",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "button_label": "Button label",
+        "button_link": "",
+        "color_scheme": "",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "multirow_3AKKmA": {
+      "type": "multirow",
+      "blocks": {
+        "media_Cp7kzz": {
+          "type": "media",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Sustainanble_golf_products.jpg",
+            "caption": "Testing the image caption",
+            "heading": "Testing the header for card",
+            "text": "Testing the description text for the card",
+            "button_link": "shopify:\/\/pages\/shipping-information-usa",
+            "button_label": "Link to shipping"
+          }
+        },
+        "media_hcb8hU": {
+          "type": "media",
+          "settings": {
+            "caption": "",
+            "heading": "",
+            "text": "",
+            "button_link": "",
+            "button_label": ""
+          }
+        },
+        "media_qMfkND": {
+          "type": "media",
+          "settings": {
+            "caption": "",
+            "heading": "",
+            "text": "",
+            "button_link": "",
+            "button_label": ""
+          }
+        },
+        "media_w6iU74": {
+          "type": "media",
+          "settings": {
+            "caption": "",
+            "heading": "",
+            "text": "",
+            "button_link": "",
+            "button_label": ""
+          }
+        }
+      },
+      "block_order": [
+        "media_Cp7kzz",
+        "media_hcb8hU",
+        "media_qMfkND",
+        "media_w6iU74"
+      ],
+      "settings": {
+        "columns_mobile": "2",
+        "columns_tablet": "3",
+        "columns_desktop": "4",
+        "image_height": "medium",
+        "desktop_image_width": "small",
+        "heading_size": "h1",
+        "row_color_scheme": "#cf3d3d"
+      }
+    },
+    "image_with_text_3wt44r": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_P8LHDV": {
+          "type": "heading",
+          "settings": {
+            "heading": "Image with text",
+            "heading_size": "h1"
+          }
+        },
+        "text_WciHDF": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "text_style": "body"
+          }
+        },
+        "button_jpPqzQ": {
+          "type": "button",
+          "settings": {
+            "button_label": "Button label",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "heading_P8LHDV",
+        "text_WciHDF",
+        "button_jpPqzQ"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Sustainanble_golf_products.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "center",
+        "content_layout": "no-overlap",
+        "color_scheme": "",
+        "image_behavior": "ambient",
+        "mobile_content_alignment": "center",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "main",
+    "slideshow_PP4fGy",
+    "featured_product_i9jatH",
+    "collage_9GeA6K",
+    "collection_list_yTbJCt",
+    "multicolumn_wDBFkW",
+    "multirow_3AKKmA",
+    "image_with_text_3wt44r"
+  ]
+}

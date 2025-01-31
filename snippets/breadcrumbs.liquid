@@ -1,0 +1,44 @@
+<script>
+    console.log({{ product | json }})
+</script>
+
+<div class='{{ class }} flex flex-row items-center gap-[8px] mb-[16px] md:mb-[64px]'>
+    {% assign breadcrumbs = links | split: '|' %}
+    <div class='flex items-center justify-center gap-[4px]'>
+        {% render 'icon-home' %}
+        <a class='text-[14px] font-medium text-text-secondary' href='{{ routes.root_url }}'>Home</a>
+    </div>
+
+    {% render 'icon-chevron-right' %}
+    {% for breadcrumb in breadcrumbs %}
+        {% assign parts = breadcrumb | split: ':' %}
+        {% if forloop.last %}
+            <div class='flex items-center justify-center gap-[4px]'>
+                <p class='text-[14px] font-medium text-text-primary'>{{ parts[0] }}</p>
+            </div>
+        {% else %}
+            <div class='flex items-center justify-center gap-[4px]'>
+                <a class='text-[14px] font-medium text-text-secondary' href='{{ parts[1] }}'>{{ parts[0] }}</a>
+            </div>
+            {% render 'icon-chevron-right' %}
+        {% endif %}
+    {% endfor %}
+    {% if collection %}
+        {% render 'icon-chevron-right' %}
+        <div class='flex items-center justify-center gap-[4px]'>
+            <p class='text-[14px] font-medium text-text-primary'>{{ collection.title }}</p>
+        </div>
+    {% endif %}
+    {% if product %}
+        {% if product.product_type != blank %}
+            {% render 'icon-chevron-right' %}
+            <div class='flex items-center justify-center gap-[4px]'>
+                <p class='text-[14px] font-medium text-text-primary'>{{ product.product_type }}</p>
+            </div>
+        {% endif %}
+        {% render 'icon-chevron-right' %}
+        <div class='flex items-center justify-center gap-[4px]'>
+            <p class='text-[14px] font-medium text-text-primary'>{{ product.title }}</p>
+        </div>
+    {% endif %}
+</div>

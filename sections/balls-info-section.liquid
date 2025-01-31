@@ -1,0 +1,224 @@
+{% assign margin_top = section.settings.margin_top | default: '64px' %}
+{% assign margin_bottom = section.settings.margin_bottom | default: '64px' %}
+
+<div
+    class='md:!mt-[128px] md:!mb-[128px] mb-[64px] px-[16px] md:px-[80px] h-auto'
+    style='margin-top: {{ margin_top }}; margin-bottom: {{ margin_bottom }};'
+>
+    <!-- Mobile Layout -->
+    <div class='relative md:hidden min-h-[700px] mb-[64px] mt-[64px]' id='card-stack'>
+        {% for card in section.blocks %}
+            <div
+                class='absolute inset-0 transition-transform duration-300 transform origin-top bg-surface-secondary rounded-[16px] shadow-md h-[700px]'
+                style='z-index: {{ forloop.length | minus: forloop.index0 }}; transform: translateY({{ forloop.index0 | times: 10 }}px);'
+                onclick='moveCardToBack(this)'
+            >
+                {% if card.settings.video != blank %}
+                    {% assign mp4_source = card.settings.video.sources | where: 'format', 'mp4' | first %}
+                    {% if mp4_source %}
+                        <video
+                            src='{{ mp4_source.url }}'
+                            class='rounded-t-[16px] w-full h-[280px] object-cover'
+                            autoplay
+                            loop
+                            muted
+                            playsinline
+                        ></video>
+                    {% endif %}
+                {% else %}
+                    <img
+                        src='{{ card.settings.image | img_url: "600x" }}'
+                        alt='{{ card.settings.image.alt | escape }}'
+                        class='rounded-t-[16px] w-full h-[280px] object-cover'
+                    >
+                {% endif %}
+                <div class='p-[32px] flex flex-col gap-[16px]'>
+                    <p class='tex-text-primary font-bold text-[24px]'>{{ card.settings.title }}</p>
+                    <p class='text-text-primary text-[18px] font-medium'>{{ card.settings.description }}</p>
+                    {% if card.settings.stepper_1 or card.settings.stepper_2 or card.settings.stepper_3 %}
+                        <div class='flex flex-col gap-[16px] mt-[8px]'>
+                            {% if card.settings.stepper_1 and card.settings.stepper_1.size > 0 %}
+                                <div class='flex flex-row gap-[16px] items-center'>
+                                    <div class='size-[32px] rounded-full bg-surface-primary-active flex items-center justify-center'>
+                                        {% render 'icon-check-small' %}
+                                    </div>
+                                    <p class='font-bold text-[18px] text-text-primary'>{{ card.settings.stepper_1 }}</p>
+                                </div>
+                            {% endif %}
+                            {% if card.settings.stepper_2 and card.settings.stepper_2.size > 0 %}
+                                <div class='flex flex-row gap-[16px] items-center'>
+                                    <div class='size-[32px] rounded-full bg-surface-primary-active flex items-center justify-center'>
+                                        {% render 'icon-check-small' %}
+                                    </div>
+                                    <p class='font-bold text-[18px] text-text-primary'>{{ card.settings.stepper_2 }}</p>
+                                </div>
+                            {% endif %}
+                            {% if card.settings.stepper_3 and card.settings.stepper_3.size > 0 %}
+                                <div class='flex flex-row gap-[16px] items-center'>
+                                    <div class='size-[32px] rounded-full bg-surface-primary-active flex items-center justify-center'>
+                                        {% render 'icon-check-small' %}
+                                    </div>
+                                    <p class='font-bold text-[18px] text-text-primary'>{{ card.settings.stepper_3 }}</p>
+                                </div>
+                            {% endif %}
+                        </div>
+                    {% endif %}
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+
+    <!-- Desktop Layout -->
+    <div class='hidden md:!grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[16px]'>
+        {% for card in section.blocks %}
+            <div class='bg-surface-secondary rounded-[16px]'>
+                {% if card.settings.video != blank %}
+                    {% assign mp4_source = card.settings.video.sources | where: 'format', 'mp4' | first %}
+                    {% if mp4_source %}
+                        <video
+                            src='{{ mp4_source.url }}'
+                            class='rounded-t-[16px] w-full h-[280px] object-cover'
+                            autoplay
+                            loop
+                            muted
+                            playsinline
+                        ></video>
+                    {% endif %}
+                {% else %}
+                    <img
+                        src='{{ card.settings.image | img_url: "600x" }}'
+                        alt='{{ card.settings.image.alt | escape }}'
+                        class='rounded-t-[16px] w-full h-[280px] object-cover'
+                    >
+                {% endif %}
+                <div class='p-[32px] flex flex-col gap-[16px]'>
+                    <p class='tex-text-primary font-bold text-[24px]'>{{ card.settings.title }}</p>
+                    <p class='text-text-primary text-[18px] font-medium'>{{ card.settings.description }}</p>
+                    {% if card.settings.stepper_1 or card.settings.stepper_2 or card.settings.stepper_3 %}
+                        <div class='flex flex-col gap-[16px] mt-[8px]'>
+                            {% if card.settings.stepper_1 and card.settings.stepper_1.size > 0 %}
+                                <div class='flex flex-row gap-[16px] items-center'>
+                                    <div class='size-[32px] rounded-full bg-surface-primary-active flex items-center justify-center'>
+                                        {% render 'icon-check-small' %}
+                                    </div>
+                                    <p class='font-bold text-[18px] text-text-primary'>{{ card.settings.stepper_1 }}</p>
+                                </div>
+                            {% endif %}
+                            {% if card.settings.stepper_2 and card.settings.stepper_2.size > 0 %}
+                                <div class='flex flex-row gap-[16px] items-center'>
+                                    <div class='size-[32px] rounded-full bg-surface-primary-active flex items-center justify-center'>
+                                        {% render 'icon-check-small' %}
+                                    </div>
+                                    <p class='font-bold text-[18px] text-text-primary'>{{ card.settings.stepper_2 }}</p>
+                                </div>
+                            {% endif %}
+                            {% if card.settings.stepper_3 and card.settings.stepper_3.size > 0 %}
+                                <div class='flex flex-row gap-[16px] items-center'>
+                                    <div class='size-[32px] rounded-full bg-surface-primary-active flex items-center justify-center'>
+                                        {% render 'icon-check-small' %}
+                                    </div>
+                                    <p class='font-bold text-[18px] text-text-primary'>{{ card.settings.stepper_3 }}</p>
+                                </div>
+                            {% endif %}
+                        </div>
+                    {% endif %}
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+</div>
+
+<script>
+    function moveCardToBack(selectedCard) {
+        const stack = document.getElementById('card-stack');
+        const cards = Array.from(stack.children);
+        const index = cards.indexOf(selectedCard);
+
+        if (index > -1) {
+            // Move the selected card to the back
+            stack.appendChild(selectedCard);
+
+            // Update z-index and position for all cards
+            cards.forEach((card, i) => {
+                card.style.zIndex = cards.length - i;
+                card.style.transform = `translateY(${i * 10}px)`;
+            });
+        }
+    }
+</script>
+
+{% schema %}
+{
+    "name": "Balls Info Cards",
+    "class": "section",
+    "settings": [
+        {
+            "type": "text",
+            "id": "margin_top",
+            "label": "Margin Top",
+            "default": "64px"
+        },
+        {
+            "type": "text",
+            "id": "margin_bottom",
+            "label": "Margin Bottom",
+            "default": "64px"
+        }
+    ],
+    "blocks": [
+        {
+            "type": "card",
+            "name": "Card",
+            "settings": [
+                {
+                    "type": "text",
+                    "id": "title",
+                    "label": "Title",
+                    "default": "Card Title"
+                },
+                {
+                    "type": "textarea",
+                    "id": "description",
+                    "label": "Description",
+                    "default": "Card description goes here."
+                },
+                {
+                    "type": "image_picker",
+                    "id": "image",
+                    "label": "Image"
+                },
+                {
+                    "type": "video",
+                    "id": "video",
+                    "label": "Video (optional)",
+                    "info": "If provided, video will be used instead of image"
+                },
+                {
+                    "type": "textarea",
+                    "id": "stepper_1",
+                    "label": "Stepper 1",
+                    "default": "Stepper 1 content"
+                },
+                {
+                    "type": "textarea",
+                    "id": "stepper_2",
+                    "label": "Stepper 2",
+                    "default": "Stepper 2 content"
+                },
+                {
+                    "type": "textarea",
+                    "id": "stepper_3",
+                    "label": "Stepper 3",
+                    "default": "Stepper 3 content"
+                }
+            ]
+        }
+    ],
+    "presets": [
+        {
+            "name": "Balls Info Cards",
+            "category": "Custom Content"
+        }
+    ]
+}
+{% endschema %}

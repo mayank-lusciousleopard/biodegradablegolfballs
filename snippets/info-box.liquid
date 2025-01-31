@@ -1,0 +1,19 @@
+<div class='px-[16px] lg:px-[80px]'>
+    <div class='grid grid-cols-1 md:grid-cols-2'>
+        <div class='bg-surface-secondary flex flex-col gap-[16px] p-[32px] lg:p-[80px] justify-center rounded-[16px]'>
+            <p class='text-text-primary text-[32px] font-bold'>{{ title }}</p>
+            <p class='font-medium text-[18px] text-text-primary'>
+                {{ description }}
+            </p>
+        </div>
+        <div>
+            <img
+                src='{{ 'info-box-image.png' |  asset_url }}'
+                alt='golf ball'
+                class='w-full h-full object-cover'
+                width='100%'
+                height='100%'
+            >
+        </div>
+    </div>
+</div>

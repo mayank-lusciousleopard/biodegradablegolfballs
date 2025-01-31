@@ -1,0 +1,68 @@
+{% assign parsedJson = faqs | split: ';' %}
+
+<div class='px-[16px] md:px-[80px] {{ class }}'>
+    <div class='flex flex-col gap-[32px]'>
+        <p class='font-bold text-text-primary text-[24px]'>FAQs</p>
+        <div class='flex flex-col gap-[8px]' id='faq-items'>
+            {% if parsedJson %}
+                {% for faq in parsedJson %}
+                    {% assign parsedFaq = faq | split: ':' %}
+                    <div
+                        class='faq-item bg-surface-secondary p-[24px] flex flex-row gap-[24px] rounded-[12px]'
+                        data-index='{{ forloop.index0 }}'
+                        id='faq-item-{{ forloop.index0 }}'
+                    >
+                        <span class='faq-icon h-fit transition-transform duration-300'>
+                            {% render 'icon-chevron-down' %}
+                        </span>
+                        <div class='flex flex-col flex-1 gap-[16px]'>
+                            <p class='faq-question font-bold text-[20px] text-text-primary cursor-pointer'>
+                                {{ parsedFaq[0] }}
+                            </p>
+                            <p class='faq-answer text-text-primary text-[16px] font-medium hidden'>
+                                {{ parsedFaq[1] }}
+                            </p>
+                        </div>
+                    </div>
+                {% endfor %}
+            {% else %}
+                <p>No FAQs available.</p>
+            {% endif %}
+        </div>
+    </div>
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        console.log('Script loaded');
+
+        let expandedQuestion = null;
+
+        const faqItems = document.querySelectorAll('.faq-item');
+
+        faqItems.forEach((item) => {
+            const question = item.querySelector('.faq-question');
+            const answer = item.querySelector('.faq-answer');
+            const icon = item.querySelector('.faq-icon');
+
+            question.addEventListener('click', function () {
+                if (expandedQuestion && expandedQuestion !== item) {
+                    expandedQuestion.querySelector('.faq-answer').classList.add('hidden');
+                    expandedQuestion.querySelector('.faq-icon').classList.remove('rotate-180');
+                    expandedQuestion.classList.remove('active');
+                }
+
+                if (expandedQuestion === item) {
+                    answer.classList.add('hidden');
+                    icon.classList.remove('rotate-180');
+                    expandedQuestion = null;
+                } else {
+                    answer.classList.remove('hidden');
+                    icon.classList.add('rotate-180');
+                    item.classList.add('active');
+                    expandedQuestion = item;
+                }
+            });
+        });
+    });
+</script>

@@ -1,0 +1,82 @@
+{% schema %}
+{
+    "name": "Rich Text",
+    "tag": "section",
+    "settings": [
+        {
+            "type": "richtext",
+            "id": "content",
+            "label": "Content",
+            "default": "<h2>Your Heading Here</h2><p>Your paragraph text here.</p>"
+        },
+        {
+            "type": "number",
+            "id": "margin_top",
+            "label": "Margin Top (px)",
+            "default": 20
+        },
+        {
+            "type": "number",
+            "id": "margin_bottom",
+            "label": "Margin Bottom (px)",
+            "default": 20
+        },
+        {
+            "type": "number",
+            "id": "margin_left",
+            "label": "Margin Left (px)",
+            "default": 0
+        },
+        {
+            "type": "number",
+            "id": "margin_right",
+            "label": "Margin Right (px)",
+            "default": 0
+        }
+    ],
+    "presets": [
+        {
+            "name": "Rich Text",
+            "category": "Text"
+        }
+    ]
+}
+{% endschema %}
+
+<style>
+    /* Heading Styles */
+    .rich-text-section h1 {
+        @apply text-4xl font-bold;
+    }
+    .rich-text-section h2 {
+        @apply text-3xl font-bold;
+    }
+    .rich-text-section h3 {
+        @apply text-2xl font-bold;
+    }
+    .rich-text-section h4 {
+        @apply text-xl font-bold;
+    }
+    .rich-text-section h5 {
+        @apply text-lg font-bold;
+    }
+    .rich-text-section h6 {
+        @apply text-base font-bold;
+    }
+</style>
+
+<section
+    class='rich-text-section'
+    style='
+        margin-top: {{ section.settings.margin_top }}px;
+        margin-bottom: {{ section.settings.margin_bottom }}px;
+        margin-left: {{ section.settings.margin_left }}px;
+        margin-right: {{ section.settings.margin_right }}px;
+    '
+>
+    <div class='container mx-auto px-4'>
+        <div class='prose max-w-none'>
+            {{ section.settings.content }}
+        </div>
+    </div>
+</section>

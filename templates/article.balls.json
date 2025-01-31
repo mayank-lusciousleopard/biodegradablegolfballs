@@ -1,0 +1,72 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-article",
+      "blocks": {
+        "featured_image": {
+          "type": "featured_image",
+          "settings": {
+            "image_height": "adapt"
+          }
+        },
+        "title": {
+          "type": "title",
+          "settings": {
+            "blog_show_date": true,
+            "blog_show_author": false
+          }
+        },
+        "share": {
+          "type": "share",
+          "settings": {
+            "share_label": "Share"
+          }
+        },
+        "content": {
+          "type": "content",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "featured_image",
+        "title",
+        "share",
+        "content"
+      ],
+      "settings": {}
+    },
+    "featured_collection_3PzPqk": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Shop Some Balls - Today!",
+        "heading_size": "h1",
+        "description": "<p>Full line up of our eco-friendly biodegradable golf balls<\/p>",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "biodegradable-golf-balls",
+        "products_to_show": 6,
+        "columns_desktop": 3,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "color_scheme": "",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_quick_add": true,
+        "show_rating": true,
+        "enable_quick_add": false,
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "main",
+    "featured_collection_3PzPqk"
+  ]
+}

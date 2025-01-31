@@ -1,0 +1,92 @@
+{
+  "name": "t:sections.footer.name",
+  "type": "footer",
+  "sections": {
+    "footer": {
+      "type": "footer",
+      "blocks": {
+        "link_list_PetdpR": {
+          "type": "link_list",
+          "settings": {
+            "title": "Contact Us",
+            "menu": "contact-us"
+          }
+        },
+        "link_list_4kTJpc": {
+          "type": "link_list",
+          "settings": {
+            "title": "Navigation",
+            "menu": "navigation"
+          }
+        },
+        "link_list_4UJAJr": {
+          "type": "link_list",
+          "settings": {
+            "title": "Get To Know Us",
+            "menu": "get-to-know-us"
+          }
+        },
+        "link_list_BHDaK4": {
+          "type": "link_list",
+          "settings": {
+            "title": "Shop On Amazon",
+            "menu": "shop-on-amazon"
+          }
+        }
+      },
+      "block_order": [
+        "link_list_PetdpR",
+        "link_list_4kTJpc",
+        "link_list_4UJAJr",
+        "link_list_BHDaK4"
+      ],
+      "settings": {
+        "tiktok_url": "https:\/\/www.tiktok.com\/@biodegradablegolfballs",
+        "facebook_url": "https:\/\/www.facebook.com\/biodegradablegolf",
+        "instagram_url": "https:\/\/www.instagram.com\/biodegradablegolfballs\/",
+        "logo_url": "biodegradablegolfballs",
+        "x_url": "https:\/\/x.com\/biogolfballs",
+        "whatsapp_url": "https:\/\/wa.me\/message\/MXYQGE5AXRLDF1",
+        "youtube_url": "https:\/\/www.youtube.com\/@biodegradablegolfballs",
+        "newsletter_title": "Subscribe to the ECO-friendly newsletter",
+        "newsletter_subtitle": "Be the first to receive up-to-date information once a week at most.",
+        "email_placeholder": "Your email",
+        "subscribe_button_text": "Subscribe",
+        "contact_form_title": "DROP US A LINE",
+        "name_placeholder": "Name",
+        "phone_placeholder": "Phone",
+        "subject_placeholder": "Subject",
+        "recaptcha_text": "THIS SITE IS PROTECTED BY RECAPTCHA AND THE GOOGLE PRIVACY POLICY AND TERMS OF SERVICE APPLY.",
+        "send_button_text": "Send",
+        "contact_us_title": "contact us",
+        "contact_us_subtitle": "contact us",
+        "shopping_info": "shopping info",
+        "phone_number": "(604) 600-4347",
+        "email_label": "email",
+        "navigation_title": "navigation",
+        "cart_label": "cart",
+        "checkout_label": "checkout",
+        "wholesale_inquiry_label": "wholesale inquiry",
+        "shipping_info_label": "shipping information",
+        "get_to_know_us_title": "get to know us",
+        "media_label": "media",
+        "about_us_label": "about us",
+        "eco_blog_label": "our eco blog",
+        "faqs_label": "faqs",
+        "amazon_walmart_title": "amazon & wallmart",
+        "amazon_usa_label": "amazon usa",
+        "amazon_canada_label": "amazon canada",
+        "amazon_uk_label": "amazon uk",
+        "walmart_usa_label": "walmart usa",
+        "copyright_text": "© 2024 COPYRIGHT BIODEGRADABLE GOLF BALLS.",
+        "tos_label": "T.O.S",
+        "privacy_policy_label": "PRIVACY POLICY",
+        "enable_country_selector": false,
+        "enable_language_selector": false
+      }
+    }
+  },
+  "order": [
+    "footer"
+  ]
+}

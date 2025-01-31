@@ -1,0 +1,136 @@
+{% assign cards = text | split: '|' %}
+<div class='px-[16px] md:px-[80px] mb-[100px] {{ class }}'>
+    <!-- DESKTOP VERSION -->
+    {% if title %}
+        <p class='mb-[32px] text-[24px] font-bold text-text-primary'>{{ title }}</p>
+    {% endif %}
+    <div class='hidden md:!grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[16px]'>
+        {% for item in cards %}
+            {% assign content = item | split: ':' %}
+            <div class='aspect-square relative rounded-[12px]'>
+                <img
+                    src='{{ 'action-card-' | append: forloop.index | append: '.png' | asset_url }}'
+                    alt='{{ 'action_card_' | append: forloop.index }}'
+                    class='w-full h-full object-cover rounded-[12px]'
+                    width='100%'
+                    height='100%'
+                >
+                <div class='absolute bottom-0 left-0 w-full h-full bg-[rgba(0,0,0,0.3)] from-black to-transparent rounded-[24px] flex flex-col justify-end p-[32px]'>
+                    <p class='text-text-inverse text-[24px] font-bold'>{{ content[0] }}</p>
+                    {% if content.size > 1 %}
+                        <p class='text-text-inverse text-[18px] font-medium'>{{ content[1] }}</p>
+                    {% endif %}
+                    {% if content.size > 2 %}
+                        <div class='flex justify-center items-center px-[16px] py-[8px] bg-highlight-yellow rounded-[24px] w-fit mt-[24px]'>
+                            <p class='text-text-primary text-[16px] font-medium'>
+                                {{
+                                    content[2]
+                                    | replace: '<bold>', '<strong>'
+                                    | replace: '</bold>', '</strong>'
+                                    | escape
+                                    | replace: '&lt;strong&gt;', '<strong>'
+                                    | replace: '&lt;/strong&gt;', '</strong>'
+                                }}
+                            </p>
+                        </div>
+                    {% endif %}
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+
+    <!-- MOBILE VERSION -->
+    <div id='mobile-slider' class='block md:!hidden relative aspect-square rounded-[12px] overflow-hidden'>
+        {% for item in cards %}
+            {% assign content = item | split: ':' %}
+            <div
+                class='mobile-card absolute inset-0 transition-opacity duration-300 ease-in-out {% if forloop.first %}opacity-100 z-2{% else %}opacity-0 z-0{% endif %}'
+                data-card-index='{{ forloop.index0 }}'
+                onclick='handleMoveToNextCard({{ forloop.index0 }})'
+            >
+                <img
+                    src='{{ 'action-card-' | append: forloop.index | append: '.png' | asset_url }}'
+                    alt='{{ 'action_card_' | append: forloop.index }}'
+                    class='w-full h-full object-cover rounded-[12px]'
+                    width='100%'
+                    height='100%'
+                >
+                <div class='absolute bottom-0 left-0 w-full h-full bg-[rgba(0,0,0,0.3)] from-black to-transparent rounded-[12px] flex flex-col justify-end p-[24px]'>
+                    <p class='text-text-inverse text-[24px] font-bold'>{{ content[0] }}</p>
+                    {% if content.size > 1 %}
+                        <p class='text-text-inverse text-[18px] font-medium'>{{ content[1] }}</p>
+                    {% endif %}
+                    {% if content.size > 2 %}
+                        <div class='flex justify-center items-center px-[16px] py-[8px] bg-highlight-yellow rounded-[24px] w-fit mt-[8px]'>
+                            <p class='text-text-primary text-[16px] font-medium'>
+                                {{
+                                    content[2]
+                                    | replace: '<bold>', '<strong>'
+                                    | replace: '</bold>', '</strong>'
+                                    | escape
+                                    | replace: '&lt;strong&gt;', '<strong>'
+                                    | replace: '&lt;/strong&gt;', '</strong>'
+                                }}
+                            </p>
+                        </div>
+                    {% endif %}
+
+                    <div class='flex flex-row justify-between items-center mt-[24px] w-full gap-[8px]'>
+                        {% for item in cards %}
+                            <span
+                                class='w-full bg-white flex-1 h-[4px] rounded-full cursor-pointer {% if forloop.index0 == forloop.parentloop.index0 %}bg-opacity-100{% else %}bg-opacity-50{% endif %}'
+                                onclick='handleMobileCardClick({{ forloop.index0 }})'
+                            ></span>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+</div>
+
+<script>
+    const handleMoveToNextCard = (currentIndex) => {
+        const cards = document.querySelectorAll('.mobile-card');
+        cards.forEach((card, i) => {
+            if (i === currentIndex) {
+                card.classList.remove('opacity-100');
+                card.classList.add('opacity-0');
+                card.style.zIndex = 0;
+            }
+            if (i === currentIndex + 1) {
+                card.classList.remove('opacity-0');
+                card.classList.add('opacity-100');
+                card.style.zIndex = 10;
+            }
+            if (currentIndex === cards.length - 1) {
+                card.classList.remove('opacity-100');
+                card.classList.add('opacity-0');
+                card.style.zIndex = 0;
+                cards[0].classList.remove('opacity-0');
+                cards[0].classList.add('opacity-100');
+                cards[0].style.zIndex = 10;
+            }
+        });
+    };
+    const handleMobileCardClick = (index) => {
+        const cards = document.querySelectorAll('.mobile-card');
+        cards.forEach((card, i) => {
+            if (i === index) {
+                card.classList.add('opacity-100');
+                card.classList.remove('opacity-0');
+                card.style.zIndex = 10;
+            } else {
+                card.classList.remove('opacity-100');
+                card.classList.add('opacity-0');
+                card.style.zIndex = 0;
+            }
+        });
+    };
+</script>
+
+<style>
+    .mobile-card {
+        transition: opacity 0.3s ease-in-out;
+    }
+</style>

@@ -1,0 +1,181 @@
+{%- comment -%}
+  Renders IG posts with link to the Instagram
+{%- endcomment -%}
+<link rel='stylesheet' href='{{ 'section-contact-form.css' | asset_url }}'>
+
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+{%- endstyle -%}
+
+<div class='color-{{ section.settings.color_scheme }} gradient px-[16px] md:px-[80px] mb-[64px] md:mb-[128px]'>
+  <div class='grid grid-cols-1 md:grid-cols-2 gap-[24px] md:gap-[64px]'>
+    <div class='flex flex-col gap-[16px]'>
+      <p class='text-text-primary font-bold text-[32px]'>{{ section.settings.contact_us_heading }}</p>
+      <p class='text-text-primary font-medium text-[18px]'>
+        {{ section.settings.contact_us_description }}
+      </p>
+
+      <div class='bg-surface-secondary p-[24px] md:p-[32px] flex flex-row gap-[24px] items-center rounded-[16px]'>
+        {% render 'icon-basket' %}
+        <div class='flex flex-col gap-[8px]'>
+          <p class='text-text-primary font-bold text-[16px]'>{{ section.settings.general_heading }}</p>
+          <p class='font-medium text-[14p] text-text-primary'>{{ section.settings.general_phone }}</p>
+          <p class='font-medium text-[14p] text-text-primary'>{{ section.settings.general_email }}</p>
+        </div>
+      </div>
+      <div class='bg-surface-secondary p-[24px] md:p-[32px] flex flex-row gap-[24px] items-center rounded-[16px]'>
+        {% render 'icon-basket' %}
+        <div class='flex flex-col gap-[8px]'>
+          <p class='text-text-primary font-bold text-[16px]'>
+            {{ section.settings.content_creator_heading }}
+          </p>
+          <p class='font-medium text-[14p] text-text-primary'>{{ section.settings.content_creator_email }}</p>
+        </div>
+      </div>
+      <div class='bg-surface-secondary p-[24px] md:p-[32px] flex flex-row gap-[24px] items-center rounded-[16px]'>
+        {% render 'icon-basket' %}
+        <div class='flex flex-col gap-[8px]'>
+          <p class='text-text-primary font-bold text-[16px]'>{{ section.settings.social_media_heading }}</p>
+          <p class='font-medium text-[14p] text-text-primary'>{{ section.settings.social_media_email }}</p>
+        </div>
+      </div>
+      <div class='bg-surface-secondary p-[24px] md:p-[32px] flex flex-row gap-[24px] items-center rounded-[16px]'>
+        {% render 'icon-basket' %}
+        <div class='flex flex-col gap-[8px]'>
+          <p class='text-text-primary font-bold text-[16px]'>{{ section.settings.warehouse_heading }}</p>
+          <p class='font-medium text-[14p] text-text-primary'>
+            {{ section.settings.warehouse_address }}
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class='h-full w-full'>
+      <iframe
+        style='border: 0;'
+        src='https://www.google.com/maps/embed{{ section.settings.map_embed_path }}'
+        width='100%'
+        height='100%'
+        frameborder='0'
+        allowfullscreen='allowfullscreen'
+        class='rounded-[16px] min-h-[240px]'></iframe>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "t:sections.contact-form.name",
+    "tag": "section",
+    "class": "section",
+    "disabled_on": {
+      "groups": ["header", "footer"]
+    },
+    "settings": [
+      {
+        "type": "inline_richtext",
+        "id": "contact_us_heading",
+        "default": "Contact us",
+        "label": "Contact Us Heading"
+      },
+      {
+        "type": "textarea",
+        "id": "contact_us_description",
+        "default": "If you are curious to Purchase Biodegradable Golf Balls please follow up with the below email address and we will get back to you within 1 one business day! We’re happy to answer any questions you might have about our environmentally friendly water soluble golf balls. Looking forward to hearing from you!",
+        "label": "Contact Us Description"
+      },
+      {
+        "type": "text",
+        "id": "general_heading",
+        "default": "General / Wholesale / Custom Printing Inquires",
+        "label": "General Heading"
+      },
+      {
+        "type": "text",
+        "id": "general_phone",
+        "default": "+6046004347",
+        "label": "General Phone"
+      }, {
+        "type": "text",
+        "id": "general_email",
+        "default": "hello@biodegradablegolfballs.com",
+        "label": "General Email"
+      }, {
+        "type": "text",
+        "id": "content_creator_heading",
+        "default": "Content Creator",
+        "label": "Content Creator Heading"
+      }, {
+        "type": "text",
+        "id": "content_creator_email",
+        "default": "dyllan@biodegradablegolfballs.com",
+        "label": "Content Creator Email"
+      }, {
+        "type": "text",
+        "id": "social_media_heading",
+        "default": "Social Media",
+        "label": "Social Media Heading"
+      }, {
+        "type": "text",
+        "id": "social_media_email",
+        "default": "gerielyn@biodegradablegolfballs.com",
+        "label": "Social Media Email"
+      }, {
+        "type": "text",
+        "id": "warehouse_heading",
+        "default": "Canadian Warehouse",
+        "label": "Warehouse Heading"
+      }, {
+        "type": "text",
+        "id": "warehouse_address",
+        "default": "3200 E Broadway (Loading Bay 1), Vancouver, BC, Canada V5M1Z8",
+        "label": "Warehouse Address"
+      }, {
+        "type": "text",
+        "id": "map_embed_path",
+        "default": "?pb=!1m14!1m8!1m3!1d83331.48765307572!2d-123.1184374!3d49.2553801!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xfccee886b1d7e86!2sBiodegradable+Golf+Balls!5e0!3m2!1sen!2sca!4v1524198203861",
+        "label": "Map Embed path"
+      }, {
+        "type": "color_scheme",
+        "id": "color_scheme",
+        "label": "t:sections.all.colors.label",
+        "default": "background-1"
+      }, {
+        "type": "header",
+        "content": "t:sections.all.padding.section_padding_heading"
+      }, {
+        "type": "range",
+        "id": "padding_top",
+        "min": 0,
+        "max": 100,
+        "step": 4,
+        "unit": "px",
+        "label": "t:sections.all.padding.padding_top",
+        "default": 36
+      }, {
+        "type": "range",
+        "id": "padding_bottom",
+        "min": 0,
+        "max": 100,
+        "step": 4,
+        "unit": "px",
+        "label": "t:sections.all.padding.padding_bottom",
+        "default": 36
+      }
+    ],
+    "presets": [
+      {
+        "name": "t:sections.contact-form.presets.name"
+      }
+    ]
+  }
+{% endschema %}

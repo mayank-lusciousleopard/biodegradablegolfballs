@@ -1,0 +1,87 @@
+{% schema %}
+  {
+    "name": "Privacy policy",
+    "settings": [
+      {
+        "type": "text",
+        "id": "main_title",
+        "label": "Main Title",
+        "default": "Main Title"
+      }, {
+        "type": "text",
+        "id": "subtitle",
+        "label": "Subtitle",
+        "default": "Subtitle"
+      }, {
+        "type": "range",
+        "id": "section_margin_top",
+        "label": "Section Top Margin",
+        "min": 0,
+        "max": 120,
+        "step": 4,
+        "default": 32,
+        "unit": "px"
+      }, {
+        "type": "range",
+        "id": "section_margin_bottom",
+        "label": "Section Bottom Margin",
+        "min": 0,
+        "max": 120,
+        "step": 4,
+        "default": 32,
+        "unit": "px"
+      }
+    ],
+    "blocks": [
+      {
+        "type": "content_section",
+        "name": "Content Section",
+        "settings": [
+          {
+            "type": "text",
+            "id": "section_title",
+            "label": "Section Title",
+            "default": "Section Title"
+          }, {
+            "type": "richtext",
+            "id": "section_content",
+            "label": "Section Content",
+            "default": "<p>Enter your content here.</p>"
+          }, {
+            "type": "image_picker",
+            "id": "section_image",
+            "label": "Section Image"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Generic Content",
+        "category": "Custom Sections"
+      }
+    ]
+  }
+{% endschema %}
+
+<section class="generic-content" style="margin-top: {{ section.settings.section_margin_top }}px; margin-bottom: {{ section.settings.section_margin_bottom }}px;">
+  <div class="container mx-auto px-4 py-8">
+    <h1 class="text-3xl font-bold mb-4">{{ section.settings.main_title }}</h1>
+    <h2 class="text-xl mb-8">{{ section.settings.subtitle }}</h2>
+
+    {% for block in section.blocks %}
+      <div class="content-section mb-12">
+        <h3 class="text-2xl font-semibold mb-4">{{ block.settings.section_title }}</h3>
+        <div class="section-content mb-4">
+          {{ block.settings.section_content }}
+        </div>
+        {% if block.settings.section_image %}
+          <img
+            src="{{ block.settings.section_image | img_url: 'master' }}"
+            alt="{{ block.settings.section_title }}"
+            class="w-full h-auto">
+        {% endif %}
+      </div>
+    {% endfor %}
+  </div>
+</section>

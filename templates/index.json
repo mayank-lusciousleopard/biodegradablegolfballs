@@ -1,0 +1,531 @@
+{
+  "sections": {
+    "image_banner": {
+      "type": "image-banner",
+      "blocks": {
+        "image_ixF9Gw": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/biodegradable-golf-balls_sustainable-gifts.jpg",
+            "title": "BIODEGRADABLE",
+            "title_2": "GOLF BALLS",
+            "subtitle": "Golf Balls That Dissolve In Water",
+            "button_label": "SHOP NOW",
+            "button_link": "shopify:\/\/collections\/all"
+          }
+        },
+        "image_MGMRax": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/biodegradable-golf-balls_lake-golf-balls.jpg",
+            "title": "THE WORLD",
+            "title_2": "IS YOUR DRIVING RANGE",
+            "subtitle": "These Golf Balls dissolve in water within 2 - 4 weeks",
+            "button_label": "Shop Now",
+            "button_link": "\/collections\/biodegradable-golf-balls"
+          }
+        }
+      },
+      "block_order": [
+        "image_ixF9Gw",
+        "image_MGMRax"
+      ],
+      "settings": {
+        "margin_top": 0,
+        "margin_bottom": 0
+      }
+    },
+    "mentions_partners_JU7GAa": {
+      "type": "mentions-partners",
+      "settings": {
+        "section_margin_top": 16,
+        "section_margin_bottom": 0,
+        "first_feature_text": "DISSOLVING",
+        "second_feature_text": "NON-TOXIC",
+        "third_feature_text": "WATER SOLUBLE",
+        "title_line_1": "Mentions, partners",
+        "title_line_2": "& customers",
+        "predefined_logos": true
+      }
+    },
+    "custom_liquid_G8Y4Pf": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<div style=\"margin-top:500px\"><\/div>",
+        "color_scheme": "",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "action_cards_section_MVFmqU": {
+      "type": "action-cards-section",
+      "blocks": {
+        "card_4GwY8D": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/biodegradable-golf-balls.png",
+            "title": "Biodegradable Golf Balls",
+            "subtitle": "Purchase biodegradable golf balls!",
+            "button_text": "The world's favorite eco golf ball",
+            "link": "shopify:\/\/collections\/eco-friendly-golf-balls"
+          }
+        },
+        "card_yb9wqL": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/cheap-biodegradable-golf-balls.png",
+            "title": "Wholesale Pricing",
+            "subtitle": "For orders over 1,000 biodegradable golf balls.",
+            "button_text": "Reduced pricing for bulk orders",
+            "link": "shopify:\/\/pages\/wholesale-biodegradable-golf-balls"
+          }
+        },
+        "card_NBrTqh": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/personalize-biodegradable-golf-balls.png",
+            "title": "Custom Printing",
+            "subtitle": "Design custom printed bio balls for events, gifts, and more.",
+            "button_text": "Personalize your balls",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "card_4GwY8D",
+        "card_yb9wqL",
+        "card_NBrTqh"
+      ],
+      "custom_css": [],
+      "settings": {
+        "title": "",
+        "card_count": 3,
+        "margin_top": 0,
+        "margin_bottom": 100
+      }
+    },
+    "featured_collection": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Shop Biodegradable Golf Balls",
+        "heading_size": "h2",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "biodegradable-golf-balls",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_view_all": false,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "color_scheme": "background-1",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_quick_add": true,
+        "show_rating": true,
+        "enable_quick_add": true,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "rich_text_TErTda": {
+      "type": "rich-text",
+      "settings": {
+        "content": "<h3>What Happens to the Golf Balls You Hit into the Water?<\/h3><p><br\/>Did you ever wonder if the balls Jim Carrey hit into the water in The Truman Show are still at the bottom of the manmade ocean somewhere? Or what about the countless golf balls your uncle launched into the lake at the cabin over the years?<br\/><br\/><em><strong>The answer is simple:<\/strong><\/em><strong> they’re still there - and will be for hundreds, if not thousands, of years.<\/strong><br\/><br\/>Traditional golf balls do not break down naturally, leading to environmental damage, microplastic pollution, and harm to aquatic life. That’s why we set out to change the game - literally.<\/p>",
+        "margin_top": 20,
+        "margin_bottom": 0,
+        "margin_left": 0,
+        "margin_right": 0,
+        "text_size": 16
+      }
+    },
+    "rich_text_mhagRa": {
+      "type": "rich-text",
+      "settings": {
+        "content": "<h2>Introducing BGB Biodegradable Golf Balls®<\/h2><p>We’ve pioneered a solution that makes waterfront golf sustainable. Our bestselling water <strong>dissolving golf balls<\/strong> are designed to break down completely when exposed to precipitation. When our golf balls are submerged in water they will dissolve within 2 to 4 weeks depending on water temperature and movement.<br\/><br\/>Made from a biodegradable, non-toxic, marine-safe formula, you can now create a driving range, anywhere. <\/p>",
+        "margin_top": 20,
+        "margin_bottom": 0,
+        "margin_left": 0,
+        "margin_right": 0,
+        "text_size": 16
+      }
+    },
+    "rich_text_VkVQw4": {
+      "type": "rich-text",
+      "settings": {
+        "content": "<h3>A New Driving Range is Born<\/h3><p>From waterfront driving ranges to yacht golf, the standard has been set: You need to use BGB Biodegradable Golf Balls®. Luxury boat owners, beach resorts, and waterfront properties are embracing the use of BGB Biodegradable Golf Balls® and creating a new activity of water front driving ranges.<br\/><br\/>We’re proud to supply our biodegradable golf balls internationally, whether you’re looking for:<br\/><\/p><ul><li>Last-minute sustainable corporate gift<\/li><li>Fun activity for a weekend getaway<\/li><li>Unique experiences for a yacht party or beach resort<\/li><\/ul><p>No matter where you are, we’ve got you covered. We offer in-house personalization on our golf balls and discounted wholesale tiers. If you’re curious about wholesale options please make sure to contact us for pricing.<\/p>",
+        "margin_top": 20,
+        "margin_bottom": 0,
+        "margin_left": 0,
+        "margin_right": 0,
+        "text_size": 16
+      }
+    },
+    "rich_text_L6LdQi": {
+      "type": "rich-text",
+      "settings": {
+        "content": "<h3>What Happens on Land?<\/h3><p>Even if our golf balls don’t land in water, they still break down naturally. However, on land the time it takes to biodegrade varies based on climate conditions:<br\/><\/p><ul><li><strong>High precipitation areas:<\/strong> 6 to 12 months<\/li><li><strong>Dry, arid regions:<\/strong> 12+ months\u2028<\/li><\/ul><h3>Trusted Worldwide<\/h3><p>BGB Biodegradable Golf Balls® have been used across every continent, by celebrities, Fortune 500 companies, and outdoor enthusiasts of all backgrounds. Whether you’re an avid golfer looking to practice your swings, an event organizer looking for personalized sustainable gifts, or just someone looking to have a bit of fun without harming the environment, our golf balls provide an eco-friendly outdoor activity that delivers both fun and a guilt free experience.<\/p>",
+        "margin_top": 20,
+        "margin_bottom": 0,
+        "margin_left": 0,
+        "margin_right": 0,
+        "text_size": 16
+      }
+    },
+    "balls_info_section_JUYyt7": {
+      "type": "balls-info-section",
+      "blocks": {
+        "card_tbAb8X": {
+          "type": "card",
+          "settings": {
+            "title": "Made From A Simple, Non-Toxic Formula",
+            "description": "Our Biodegradable Golf Balls are made from a simple, water dissolving compound that's similar to the dish washing pods you use at home.",
+            "image": "shopify:\/\/shop_images\/water-dissolving-golf-balls.jpg",
+            "stepper_1": "PVA (Polyvinyl Alcohol) \/ Corn Starch",
+            "stepper_2": "Calcium Carbonate",
+            "stepper_3": "Glycerin"
+          }
+        },
+        "card_g8rc3g": {
+          "type": "card",
+          "settings": {
+            "title": "Dissolves In Water Within 2 - 4 Weeks",
+            "description": "Our golf balls are designed to dissolve within 2 - 4 weeks of being submerged in water.",
+            "video": "shopify:\/\/files\/videos\/1.mp4",
+            "stepper_1": "Water Front Driving Ranges",
+            "stepper_2": "Yacht Golf",
+            "stepper_3": "Fun Golf Gifts"
+          }
+        },
+        "card_AXDNex": {
+          "type": "card",
+          "settings": {
+            "title": "A North American Innovation",
+            "description": "We are proudly a North American company with warehousing both in Canada and in the United States.",
+            "image": "shopify:\/\/shop_images\/north-american-company_biodegradable-golf-balls.jpg",
+            "stepper_1": "International Shipping",
+            "stepper_2": "In-House Personalization",
+            "stepper_3": "1 - 2 Day Shipping Available"
+          }
+        }
+      },
+      "block_order": [
+        "card_tbAb8X",
+        "card_g8rc3g",
+        "card_AXDNex"
+      ],
+      "settings": {
+        "margin_top": "0px",
+        "margin_bottom": "128px"
+      }
+    },
+    "custom_liquid_niMBmx": {
+      "type": "custom-liquid",
+      "disabled": true,
+      "settings": {
+        "custom_liquid": "{% assign faqs_json = '\n     How many weeks does it take to dissolve when submerged in water:Our golf balls start dissolving after 24 hours and depending on the temperature of the water, how fast it is moving (or if it is stagnant), and if it is fully submerged or not will generally dissolve within 2 - 4 weeks;\n     Can I use these golf balls as an alternative to traditional golf course use balls:These balls are designed for a specific purpose and are ideal for environmentally friendly practices but may not perform exactly like traditional golf balls in all settings\n    ' %}\n\n{% render 'faq', faqs: faqs_json, class:'mt-[64px] md:mt-[128px]' %}",
+        "color_scheme": "",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "custom_liquid_w73PmD": {
+      "type": "custom-liquid",
+      "disabled": true,
+      "settings": {
+        "custom_liquid": "{% render 'instagram-preview' class:'mt-[64px] md:mt-[128px]'%}",
+        "color_scheme": "",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "rich_text_FzYrVy": {
+      "type": "rich-text",
+      "settings": {
+        "content": "<h2>Follow us on Instagram<\/h2>",
+        "margin_top": 60,
+        "margin_bottom": 0,
+        "margin_left": 60,
+        "margin_right": 0,
+        "text_size": 12
+      }
+    },
+    "17300634985de8c4a0": {
+      "type": "apps",
+      "blocks": {
+        "instafeed_app_block_xWFb9e": {
+          "type": "shopify:\/\/apps\/instafeed\/blocks\/app-block\/c447db20-095d-4a10-9725-b5977662c9d5",
+          "settings": {
+            "title": "",
+            "title_color": "",
+            "title_size": 0,
+            "alignment": "left",
+            "margin_top": 0,
+            "margin_sides": 0,
+            "background_color": "",
+            "feed_id": "",
+            "html_area": ""
+          }
+        }
+      },
+      "block_order": [
+        "instafeed_app_block_xWFb9e"
+      ],
+      "custom_css": [
+        "div {margin-top: 25px;}"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "customer_reviews_section_DxVLgf": {
+      "type": "customer-reviews-section",
+      "blocks": {
+        "review_bkAWp7": {
+          "type": "review",
+          "settings": {
+            "title": "Going the extra mile, you guys rock!",
+            "content": "Thank you!\nI really appreciate the help getting it to me, I got the balls and was absolutely happy with the product. I kept one in my desk in a cup of water to see how it works. Pretty awesome! I can confirm it is all that I hoped it would be.",
+            "author": "David Rasmussen",
+            "location": "02\/07\/2023",
+            "rating": 5
+          }
+        },
+        "review_7qznf4": {
+          "type": "review",
+          "settings": {
+            "title": "Great delivery service",
+            "content": "This product exceeded my expectations. Highly recommended!",
+            "author": "Terry Hunt",
+            "location": "10\/05\/2023",
+            "rating": 5
+          }
+        },
+        "review_UYnyEJ": {
+          "type": "review",
+          "settings": {
+            "title": "Amazing Golf Ball",
+            "content": "These golf balls look excellent in their packaging and are great fun to use – especially when playing near water, as you have the piece of mind that your ball won't cause any harm if you hit a stray shot! 10\/10 would recommend.",
+            "author": "Customer",
+            "location": "04\/17\/2024",
+            "rating": 5
+          }
+        }
+      },
+      "block_order": [
+        "review_bkAWp7",
+        "review_7qznf4",
+        "review_UYnyEJ"
+      ],
+      "settings": {
+        "title": "What People Are Saying",
+        "margin_top": 36,
+        "margin_bottom": 100,
+        "columns": "3",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false
+      }
+    },
+    "multicolumn_ieNHh4": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_aGYdNJ": {
+          "type": "column",
+          "settings": {
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_EeN9Yd": {
+          "type": "column",
+          "settings": {
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_dmYFyT": {
+          "type": "column",
+          "settings": {
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_aGYdNJ",
+        "column_EeN9Yd",
+        "column_dmYFyT"
+      ],
+      "settings": {
+        "title": "Multicolumn",
+        "heading_size": "h2",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "button_label": "Button label",
+        "button_link": "",
+        "color_scheme": "",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "collapsible_content_7wKatN": {
+      "type": "collapsible-content",
+      "blocks": {
+        "collapsible_row_t4cXgw": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Collapsible row",
+            "icon": "none",
+            "row_content": "<p>assafsdf<\/p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_X79C9A": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Collapsible row",
+            "icon": "none",
+            "row_content": "<p>assafsdf<\/p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_XVtddA": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Collapsible row",
+            "icon": "none",
+            "row_content": "<p>assafsdf<\/p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_VKFbQk": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Collapsible row",
+            "icon": "none",
+            "row_content": "<p>assafsdf<\/p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "collapsible_row_t4cXgw",
+        "collapsible_row_X79C9A",
+        "collapsible_row_XVtddA",
+        "collapsible_row_VKFbQk"
+      ],
+      "settings": {
+        "caption": "",
+        "heading": "Collapsible content",
+        "heading_size": "h1",
+        "heading_alignment": "center",
+        "layout": "none",
+        "color_scheme": "background-1",
+        "container_color_scheme": "",
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 72,
+        "padding_bottom": 72
+      }
+    },
+    "featured_blog_MDD3Vy": {
+      "type": "featured-blog",
+      "settings": {
+        "heading": "Blog posts",
+        "heading_size": "h1",
+        "blog": "",
+        "post_limit": 3,
+        "columns_desktop": 3,
+        "color_scheme": "",
+        "show_image": true,
+        "show_date": true,
+        "show_author": false,
+        "show_view_all": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "image_with_text_n9FpCH": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_mJXyVK": {
+          "type": "heading",
+          "settings": {
+            "heading": "Image with text",
+            "heading_size": "h1"
+          }
+        },
+        "text_PkVU8q": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "text_style": "body"
+          }
+        },
+        "button_b9nEQ8": {
+          "type": "button",
+          "settings": {
+            "button_label": "Button label",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "heading_mJXyVK",
+        "text_PkVU8q",
+        "button_b9nEQ8"
+      ],
+      "settings": {
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 96
+      }
+    }
+  },
+  "order": [
+    "image_banner",
+    "mentions_partners_JU7GAa",
+    "custom_liquid_G8Y4Pf",
+    "action_cards_section_MVFmqU",
+    "featured_collection",
+    "rich_text_TErTda",
+    "rich_text_mhagRa",
+    "rich_text_VkVQw4",
+    "rich_text_L6LdQi",
+    "balls_info_section_JUYyt7",
+    "custom_liquid_niMBmx",
+    "custom_liquid_w73PmD",
+    "rich_text_FzYrVy",
+    "17300634985de8c4a0",
+    "customer_reviews_section_DxVLgf",
+    "multicolumn_ieNHh4",
+    "collapsible_content_7wKatN",
+    "featured_blog_MDD3Vy",
+    "image_with_text_n9FpCH"
+  ]
+}

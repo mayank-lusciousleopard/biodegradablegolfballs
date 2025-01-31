@@ -1,0 +1,140 @@
+{% schema %}
+{
+    "name": "Info Box",
+    "settings": [
+        {
+            "type": "text",
+            "id": "title",
+            "label": "Title",
+            "default": "Info Box Title"
+        },
+        {
+            "type": "richtext",
+            "id": "description",
+            "label": "Description",
+            "default": "<p>Add your description here</p>"
+        },
+        {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Image"
+        },
+        {
+            "type": "checkbox",
+            "id": "display_pc",
+            "label": "Display on Desktop",
+            "default": true
+        },
+        {
+            "type": "checkbox",
+            "id": "display_mobile",
+            "label": "Display on Mobile",
+            "default": true
+        },
+        {
+            "type": "range",
+            "id": "margin_top",
+            "label": "Top Margin",
+            "min": 0,
+            "max": 100,
+            "step": 4,
+            "unit": "px",
+            "default": 0
+        },
+        {
+            "type": "range",
+            "id": "margin_bottom",
+            "label": "Bottom Margin",
+            "min": 0,
+            "max": 100,
+            "step": 4,
+            "unit": "px",
+            "default": 0
+        }
+    ],
+    "presets": [
+        {
+            "name": "Info Box",
+            "category": "Custom Content"
+        }
+    ]
+}
+{% endschema %}
+
+{%- comment -%}
+    We conditionally render two “Info Box” containers:
+     1) Desktop-only version (hidden on mobile) if display_pc == true
+     2) Mobile-only version (hidden on desktop) if display_mobile == true
+{%- endcomment -%}
+
+{% if section.settings.display_pc %}
+    <!-- DESKTOP ONLY (hidden on mobile) -->
+    <div
+        class='hidden md:!block px-[16px] lg:px-[80px]'
+        style='margin-top: {{ section.settings.margin_top }}px; margin-bottom: {{ section.settings.margin_bottom }}px;'
+    >
+        <div class='flex flex-col md:flex-row gap-0 overflow-hidden items-stretch'>
+            <div class='bg-surface-secondary flex flex-col gap-[16px] p-[32px] lg:p-[32px] justify-center rounded-[16px] flex-grow'>
+                <p class='text-text-primary text-[32px] font-bold'>
+                    {{ section.settings.title }}
+                </p>
+                <p class='font-medium text-[18px] text-text-primary'>
+                    {{ section.settings.description }}
+                </p>
+            </div>
+            <div
+                class='h-full rounded-[16px] w-full min-w-[300px] flex sm:max-w-full items-center justify-center flex-none mx-auto'
+                style='max-width: 300px; height: 300px;'
+            >
+                {% if section.settings.image %}
+                    {{
+                        section.settings.image
+                        | image_url: width: 1500
+                        | image_tag:
+                            class: 'w-full h-full object-cover max-h-[300px]',
+                            widths: '550, 750, 1100, 1500',
+                            sizes: '(min-width: 768px) 50vw, 100vw'
+                    }}
+                {% else %}
+                    {{ 'image' | placeholder_svg_tag: 'w-full h-full object-cover max-h-[300px]' }}
+                {% endif %}
+            </div>
+        </div>
+    </div>
+{% endif %}
+
+{% if section.settings.display_mobile %}
+    <!-- MOBILE ONLY (hidden on desktop) -->
+    <div
+        class='md:hidden px-[16px] lg:px-[80px]'
+        style='margin-top: {{ section.settings.margin_top }}px; margin-bottom: {{ section.settings.margin_bottom }}px;'
+    >
+        <div class='flex flex-col md:flex-row gap-0 overflow-hidden items-stretch'>
+            <div class='bg-surface-secondary flex flex-col gap-[16px] p-[32px] lg:p-[32px] justify-center rounded-[16px] flex-grow'>
+                <p class='text-text-primary text-[32px] font-bold'>
+                    {{ section.settings.title }}
+                </p>
+                <p class='font-medium text-[18px] text-text-primary'>
+                    {{ section.settings.description }}
+                </p>
+            </div>
+            <div
+                class='h-full rounded-[16px] w-full min-w-[300px] flex sm:max-w-full items-center justify-center flex-none mx-auto'
+                style='max-width: 300px; height: 300px;'
+            >
+                {% if section.settings.image %}
+                    {{
+                        section.settings.image
+                        | image_url: width: 1500
+                        | image_tag:
+                            class: 'w-full h-full object-cover max-h-[300px]',
+                            widths: '550, 750, 1100, 1500',
+                            sizes: '(min-width: 768px) 50vw, 100vw'
+                    }}
+                {% else %}
+                    {{ 'image' | placeholder_svg_tag: 'w-full h-full object-cover max-h-[300px]' }}
+                {% endif %}
+            </div>
+        </div>
+    </div>
+{% endif %}

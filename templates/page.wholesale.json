@@ -1,0 +1,262 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "custom_liquid_HGmKg6": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "{% render 'breadcrumbs' ,links:'Wholesale', class:' px-[16px] md:px-[80px]' %}",
+        "color_scheme": "",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "custom_liquid_WLCP7D": {
+      "type": "custom-liquid",
+      "disabled": true,
+      "settings": {
+        "custom_liquid": "{% render 'wholesale-info' %}",
+        "color_scheme": "",
+        "padding_top": 0,
+        "padding_bottom": 64
+      }
+    },
+    "wholesale_info_section_zRNHiJ": {
+      "type": "wholesale-info-section",
+      "blocks": {
+        "feature_hEATa7": {
+          "type": "feature",
+          "settings": {
+            "title": "Feature",
+            "icon": "{% render 'icon-present' %}"
+          }
+        },
+        "feature_GXfqxB": {
+          "type": "feature",
+          "settings": {
+            "title": "Feature",
+            "icon": "{% render 'icon-present' %}"
+          }
+        },
+        "feature_H6RtBT": {
+          "type": "feature",
+          "settings": {
+            "title": "Feature",
+            "icon": "{% render 'icon-present' %}"
+          }
+        },
+        "feature_GY4WHA": {
+          "type": "feature",
+          "settings": {
+            "title": "Feature",
+            "icon": "{% render 'icon-present' %}"
+          }
+        },
+        "image_text_L3rtJf": {
+          "type": "image_text",
+          "settings": {
+            "title": "Image Title",
+            "subtitle": "Image Subtitle"
+          }
+        },
+        "image_text_dhmbUQ": {
+          "type": "image_text",
+          "settings": {
+            "title": "Image Title",
+            "subtitle": "Image Subtitle"
+          }
+        },
+        "faq_ztaiaM": {
+          "type": "faq",
+          "settings": {
+            "question": "Do You Offer The Option To Rush A Print Job On Biodegradable Golf Balls?",
+            "answer": "",
+            "youtube_url": "https:\/\/www.youtube.com\/watch?v=MsNeksRI_3E"
+          }
+        },
+        "faq_mbNLGM": {
+          "type": "faq",
+          "settings": {
+            "question": "What Is Your Lead Time On Logo Customization For Biodegradable Golf Balls",
+            "answer": "",
+            "youtube_url": "https:\/\/www.youtube.com\/watch?v=fn7bfdFqAGk"
+          }
+        },
+        "faq_A6pAVX": {
+          "type": "faq",
+          "settings": {
+            "question": "Do We Offer Logo Customization On Our Biodegradable Golf Balls?",
+            "answer": "",
+            "youtube_url": "https:\/\/www.youtube.com\/watch?v=ACRKutHeqDc"
+          }
+        },
+        "faq_rD3LHn": {
+          "type": "faq",
+          "settings": {
+            "question": "Drop Shipping Biodegradable Golf Balls",
+            "answer": "",
+            "youtube_url": "https:\/\/www.youtube.com\/watch?v=IThXvmA286w"
+          }
+        },
+        "faq_jbnQ96": {
+          "type": "faq",
+          "settings": {
+            "question": "Do Biodegradable Golf Balls Do Bulk Wholesale Shipments?",
+            "answer": "",
+            "youtube_url": "https:\/\/www.youtube.com\/watch?v=qNwS6DRXc_g"
+          }
+        },
+        "faq_H3VtHC": {
+          "type": "faq",
+          "settings": {
+            "question": "Do Biodegradable Golf Balls Allow For The Resale of Your Product?",
+            "answer": "",
+            "youtube_url": "https:\/\/www.youtube.com\/watch?v=048hzxBELB0"
+          }
+        },
+        "faq_bpfnTN": {
+          "type": "faq",
+          "settings": {
+            "question": "Shipping Biodegradable Golf Balls Internationally",
+            "answer": "",
+            "youtube_url": "https:\/\/www.youtube.com\/watch?v=tlBqOSWMndA"
+          }
+        },
+        "faq_PL7xaT": {
+          "type": "faq",
+          "settings": {
+            "question": "Biodegradable Golf Balls Overnight Shipping",
+            "answer": "",
+            "youtube_url": "https:\/\/www.youtube.com\/watch?v=kODG6XPnXaQ"
+          }
+        },
+        "faq_9xTHha": {
+          "type": "faq",
+          "settings": {
+            "question": "How Long Does It Take To Ship My Order From biodegradablegolfballs.com",
+            "answer": "",
+            "youtube_url": "https:\/\/www.youtube.com\/watch?v=GcH5A2BPoTs"
+          }
+        },
+        "faq_zjXAtp": {
+          "type": "faq",
+          "settings": {
+            "question": "Where Can I Buy Biodegradable Golf Balls For Water?",
+            "answer": "FAQ Answer",
+            "youtube_url": "https:\/\/www.youtube.com\/watch?v=DCdbCJfueAg"
+          }
+        },
+        "faq_TgkCi9": {
+          "type": "faq",
+          "settings": {
+            "question": "Why Are Biodegradable Golf Balls So Expensive?",
+            "answer": "",
+            "youtube_url": "https:\/\/www.youtube.com\/watch?v=UoPZETurhS8"
+          }
+        },
+        "faq_Yqe3bf": {
+          "type": "faq",
+          "settings": {
+            "question": "Why You Shouldn't Hit Golf Balls Into Bodies Of Water",
+            "answer": "",
+            "youtube_url": "https:\/\/www.youtube.com\/watch?v=Jp62IVuTEPY"
+          }
+        },
+        "faq_XTWwNH": {
+          "type": "faq",
+          "settings": {
+            "question": "What Happens If An Animal Eats a Biodegradable Golf Ball?",
+            "answer": "",
+            "youtube_url": "https:\/\/www.youtube.com\/watch?v=jlAdx8JVH2U"
+          }
+        },
+        "faq_gRj3pX": {
+          "type": "faq",
+          "settings": {
+            "question": "Do Biodegradable Golf Balls Perform As Well as Professional Green Balls?",
+            "answer": "",
+            "youtube_url": "https:\/\/www.youtube.com\/watch?v=lWtN2NI9_Hw"
+          }
+        },
+        "faq_zMmkgX": {
+          "type": "faq",
+          "settings": {
+            "question": "What Are Biodegradable Golf Balls Made Of?",
+            "answer": "",
+            "youtube_url": "https:\/\/www.youtube.com\/watch?v=F3O3VdL-62w"
+          }
+        },
+        "faq_Mr7AbW": {
+          "type": "faq",
+          "settings": {
+            "question": "Do Biodegradable Golf Balls Dissolve on Land?",
+            "answer": "",
+            "youtube_url": "https:\/\/www.youtube.com\/watch?v=gIg8nisjtqA"
+          }
+        },
+        "faq_Xw9abF": {
+          "type": "faq",
+          "settings": {
+            "question": "How Long Biodegradable Golf Balls Take to Dissolve?",
+            "answer": "",
+            "youtube_url": "https:\/\/www.youtube.com\/watch?v=5v8QXrQLaaI"
+          }
+        },
+        "faq_6hBdNP": {
+          "type": "faq",
+          "settings": {
+            "question": "What Are Biodegradable Golf Balls? | Sustainable Golf For a Sustainable Future",
+            "answer": "",
+            "youtube_url": "https:\/\/www.youtube.com\/watch?v=qND_we1iOG4"
+          }
+        }
+      },
+      "block_order": [
+        "feature_hEATa7",
+        "feature_GXfqxB",
+        "feature_H6RtBT",
+        "feature_GY4WHA",
+        "image_text_L3rtJf",
+        "image_text_dhmbUQ",
+        "faq_ztaiaM",
+        "faq_mbNLGM",
+        "faq_A6pAVX",
+        "faq_rD3LHn",
+        "faq_jbnQ96",
+        "faq_H3VtHC",
+        "faq_bpfnTN",
+        "faq_PL7xaT",
+        "faq_9xTHha",
+        "faq_zjXAtp",
+        "faq_TgkCi9",
+        "faq_Yqe3bf",
+        "faq_XTWwNH",
+        "faq_gRj3pX",
+        "faq_zMmkgX",
+        "faq_Mr7AbW",
+        "faq_Xw9abF",
+        "faq_6hBdNP"
+      ],
+      "settings": {
+        "margin_top": 16,
+        "margin_bottom": 100,
+        "title": "Wholesale offer",
+        "subtitle": "Sustainable Solution for Your Business",
+        "form_title": "WHOLESALE INQUIRY",
+        "description": "<p>We are proud to offer you an innovative and sustainable solution for your golf business. Our biodegradable balls are made from materials that easily decompose in water, meaning they leave no unwanted waste in the environment.<\/p><p>This eco-friendly approach not only helps protect the environment but also brings many benefits to your business. The balls are of high quality and deliver excellent performance during play. Through our wholesale offer, you can acquire these balls in larger quantities at competitive prices. Additionally, as a wholesale customer, you will have access to our outstanding customer service and flexible ordering options. Join us in supporting sustainability in the golf industry while gaining advantages for your wholesale business.<\/p>"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "custom_liquid_HGmKg6",
+    "custom_liquid_WLCP7D",
+    "wholesale_info_section_zRNHiJ"
+  ]
+}

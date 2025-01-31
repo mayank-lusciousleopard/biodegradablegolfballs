@@ -1,0 +1,67 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "custom_liquid_6tAWqB": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "{% render 'breadcrumbs' ,links:'Custom printing', class:' px-[16px] md:px-[80px]' %}",
+        "color_scheme": "",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "custom_liquid_Jbmmfq": {
+      "type": "custom-liquid",
+      "disabled": true,
+      "settings": {
+        "custom_liquid": "{% render 'custom-printing' %}",
+        "color_scheme": "",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "custom_printing_section_dUQDmi": {
+      "type": "custom-printing-section",
+      "settings": {
+        "title": "Personalize Biodegradable Golf Balls",
+        "description": "Print your custom logo or saying on biodegradable golf balls! All custom golf balls are in-house which give us the flexibility to have extremely fast turn-around times and monitor the quality of print. For more information visit our <a href=\"\/pages\/print-faq\" style=\"text-decoration:underline;\">Print FAQ Page.<\/a>",
+        "customize_title": "Customize printing",
+        "upload_button_text": "Upload your image",
+        "upload_description": "Upload an image in JPG or PNG format. 5 MB maximum file size.",
+        "preview_image": "shopify:\/\/shop_images\/ball_5a7d1a88-8160-4284-8633-6a568340a700.webp",
+        "preview_title": "Image preview",
+        "amount_title": "Choose amount",
+        "custom_amount_text": "Custom amount please email us at",
+        "custom_amount_email": "hello@biodegradablegolfballs.com",
+        "packaging_title": "Select packaging type",
+        "package_image_1": "shopify:\/\/shop_images\/biodegradable-golf-balls_3-ball-sleeve_64e69733-7b5c-4e23-bf0c-3a2895dc701d.png",
+        "package_text_1": "3 ball sleeve",
+        "package_image_2": "shopify:\/\/shop_images\/24Pack_ProductShot.jpg",
+        "package_text_2": "24 balls package",
+        "package_image_3": "shopify:\/\/shop_images\/96Pack_ProductShot.jpg",
+        "package_text_3": "96 balls package",
+        "package_image_4": "shopify:\/\/shop_images\/BGB_logo_2022_RGB.jpg",
+        "package_text_4": "No branding",
+        "price_title": "Price",
+        "add_to_cart_text": "Add to cart",
+        "margin_top": 16,
+        "margin_top_mobile": 16,
+        "margin_bottom": 64,
+        "margin_bottom_mobile": 64
+      }
+    }
+  },
+  "order": [
+    "main",
+    "custom_liquid_6tAWqB",
+    "custom_liquid_Jbmmfq",
+    "custom_printing_section_dUQDmi"
+  ]
+}

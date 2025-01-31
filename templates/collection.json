@@ -1,0 +1,144 @@
+{
+  "sections": {
+    "custom_liquid_jz3PXw": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "{% render 'breadcrumbs' ,links:'Products', class:' px-[16px] md:px-[80px]' %}",
+        "color_scheme": "",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "info_box_section_qCTRfx": {
+      "type": "info-box-section",
+      "settings": {
+        "title": "{{ collection.metafields.custom.products_header.value }}",
+        "description": "{{ collection.metafields.custom.products_description | metafield_tag }}",
+        "image": "{{ collection.metafields.custom.product_image.value }}",
+        "display_pc": true,
+        "display_mobile": false,
+        "margin_top": 0,
+        "margin_bottom": 0
+      }
+    },
+    "banner": {
+      "type": "main-collection-banner",
+      "settings": {
+        "show_collection_description": true,
+        "show_collection_image": false,
+        "color_scheme": "background-1"
+      }
+    },
+    "product-grid": {
+      "type": "main-collection-product-grid",
+      "settings": {
+        "products_per_page": 16,
+        "columns_desktop": 4,
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": true,
+        "enable_quick_add": true,
+        "enable_filtering": true,
+        "filter_type": "horizontal",
+        "enable_sorting": true,
+        "columns_mobile": "2",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "info_box_section_tnVt3F": {
+      "type": "info-box-section",
+      "settings": {
+        "title": "{{ collection.metafields.custom.products_header.value }}",
+        "description": "{{ collection.metafields.custom.products_description | metafield_tag }}",
+        "image": "{{ collection.metafields.custom.product_image.value }}",
+        "display_pc": false,
+        "display_mobile": true,
+        "margin_top": 64,
+        "margin_bottom": 0
+      }
+    },
+    "custom_liquid_qCxbHH": {
+      "type": "custom-liquid",
+      "disabled": true,
+      "settings": {
+        "custom_liquid": "{% render 'wholesale-info' %}",
+        "color_scheme": "",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "custom_liquid_GtLyW7": {
+      "type": "custom-liquid",
+      "disabled": true,
+      "settings": {
+        "custom_liquid": "{% render 'action-cards',\ntitle: 'Other products and services'\n        text: 'Wholesale event packages::Save more then <bold>$150.00<\/bold>|\n        Biodegradable Golf Balls::Starting at <strong>$5.00<\/strong> per ball|\n        Custom printing:Print your balls with your own design.:Starting at <strong>$5.50<\/strong> per ball'\n    %}",
+        "color_scheme": "",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "custom_liquid_JwWjdw": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "",
+        "color_scheme": "",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "action_cards_section_knd37L": {
+      "type": "action-cards-section",
+      "blocks": {
+        "card_qEHhEr": {
+          "type": "card",
+          "settings": {
+            "title": "Card Title",
+            "subtitle": "",
+            "button_text": ""
+          }
+        },
+        "card_Nmhykp": {
+          "type": "card",
+          "settings": {
+            "title": "Card Title",
+            "subtitle": "",
+            "button_text": ""
+          }
+        },
+        "card_TRrFnT": {
+          "type": "card",
+          "settings": {
+            "title": "Card Title",
+            "subtitle": "",
+            "button_text": ""
+          }
+        }
+      },
+      "block_order": [
+        "card_qEHhEr",
+        "card_Nmhykp",
+        "card_TRrFnT"
+      ],
+      "settings": {
+        "title": "Action Cards",
+        "card_count": 3,
+        "margin_top": 0,
+        "margin_bottom": 100
+      }
+    }
+  },
+  "order": [
+    "custom_liquid_jz3PXw",
+    "info_box_section_qCTRfx",
+    "banner",
+    "product-grid",
+    "info_box_section_tnVt3F",
+    "custom_liquid_qCxbHH",
+    "custom_liquid_GtLyW7",
+    "custom_liquid_JwWjdw",
+    "action_cards_section_knd37L"
+  ]
+}

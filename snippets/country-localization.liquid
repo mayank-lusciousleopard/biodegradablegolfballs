@@ -1,0 +1,49 @@
+{%- comment -%}
+  Renders the country picker for the localization form
+{%- endcomment -%}
+
+{%- form 'localization'
+  , id: 'HeaderCountryForm'
+  , class: 'localization-form' -%}
+  <div class="relative">
+    <button
+      type="button"
+      class="country-selector-button min-w-[120px] flex items-center gap-2 p-2 hover:bg-gray-100 rounded-lg transition-colors duration-200"
+      aria-expanded="false"
+      aria-controls="CountryList">
+      <span class="w-5 h-4 overflow-hidden rounded">
+        {{- localization.country | image_url: width: 20 | image_tag -}}
+      </span>
+      <span class="text-sm font-medium">
+        {{- localization.country.name -}}
+      </span>
+      <span class="transition-transform duration-300 ml-auto">
+        {% render 'icon-arrow-down' %}
+      </span>
+    </button>
+
+    <div id="CountryList" class="hidden absolute right-0 top-full mt-2 bg-white border border-gray-200 rounded-lg shadow-lg z-50 w-64 max-h-96 overflow-y-auto scrollbar-thin scrollbar-thumb-gray-300 scrollbar-track-transparent">
+      <div class="p-2 space-y-1">
+        {%- for country in localization.available_countries -%}
+          <button
+            type="submit"
+            name="country_code"
+            value="{{ country.iso_code }}"
+            class="flex items-center gap-2 w-full p-2 hover:bg-gray-100 rounded transition-colors duration-200 {% if country.iso_code == localization.country.iso_code %}bg-gray-50{% endif %}">
+            <span class="w-5 h-4 overflow-hidden rounded">
+              {{- country | image_url: width: 20 | image_tag -}}
+            </span>
+            <span class="text-sm">
+              {{- country.name -}}
+            </span>
+          </button>
+        {%- endfor -%}
+      </div>
+    </div>
+
+    <input
+      type="hidden"
+      name="return_to"
+      value="{{ request.path }}">
+  </div>
+{%- endform -%}

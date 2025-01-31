@@ -1,0 +1,27 @@
+{% assign parsedJson = reviews | split: ';' %}
+
+<div class='px-[16px] md:px-[80px] {{ class }}'>
+    <p class='mb-[32px] text-[24px] font-bold text-text-primary'>Customer feedback</p>
+    <div class='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[16px]'>
+        {% for review in parsedJson %}
+            {% assign parsedReview = review | split: ':' %}
+            <div class='bg-surface-secondary-active rounded-[16px] p-[32px] flex flex-col gap-[16px]'>
+                <p class='text-text-primary text-[20px] font-bold'>{{ parsedReview[0] }}</p>
+                <p class='font-medium text-[16px] text-text-primary'>
+                    {{ parsedReview[1] }}
+                </p>
+
+                <div class='flex flex-col gap-[4px]'>
+                    <p class='text-[12px] font-bold text-text-primary'>{{ parsedReview[2] }}</p>
+                    <p class='text-text-secondary text-[12px] font-medium'>{{ parsedReview[3] }}</p>
+                    <div class='flex flex-row gap-[4px]'>
+                        {% assign star_count = parsedReview[4] | plus: 0 %}
+                        {% for i in (1..star_count) %}
+                            {% render 'icon-star' %}
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+</div>

@@ -1,0 +1,303 @@
+{% schema %}
+{
+    "name": "Wholesale Info",
+    "settings": [
+        {
+            "type": "range",
+            "id": "margin_top",
+            "label": "Top Margin",
+            "min": 0,
+            "max": 100,
+            "step": 4,
+            "default": 16,
+            "unit": "px"
+        },
+        {
+            "type": "range",
+            "id": "margin_bottom",
+            "label": "Bottom Margin",
+            "min": 0,
+            "max": 100,
+            "step": 4,
+            "default": 16,
+            "unit": "px"
+        },
+        {
+            "type": "text",
+            "id": "title",
+            "label": "Title",
+            "default": "Wholesale offer"
+        },
+        {
+            "type": "text",
+            "id": "subtitle",
+            "label": "Subtitle",
+            "default": "Sustainable Solution for Your Business"
+        },
+        {
+            "type": "text",
+            "id": "form_title",
+            "label": "Form Title",
+            "default": "WHOLESALE INQUIRY"
+        },
+        {
+            "type": "richtext",
+            "id": "description",
+            "label": "Description",
+            "default": "<p>We are proud to offer you an innovative and sustainable solution for your golf business. Our biodegradable balls are made from materials that easily decompose in water, meaning they leave no unwanted waste in the environment.</p><p>This eco-friendly approach not only helps protect the environment but also brings many benefits to your business. The balls are of high quality and deliver excellent performance during play. Through our wholesale offer, you can acquire these balls in larger quantities at competitive prices. Additionally, as a wholesale customer, you will have access to our outstanding customer service and flexible ordering options. Join us in supporting sustainability in the golf industry while gaining advantages for your wholesale business.</p>"
+        }
+    ],
+    "blocks": [
+        {
+            "type": "feature",
+            "name": "Feature",
+            "limit": 4,
+            "settings": [
+                {
+                    "type": "text",
+                    "id": "title",
+                    "label": "Title",
+                    "default": "Feature"
+                },
+                {
+                    "type": "liquid",
+                    "id": "icon",
+                    "label": "Icon Snippet",
+                    "default": "{% render 'icon-present' %}"
+                }
+            ]
+        },
+        {
+            "type": "image_text",
+            "name": "Image with Text",
+            "limit": 2,
+            "settings": [
+                {
+                    "type": "image_picker",
+                    "id": "image",
+                    "label": "Image"
+                },
+                {
+                    "type": "text",
+                    "id": "title",
+                    "label": "Title",
+                    "default": "Image Title"
+                },
+                {
+                    "type": "text",
+                    "id": "subtitle",
+                    "label": "Subtitle",
+                    "default": "Image Subtitle"
+                }
+            ]
+        },
+        {
+            "type": "faq",
+            "name": "FAQ",
+            "settings": [
+                {
+                    "type": "text",
+                    "id": "question",
+                    "label": "Question",
+                    "default": "FAQ Question"
+                },
+                {
+                    "type": "text",
+                    "id": "answer",
+                    "label": "Answer",
+                    "default": "FAQ Answer"
+                },
+                {
+                    "type": "text",
+                    "id": "youtube_url",
+                    "label": "YouTube Video URL",
+                    "info": "Example: https://www.youtube.com/watch?v=XXXXXXXXXXXX"
+                }
+            ]
+        }
+    ],
+    "presets": [
+        {
+            "name": "Wholesale Info",
+            "blocks": [
+                {
+                    "type": "feature"
+                },
+                {
+                    "type": "feature"
+                },
+                {
+                    "type": "feature"
+                },
+                {
+                    "type": "feature"
+                },
+                {
+                    "type": "image_text"
+                },
+                {
+                    "type": "image_text"
+                },
+                {
+                    "type": "faq"
+                },
+                {
+                    "type": "faq"
+                },
+                {
+                    "type": "faq"
+                }
+            ]
+        }
+    ]
+}
+{% endschema %}
+
+<section
+    id='wholesale-info'
+    style='margin-top: {{ section.settings.margin_top }}px; margin-bottom: {{ section.settings.margin_bottom }}px;'
+>
+    <div class='px-[16px] md:px-[80px] my-[{{ section.settings.margin_top }}px] md:my-[{{ section.settings.margin_top | times: 4 }}px] w-full'>
+        <p class='font-bold text-text-primary text-[24px] md:text-[32px]'>{{ section.settings.title }}</p>
+        <p class='text-text-primary text-[24px] font-medium mt-[8px] md:text-[32px]'>
+            {{ section.settings.subtitle }}
+        </p>
+
+        <div class='grid grid-cols-1 lg:grid-cols-2 gap-[16px] md:gap-[64px] mt-[16px] md:mt-[19px]'>
+            <div>
+                <div class='grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-[16px] lg:gap-[16px] lg:gap-[64px]'>
+                    {% for block in section.blocks %}
+                        {% if block.type == 'feature' %}
+                            <div class='bg-surface-background w-full flex items-center justify-center flex-col py-[16px] h-[104px] rounded-[16px] gap-[8px] text-center'>
+                                {{ block.settings.icon }}
+                                <p class='text-text-primary font-bold text-[14px]'>{{ block.settings.title }}</p>
+                            </div>
+                        {% endif %}
+                    {% endfor %}
+                </div>
+                <div class='grid grid-cols-2 sm:grid-cols-2 gap-[16px] md:gap-[64px]'>
+                    <div class='w-full col-span-4 grid grid-cols-1 md:grid-cols-2 gap-[16px]'>
+                        {% for block in section.blocks %}
+                            {% if block.type == 'image_text' %}
+                                <div class='relative w-full max-h-[200px]'>
+                                    <div class='absolute top-0 left-0 w-full h-full z-10'>
+                                        <div class='bg-linear-gradient-secondary opacity-70 w-full h-full rounded-[16px]'>
+                                            <span></span>
+                                        </div>
+                                        <div class='relative top-[-100px]'>
+                                            <p class='text-text-inverse font-bold text-[24px] text-center'>
+                                                {{ block.settings.title }}
+                                            </p>
+                                            {% if block.settings.subtitle != blank %}
+                                                <p class='text-text-inverse font-medium text-[18px] text-center'>
+                                                    {{ block.settings.subtitle }}
+                                                </p>
+                                            {% endif %}
+                                        </div>
+                                    </div>
+                                    {% if block.settings.image %}
+                                        {{
+                                            block.settings.image
+                                            | image_url: width: 400
+                                            | image_tag:
+                                                class: 'w-full h-full object-cover rounded-[16px]',
+                                                width: '100%',
+                                                height: '100%'
+                                        }}
+                                    {% else %}
+                                        {{ 'image' | placeholder_svg_tag: 'w-full h-full object-cover rounded-[16px]' }}
+                                    {% endif %}
+                                </div>
+                            {% endif %}
+                        {% endfor %}
+                    </div>
+
+                    <div class='col-span-4 flex flex-col gap-[24px]'>
+                        {{ section.settings.description }}
+                    </div>
+                </div>
+            </div>
+
+            <form class='w-full bg-surface-secondary flex flex-col items-center justify-center rounded-[16px] py-[32px] px-[24px] lg:px-[80px] md:py-[80px] gap-[32px] h-fit'>
+                <p class='text-text-primary text-[24px] font-bold uppercase'>{{ section.settings.form_title }}</p>
+
+                <div class='flex flex-col w-full gap-[16px]'>
+                    <input
+                        type='text'
+                        name='name'
+                        placeholder='Name'
+                        class='py-[6px] h-[48px] px-[16px] rounded-[8px] bg-surface-primary border-tertiary border-[1px] outline-none shadow-none w-full'
+                    >
+                    <input
+                        type='text'
+                        name='company'
+                        placeholder='Company'
+                        class='py-[6px] h-[48px] px-[16px] rounded-[8px] bg-surface-primary border-tertiary border-[1px] outline-none shadow-none w-full'
+                    >
+                    <input
+                        type='email'
+                        name='email'
+                        placeholder='Email'
+                        class='py-[6px] h-[48px] px-[16px] rounded-[8px] bg-surface-primary border-tertiary border-[1px] outline-none shadow-none w-full'
+                    >
+                    <input
+                        type='tel'
+                        name='phone'
+                        placeholder='Phone'
+                        class='py-[6px] h-[48px] px-[16px] rounded-[8px] bg-surface-primary border-tertiary border-[1px] outline-none shadow-none w-full'
+                    >
+                    <input
+                        type='number'
+                        name='amount'
+                        placeholder='Amount of golf balls needed'
+                        class='py-[6px] h-[48px] px-[16px] rounded-[8px] bg-surface-primary border-tertiary border-[1px] outline-none shadow-none w-full'
+                    >
+                    <textarea
+                        type='text'
+                        name='message'
+                        placeholder='Message'
+                        class='py-[6px] h-[80px] px-[16px] rounded-[8px] bg-surface-primary border-tertiary border-[1px] outline-none shadow-none w-full resize-none'
+                    ></textarea>
+                </div>
+
+                <button
+                    type='submit'
+                    class='w-fit bg-surface-primary-active text-text-secondary-active font-bold text-[16px] rounded-[8px] px-[24px] py-[12px]'
+                >
+                    Send
+                </button>
+            </form>
+        </div>
+    </div>
+    <div class='mx-4'>
+        <div class='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6'>
+            {% for block in section.blocks %}
+                {% if block.type == 'faq' %}
+                    <div class='bg-surface-secondary rounded-lg shadow-md'>
+                        {% if block.settings.youtube_url != blank %}
+                            <div class='relative w-full h-[200px]'>
+                                <iframe
+                                    src='https://www.youtube.com/embed/{{ block.settings.youtube_url | split: 'v=' | last }}'
+                                    class='w-full h-full rounded-t-lg absolute top-0 left-0'
+                                    frameborder='0'
+                                    allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
+                                    allowfullscreen
+                                ></iframe>
+                            </div>
+                        {% else %}
+                            <img
+                                src='{{ "wholesale-card-placeholder.png" | asset_url }}'
+                                alt='FAQ Image'
+                                class='w-full h-auto rounded-t-lg'
+                            >
+                        {% endif %}
+                        <div class='p-6'>
+                            <h3 class='text-xl font-semibold mb-2'>{{ block.settings.question }}</h3>
+                            <p>{{ block.settings.answer }}</p>
+                        </div>
+                    </div>
+                {% endif %}
+            {% endfor %}
+        </div>
+    </div>
+</section>

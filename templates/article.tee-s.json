@@ -1,0 +1,111 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-article",
+      "blocks": {
+        "featured_image": {
+          "type": "featured_image",
+          "settings": {
+            "image_height": "adapt"
+          }
+        },
+        "title": {
+          "type": "title",
+          "settings": {
+            "blog_show_date": true,
+            "blog_show_author": false
+          }
+        },
+        "share": {
+          "type": "share",
+          "settings": {
+            "share_label": "Share"
+          }
+        },
+        "content": {
+          "type": "content",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "featured_image",
+        "title",
+        "share",
+        "content"
+      ],
+      "settings": {}
+    },
+    "featured_product_LzdBiU": {
+      "type": "featured-product",
+      "blocks": {
+        "text_znrNJR": {
+          "type": "text",
+          "settings": {
+            "text": "{{ section.settings.product.vendor }}",
+            "text_style": "uppercase"
+          }
+        },
+        "title_ayhqwb": {
+          "type": "title",
+          "settings": {
+            "heading_size": "h1"
+          }
+        },
+        "price_czxzeC": {
+          "type": "price",
+          "settings": {}
+        },
+        "variant_picker_jHQzXb": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button"
+          }
+        },
+        "quantity_selector_xLU8ah": {
+          "type": "quantity_selector",
+          "settings": {}
+        },
+        "buy_buttons_feD3He": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true,
+            "show_gift_card_recipient": true
+          }
+        },
+        "share_BQRJgL": {
+          "type": "share",
+          "settings": {
+            "share_label": "Share"
+          }
+        }
+      },
+      "block_order": [
+        "text_znrNJR",
+        "title_ayhqwb",
+        "price_czxzeC",
+        "variant_picker_jHQzXb",
+        "quantity_selector_xLU8ah",
+        "buy_buttons_feD3He",
+        "share_BQRJgL"
+      ],
+      "settings": {
+        "product": "biodegradable-golf-tees",
+        "color_scheme": "background-1",
+        "secondary_background": false,
+        "media_size": "medium",
+        "constrain_to_viewport": true,
+        "media_fit": "contain",
+        "media_position": "left",
+        "image_zoom": "lightbox",
+        "hide_variants": false,
+        "enable_video_looping": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "main",
+    "featured_product_LzdBiU"
+  ]
+}
