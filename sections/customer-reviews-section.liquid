@@ -130,7 +130,7 @@
 
 <div class='px-[16px] md:px-[80px] {{ section.settings.class }}' style='margin-top: {{ section.settings.margin_top }}px; margin-bottom: {{ section.settings.margin_bottom }}px;'>
   <p class='mb-[32px] text-[24px] font-bold text-text-primary'>{{ section.settings.title }}</p>
-  <div class='multicolumn-list contains-content-container grid grid--{{ section.settings.columns_mobile }}-col-tablet-down grid--{{ section.settings.columns_desktop }}-col-desktop{% if show_mobile_slider %} slider slider--tablet grid--peek{% endif %}'>
+  <div class='multicolumn-list contains-content-container theme-grid grid--{{ section.settings.columns_mobile }}-col-tablet-down grid--{{ section.settings.columns_desktop }}-col-desktop{% if show_mobile_slider %} slider slider--tablet grid--peek{% endif %}'>
     {% for block in section.blocks %}
       {% if block.type == 'review' %}
         <div class='multicolumn-list__item grid__item bg-surface-secondary-active rounded-[16px] p-[32px] flex flex-col gap-[16px]' style='padding-bottom:32px;'>

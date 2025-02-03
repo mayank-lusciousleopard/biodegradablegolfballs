@@ -347,7 +347,7 @@
           "type": "column",
           "settings": {
             "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p><ul><li>style, or even provide a review.<\/li><li>style, or even provide a review.<\/li><\/ul>",
             "link_label": "",
             "link": ""
           }

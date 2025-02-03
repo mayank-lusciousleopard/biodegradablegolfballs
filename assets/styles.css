@@ -1599,7 +1599,7 @@ video {
   display: grid !important;
 }
 .grid {
-  /* display: grid; */
+  display: grid;
 }
 .inline-grid {
   display: inline-grid;

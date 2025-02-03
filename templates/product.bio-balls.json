@@ -1,0 +1,157 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "settings": {
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "description_title": "How Long Do BGB Biodegradable Golf Balls® take to dissolve?",
+        "description_text_1": "Our BGB Biodegradable Golf Balls® when submerged in fresh or salt water take about 2 - 4 weeks to fully dissolve. Within minutes to hours you can see the ball starting to dissolve. Generally, the dimples will start to become smooth and slippery to touch. The balls break down into a non toxic substance similar to dishwasher pods.",
+        "description_text_2": "You can hit our water soluble golf balls onto land without feeling guilty that you’ll need to recover every ball. The exact timeline on how long one of our balls take to dissolve on land will be dictated by the amount of precipitation your biome receives. For a rainy region like the coast of Washington it may take 6 - 8 months, however an arid dry climate like Arizona may take much longer.",
+        "description_image": "shopify:\/\/shop_images\/biodegradable-golf-balls.jpg"
+      }
+    },
+    "1722892051ab072ec8": {
+      "type": "apps",
+      "blocks": {
+        "delivery_timer_text_based_timer_NMPbEW": {
+          "type": "shopify:\/\/apps\/delivery-timer\/blocks\/text_based_timer\/bace9725-6846-4fad-8461-027a1ac43ad8",
+          "settings": {}
+        },
+        "delivery_timer_visual_timer_rFqwkw": {
+          "type": "shopify:\/\/apps\/delivery-timer\/blocks\/visual_timer\/bace9725-6846-4fad-8461-027a1ac43ad8",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "delivery_timer_text_based_timer_NMPbEW",
+        "delivery_timer_visual_timer_rFqwkw"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "related-products": {
+      "type": "related-products",
+      "disabled": true,
+      "settings": {
+        "heading": "You may also like",
+        "heading_size": "h2",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "color_scheme": "background-1",
+        "image_ratio": "square",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "columns_mobile": "2",
+        "padding_top": 36,
+        "padding_bottom": 28
+      }
+    },
+    "rich_text_HR4BxE": {
+      "type": "rich-text",
+      "settings": {
+        "content": "<h2>Is it Safe to hit BGB Biodegradable Golf Balls® into Water?<\/h2><p>We had the compound used to create our golf balls tested with an ISO Certified third party called SGS. There are no heavy metals and our balls are non-toxic to marine life after dissolving.<\/p>",
+        "margin_top": 0,
+        "margin_bottom": 20,
+        "margin_left": 0,
+        "margin_right": 0,
+        "text_size": 12
+      }
+    },
+    "rich_text_yB7EgM": {
+      "type": "rich-text",
+      "settings": {
+        "content": "<h2>Why Use Dissolvable Golf Balls?<\/h2><ul><li>Water Golf (Water Front Driving Ranges)<\/li><li>Yacht Golf<\/li><li>Resort Golf Ranges<\/li><li>Unique Golf Party Experiences<\/li><li>Golfing Over Water Hazards<\/li><li>Setting Up Targets In Bodies Of Water<\/li><li>Sustainable Gifts<\/li><li>Eco Friendly Novelty Products<\/li><\/ul>",
+        "margin_top": 20,
+        "margin_bottom": 20,
+        "margin_left": 0,
+        "margin_right": 0,
+        "text_size": 12
+      }
+    },
+    "rich_text_Hgiwng": {
+      "type": "rich-text",
+      "settings": {
+        "content": "<h2>What These Are Not For:<\/h2><ul><li>Professional Golf Use<\/li><li>Playing a round of golf on greens<\/li><li>Evil people who want to destroy the world<\/li><li>Boring People<\/li><\/ul>",
+        "margin_top": 20,
+        "margin_bottom": 20,
+        "margin_left": 0,
+        "margin_right": 0,
+        "text_size": 12
+      }
+    },
+    "collapsible_content_Jqhm4n": {
+      "type": "collapsible-content",
+      "blocks": {
+        "collapsible_row_j9rJhm": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Toxicological Information",
+            "icon": "question_mark",
+            "row_content": "<p><strong>Acute Oral Toxicity On Rats: <\/strong>Above 2,000 mg／kg. <br\/><strong>Acute Oral Toxicity On Fish: <\/strong>The fish did not show any poisoning symptoms.  <br\/><strong>Skin Irritation:<\/strong> Not noticed <br\/><em>Note: With adequate use, serious damage to health is not noticed. <\/em><\/p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_kRpD9B": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "What Are BGB Biodegradable Golf Balls® Made From?",
+            "icon": "question_mark",
+            "row_content": "<p><strong>Polyvinyl Alcohol (CAS No. 9002-89-5)<\/strong>: Concentration &gt; 65%<\/p><p><strong>Glycerin (CAS No. 56-81-5)<\/strong>: Concentration &lt; 15%<\/p><p><strong>Calcium Carbonate (CAS No. 471-31-1)<\/strong>: Concentration &lt; 15%<\/p><p><strong>Water<\/strong>: Concentration &lt; 5%<\/p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_LfUmxw": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Physical And Chemical Properties",
+            "icon": "question_mark",
+            "row_content": "<h3>Appearance:<\/h3><ul><li><strong>Form<\/strong>: Solid, translucent<\/li><li><strong>Color<\/strong>: White<\/li><li><strong>Smell<\/strong>: A small amount of odor<\/li><\/ul><h3>Physical Properties:<\/h3><ul><li><strong>Fusion Point<\/strong>: &gt; 150℃<\/li><li><strong>Inflammability<\/strong>: Non-detectable decomposition<\/li><li><strong>Decomposition Temperature<\/strong>: &gt; 260℃<\/li><li><strong>Self-Ignition<\/strong>: &gt; 400℃<\/li><li><strong>Explosion Danger<\/strong>: No<\/li><li><strong>pH Value<\/strong>: 5-7 (4wt％ water solution)<\/li><li><strong>Specific Weight<\/strong>: 1.1~1.3 g\/cm³<\/li><li><strong>Moisture Content<\/strong>: The moisture content varies according to the ambient temperature and humidity.<\/li><\/ul>",
+            "page": ""
+          }
+        },
+        "collapsible_row_wrCtxE": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Shipping Information",
+            "icon": "check_mark",
+            "row_content": "<p>Please refer to our <a href=\"\/pages\/shipping-information-usa\" title=\"Shipping Information - USA\">shipping page<\/a> for any questions about shipping. We offer overnight shipping in North America (<a href=\"\/pages\/shipping-information-usa\" title=\"Shipping Information - USA\">United States<\/a>, and <a href=\"\/pages\/shipping-information-canada\" title=\"Shipping Information - Canada\">Canada<\/a>). We offer <a href=\"\/pages\/shipping-information-international\" title=\"Shipping Information - International\">international shipping<\/a> to all continents. <\/p><p>Free shipping on orders over $99.99 in the United States and Canada.<\/p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "collapsible_row_j9rJhm",
+        "collapsible_row_kRpD9B",
+        "collapsible_row_LfUmxw",
+        "collapsible_row_wrCtxE"
+      ],
+      "settings": {
+        "caption": "",
+        "heading": "About Biodegradable Golf Balls",
+        "heading_size": "h1",
+        "heading_alignment": "center",
+        "layout": "row",
+        "color_scheme": "",
+        "container_color_scheme": "",
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "main",
+    "1722892051ab072ec8",
+    "related-products",
+    "rich_text_HR4BxE",
+    "rich_text_yB7EgM",
+    "rich_text_Hgiwng",
+    "collapsible_content_Jqhm4n"
+  ]
+}

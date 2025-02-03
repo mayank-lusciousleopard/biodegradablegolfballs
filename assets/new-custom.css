@@ -1,3 +1,6 @@
 .grid.collapsible-content__grid {
     display: flex;
 }
+.multicolumn-list__item .rte ul {
+    list-style: disc;
+}
