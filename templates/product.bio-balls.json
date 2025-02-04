@@ -50,37 +50,57 @@
         "padding_bottom": 28
       }
     },
-    "rich_text_HR4BxE": {
-      "type": "rich-text",
+    "multicolumn_LFe9LU": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_36bmQk": {
+          "type": "column",
+          "settings": {
+            "title": "Is it Safe to hit BGB Biodegradable Golf Balls® into Water?",
+            "text": "<p>We had the compound used to create our golf balls tested with an ISO Certified third party called SGS. There are no heavy metals and our balls are non-toxic to marine life after dissolving.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_xCcGUK": {
+          "type": "column",
+          "settings": {
+            "title": "Why Use Dissolvable Golf Balls?",
+            "text": "<ul><li>Water Golf (Water Front Driving Ranges)<\/li><li>Yacht Golf<\/li><li>Resort Golf Ranges<\/li><li>Unique Golf Party Experiences<\/li><li>Golfing Over Water Hazards<\/li><li>Setting Up Targets In Bodies Of Water<\/li><li>Sustainable Gifts<\/li><li>Eco Friendly Novelty Products<\/li><\/ul>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_y7MyFy": {
+          "type": "column",
+          "settings": {
+            "title": "What These Are Not For:",
+            "text": "<ul><li>Professional Golf Use<\/li><li>Playing a round of golf on greens<\/li><li>Evil people who want to destroy the world<\/li><li>Boring People<\/li><\/ul>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_36bmQk",
+        "column_xCcGUK",
+        "column_y7MyFy"
+      ],
       "settings": {
-        "content": "<h2>Is it Safe to hit BGB Biodegradable Golf Balls® into Water?<\/h2><p>We had the compound used to create our golf balls tested with an ISO Certified third party called SGS. There are no heavy metals and our balls are non-toxic to marine life after dissolving.<\/p>",
-        "margin_top": 0,
-        "margin_bottom": 20,
-        "margin_left": 0,
-        "margin_right": 0,
-        "text_size": 12
-      }
-    },
-    "rich_text_yB7EgM": {
-      "type": "rich-text",
-      "settings": {
-        "content": "<h2>Why Use Dissolvable Golf Balls?<\/h2><ul><li>Water Golf (Water Front Driving Ranges)<\/li><li>Yacht Golf<\/li><li>Resort Golf Ranges<\/li><li>Unique Golf Party Experiences<\/li><li>Golfing Over Water Hazards<\/li><li>Setting Up Targets In Bodies Of Water<\/li><li>Sustainable Gifts<\/li><li>Eco Friendly Novelty Products<\/li><\/ul>",
-        "margin_top": 20,
-        "margin_bottom": 20,
-        "margin_left": 0,
-        "margin_right": 0,
-        "text_size": 12
-      }
-    },
-    "rich_text_Hgiwng": {
-      "type": "rich-text",
-      "settings": {
-        "content": "<h2>What These Are Not For:<\/h2><ul><li>Professional Golf Use<\/li><li>Playing a round of golf on greens<\/li><li>Evil people who want to destroy the world<\/li><li>Boring People<\/li><\/ul>",
-        "margin_top": 20,
-        "margin_bottom": 20,
-        "margin_left": 0,
-        "margin_right": 0,
-        "text_size": 12
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "button_label": "Button label",
+        "button_link": "",
+        "color_scheme": "",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 0,
+        "padding_bottom": 36
       }
     },
     "collapsible_content_Jqhm4n": {
@@ -149,9 +169,7 @@
     "main",
     "1722892051ab072ec8",
     "related-products",
-    "rich_text_HR4BxE",
-    "rich_text_yB7EgM",
-    "rich_text_Hgiwng",
+    "multicolumn_LFe9LU",
     "collapsible_content_Jqhm4n"
   ]
 }

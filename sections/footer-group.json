@@ -48,8 +48,8 @@
         "x_url": "https:\/\/x.com\/biogolfballs",
         "whatsapp_url": "https:\/\/wa.me\/message\/MXYQGE5AXRLDF1",
         "youtube_url": "https:\/\/www.youtube.com\/@biodegradablegolfballs",
-        "newsletter_title": "Subscribe to the ECO-friendly newsletter",
-        "newsletter_subtitle": "Be the first to receive up-to-date information once a week at most.",
+        "newsletter_title": "Sign-Up Up For Deals and Receive 10% Off Your First Order!",
+        "newsletter_subtitle": "Sign-up for our monthly newsletter and receive 10% off your first order!",
         "email_placeholder": "Your email",
         "subscribe_button_text": "Subscribe",
         "contact_form_title": "DROP US A LINE",
@@ -82,7 +82,9 @@
         "tos_label": "T.O.S",
         "privacy_policy_label": "PRIVACY POLICY",
         "enable_country_selector": false,
-        "enable_language_selector": false
+        "enable_language_selector": false,
+        "section_margin_top": 0,
+        "section_margin_bottom": 0
       }
     }
   },

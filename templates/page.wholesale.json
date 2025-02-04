@@ -33,43 +33,45 @@
         "feature_hEATa7": {
           "type": "feature",
           "settings": {
-            "title": "Feature",
-            "icon": "{% render 'icon-present' %}"
+            "title": "Always In Stock",
+            "icon": "<svg class=\"icon icon-accordion\" aria-hidden=\"true\" focusable=\"false\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\" width=\"20\" height=\"20\" viewBox=\"0 0 20 20\"><path d=\"M9.69502 0.6786C9.91338 0.601796 10.1516 0.603123 10.3691 0.682353L18.2151 3.54058C18.61 3.68445 18.8728 4.05988 18.8728 4.48018V14.4287C18.8728 14.8074 18.6588 15.1537 18.32 15.3231L10.4731 19.2465C10.196 19.385 9.87022 19.3873 9.59117 19.2526L1.45405 15.3244C1.10843 15.1576 0.888794 14.8076 0.888794 14.4239V4.48434C0.888794 4.05997 1.15665 3.68181 1.55699 3.541L9.69502 0.6786ZM6.07999 3.01017L2.5346 4.25719L10.149 7.63545L13.5692 6.118L6.07999 3.01017ZM6.78606 2.76183L14.1997 5.83828L17.5367 4.35774L10.0268 1.62195L6.78606 2.76183ZM1.88879 14.4239L1.88879 5.06467L9.64898 8.50762V18.1701L1.88879 14.4239ZM17.8728 14.4287L10.649 18.0405V8.50762L17.8728 5.30263V14.4287Z\" fill-rule=\"evenodd\"><\/path><\/svg>"
           }
         },
         "feature_GXfqxB": {
           "type": "feature",
           "settings": {
-            "title": "Feature",
-            "icon": "{% render 'icon-present' %}"
+            "title": "In-House Printing",
+            "icon": "<svg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http:\/\/www.w3.org\/2000\/svg'>\n    <path d=\"M17.9404 9.55625L10.4404 2.05625C10.1988 1.81458 9.79877 1.81458 9.5571 2.05625L2.0571 9.55625C1.8821 9.73125 1.82377 10.0063 1.92377 10.2396C2.02377 10.4729 2.24877 10.6229 2.49877 10.6229H3.54044V15.8313C3.54044 17.0979 4.56544 18.1229 5.8321 18.1229H14.1654C15.4321 18.1229 16.4571 17.0979 16.4571 15.8313V10.6229H17.4988C17.7488 10.6229 17.9821 10.4729 18.0738 10.2396C18.1654 10.0063 18.1154 9.73958 17.9404 9.55625ZM15.8321 9.37292C15.4904 9.37292 15.2071 9.65625 15.2071 9.99792V15.8313C15.2071 16.4062 14.7404 16.8729 14.1654 16.8729H5.8321C5.2571 16.8729 4.79044 16.4062 4.79044 15.8313V9.99792C4.79044 9.65625 4.5071 9.37292 4.16544 9.37292H4.0071L9.99877 3.38125L15.9904 9.37292H15.8321ZM7.7071 9.99792V13.3313C7.7071 13.6729 7.99044 13.9563 8.3321 13.9563H11.6654C12.0071 13.9563 12.2904 13.6729 12.2904 13.3313V9.99792C12.2904 9.65625 12.0071 9.37292 11.6654 9.37292H8.3321C7.99044 9.37292 7.7071 9.65625 7.7071 9.99792ZM8.9571 10.6229H11.0404V12.7063H8.9571V10.6229Z\" fill=\"#000\"\/>\n<\/svg>"
           }
         },
         "feature_H6RtBT": {
           "type": "feature",
           "settings": {
-            "title": "Feature",
-            "icon": "{% render 'icon-present' %}"
+            "title": "Tiered Pricing",
+            "icon": "<svg class=\"icon icon-accordion\" aria-hidden=\"true\" focusable=\"false\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\" width=\"20\" height=\"20\" viewBox=\"0 0 20 20\"><path d=\"M1.16154 11.8423L8.09186 18.829C8.28991 19.0287 8.61108 19.0284 8.80882 18.8285L18.839 8.68572C18.9337 8.58998 18.9868 8.46032 18.9868 8.32514V1.53212C18.9868 1.25006 18.76 1.02141 18.4802 1.02141L11.387 1.02147C11.2527 1.02147 11.1238 1.07529 11.0288 1.17108L1.16151 11.1201C0.963704 11.3195 0.963715 11.6428 1.16154 11.8423ZM20 1.53212C20 0.685947 19.3196 -6.58649e-06 18.4802 0L11.387 5.82026e-05C10.9839 6.15389e-05 10.5973 0.161509 10.3123 0.448879L0.445049 10.3979C-0.148378 10.9962 -0.148346 11.9662 0.445123 12.5645L7.37544 19.5513C7.96958 20.1502 8.9331 20.1495 9.52633 19.5496L19.5565 9.40686C19.8405 9.11967 20 8.73068 20 8.32514V1.53212Z\" fill-rule=\"evenodd\"><\/path>\n      <path d=\"M15.9028 8.22958C14.7801 9.36148 12.9597 9.36148 11.837 8.22958C10.7142 7.09769 10.7142 5.26253 11.837 4.13064C12.9597 2.99875 14.7801 2.99875 15.9028 4.13064C17.0256 5.26253 17.0256 7.09769 15.9028 8.22958ZM12.5534 7.50734C13.2805 8.24034 14.4593 8.24034 15.1864 7.50734C15.9135 6.77433 15.9135 5.58589 15.1864 4.85289C14.4593 4.11988 13.2805 4.11988 12.5534 4.85289C11.8263 5.58589 11.8263 6.77433 12.5534 7.50734Z\"><\/path><\/svg>"
           }
         },
         "feature_GY4WHA": {
           "type": "feature",
           "settings": {
-            "title": "Feature",
-            "icon": "{% render 'icon-present' %}"
+            "title": "Same Day Shipping",
+            "icon": "<svg class=\"icon icon-accordion\" aria-hidden=\"true\" focusable=\"false\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\" width=\"20\" height=\"20\" viewBox=\"0 0 20 20\"><path d=\"M16.4116 2.07871C16.3845 2.09721 16.3574 2.11565 16.3303 2.13411C16.1517 2.25559 15.9719 2.37791 15.7837 2.52296L15.7773 2.52789C14.8355 3.23007 13.6039 4.27066 12.2818 5.4955C12.1614 5.60703 11.994 5.65239 11.8338 5.61687L3.68598 3.81033C3.60396 3.80009 3.57101 3.79608 3.53891 3.79608C3.32198 3.79608 3.11893 3.92321 3.0302 4.12886C2.92673 4.39247 3.02138 4.67552 3.23628 4.81149L3.24111 4.81454L8.61434 8.30083C8.741 8.38301 8.82374 8.51802 8.83947 8.66819C8.8552 8.81836 8.80223 8.96759 8.69534 9.07423L8.66991 9.09961C7.38122 10.4798 6.31043 11.7361 5.58838 12.7137C5.47003 12.8747 5.36378 13.0195 5.27879 13.1514C5.16553 13.3272 4.95486 13.4139 4.75068 13.3689L2.19767 12.8052C2.11507 12.7948 2.08257 12.7908 2.05053 12.7908C1.83353 12.7908 1.6304 12.918 1.54169 13.1236C1.44423 13.3719 1.52255 13.6375 1.71155 13.7811L4.70992 14.8869C4.84334 14.9361 4.9495 15.0398 5.00183 15.172L6.23217 18.2805C6.33749 18.4229 6.50021 18.5 6.6743 18.5C6.68974 18.5 6.70318 18.4991 6.71409 18.4977C6.75433 18.4624 6.80008 18.4337 6.84965 18.4128C7.09772 18.3083 7.23368 18.0443 7.17792 17.7789L7.17755 17.7772L6.60833 15.2112C6.56292 15.0066 6.65004 14.7953 6.82652 14.6821C6.90797 14.6299 6.97089 14.584 7.04582 14.5293C7.10751 14.4844 7.17733 14.4334 7.27233 14.3682C8.25973 13.6492 9.5053 12.5837 10.8878 11.2987L10.9132 11.2733C11.0198 11.1669 11.1687 11.1143 11.3185 11.13C11.4683 11.1457 11.603 11.2281 11.6853 11.3542L15.1827 16.7203C15.2864 16.8837 15.4603 16.9728 15.6474 16.9728C15.7137 16.9728 15.7958 16.9563 15.866 16.9273C16.1134 16.8225 16.2489 16.5588 16.1933 16.294L14.3782 8.1444C14.3425 7.9844 14.3876 7.8171 14.4987 7.69663C15.7202 6.37288 16.7705 5.15757 17.4604 4.21249L17.4689 4.20111C17.614 4.01381 17.7363 3.83484 17.8578 3.65697C17.8763 3.6299 17.8948 3.60285 17.9133 3.5758C18.0978 3.29428 18.3328 2.929 18.4428 2.55475C18.5482 2.19592 18.5158 1.92451 18.2922 1.70148C18.1713 1.58082 17.9849 1.5 17.7692 1.5C17.4882 1.5 17.1061 1.62056 16.4116 2.07871ZM11.1716 12.3976C9.92929 13.5361 8.79171 14.4994 7.85517 15.1808L7.84395 15.1889C7.79752 15.2208 7.73884 15.2628 7.67606 15.308C7.66979 15.3125 7.66348 15.3171 7.65713 15.3216L8.15558 17.5686C8.30356 18.2625 7.96934 18.9767 7.32384 19.2951C7.10254 19.4742 6.82781 19.5 6.6743 19.5C6.16465 19.5 5.66279 19.2521 5.36533 18.7835C5.34846 18.7569 5.33414 18.7288 5.32255 18.6996L4.15425 15.7478L1.30743 14.6979C1.27444 14.6858 1.24282 14.6701 1.2131 14.6513C0.56351 14.2403 0.341328 13.4303 0.615189 12.7472L0.618547 12.7388C0.868584 12.1463 1.44556 11.7908 2.05053 11.7908C2.15024 11.7908 2.24946 11.8035 2.31873 11.8124C2.32791 11.8136 2.33656 11.8147 2.34462 11.8157C2.36005 11.8177 2.37537 11.8203 2.39055 11.8237L4.63775 12.3198C4.68444 12.255 4.73137 12.1912 4.77648 12.1298L4.78291 12.1211L4.78359 12.1202C5.46491 11.1976 6.42874 10.0567 7.57005 8.81531L2.69897 5.65488C2.05143 5.24337 1.8302 4.43467 2.1037 3.75248L2.10706 3.74411C2.35707 3.15168 2.93387 2.79608 3.53891 2.79608C3.63888 2.79608 3.73821 2.8088 3.80785 2.81773C3.81678 2.81887 3.82523 2.81996 3.83313 2.82094C3.8487 2.82288 3.86417 2.82556 3.87949 2.82895L11.795 4.58399C13.0596 3.4216 14.2446 2.42349 15.1764 1.72853C15.3888 1.56496 15.5937 1.42564 15.7706 1.30538C15.7981 1.28666 15.8249 1.26841 15.851 1.2506L15.8574 1.24625C16.5966 0.758201 17.1851 0.5 17.7692 0.5C18.2292 0.5 18.6761 0.671867 18.9985 0.99357C19.5773 1.57101 19.566 2.27912 19.4022 2.83663C19.2467 3.36596 18.9337 3.8433 18.7575 4.11215L18.7411 4.13711C18.7231 4.16341 18.7045 4.19042 18.6855 4.21819C18.5656 4.39374 18.4268 4.59704 18.2639 4.80777C17.5744 5.7516 16.563 6.92641 15.411 8.182L17.1709 16.0836C17.3254 16.8078 16.9545 17.5539 16.2531 17.8493L16.2509 17.8503C16.0679 17.9263 15.8552 17.9728 15.6474 17.9728C15.1387 17.9728 14.6379 17.7259 14.3402 17.2591L11.1716 12.3976Z\"><\/path><\/svg>"
           }
         },
         "image_text_L3rtJf": {
           "type": "image_text",
           "settings": {
-            "title": "Image Title",
-            "subtitle": "Image Subtitle"
+            "image": "shopify:\/\/shop_images\/0336c57d-d4ea-48d9-bb9a-cec61eb59a74.jpg",
+            "title": "Resellers & Distros",
+            "subtitle": "Looking to resell our biodegradable golf balls?"
           }
         },
         "image_text_dhmbUQ": {
           "type": "image_text",
           "settings": {
-            "title": "Image Title",
-            "subtitle": "Image Subtitle"
+            "image": "shopify:\/\/shop_images\/20210901_113240.jpg",
+            "title": "Corporate Gifting",
+            "subtitle": "Custom Printed Event Gifts"
           }
         },
         "faq_ztaiaM": {
@@ -119,102 +121,6 @@
             "answer": "",
             "youtube_url": "https:\/\/www.youtube.com\/watch?v=048hzxBELB0"
           }
-        },
-        "faq_bpfnTN": {
-          "type": "faq",
-          "settings": {
-            "question": "Shipping Biodegradable Golf Balls Internationally",
-            "answer": "",
-            "youtube_url": "https:\/\/www.youtube.com\/watch?v=tlBqOSWMndA"
-          }
-        },
-        "faq_PL7xaT": {
-          "type": "faq",
-          "settings": {
-            "question": "Biodegradable Golf Balls Overnight Shipping",
-            "answer": "",
-            "youtube_url": "https:\/\/www.youtube.com\/watch?v=kODG6XPnXaQ"
-          }
-        },
-        "faq_9xTHha": {
-          "type": "faq",
-          "settings": {
-            "question": "How Long Does It Take To Ship My Order From biodegradablegolfballs.com",
-            "answer": "",
-            "youtube_url": "https:\/\/www.youtube.com\/watch?v=GcH5A2BPoTs"
-          }
-        },
-        "faq_zjXAtp": {
-          "type": "faq",
-          "settings": {
-            "question": "Where Can I Buy Biodegradable Golf Balls For Water?",
-            "answer": "FAQ Answer",
-            "youtube_url": "https:\/\/www.youtube.com\/watch?v=DCdbCJfueAg"
-          }
-        },
-        "faq_TgkCi9": {
-          "type": "faq",
-          "settings": {
-            "question": "Why Are Biodegradable Golf Balls So Expensive?",
-            "answer": "",
-            "youtube_url": "https:\/\/www.youtube.com\/watch?v=UoPZETurhS8"
-          }
-        },
-        "faq_Yqe3bf": {
-          "type": "faq",
-          "settings": {
-            "question": "Why You Shouldn't Hit Golf Balls Into Bodies Of Water",
-            "answer": "",
-            "youtube_url": "https:\/\/www.youtube.com\/watch?v=Jp62IVuTEPY"
-          }
-        },
-        "faq_XTWwNH": {
-          "type": "faq",
-          "settings": {
-            "question": "What Happens If An Animal Eats a Biodegradable Golf Ball?",
-            "answer": "",
-            "youtube_url": "https:\/\/www.youtube.com\/watch?v=jlAdx8JVH2U"
-          }
-        },
-        "faq_gRj3pX": {
-          "type": "faq",
-          "settings": {
-            "question": "Do Biodegradable Golf Balls Perform As Well as Professional Green Balls?",
-            "answer": "",
-            "youtube_url": "https:\/\/www.youtube.com\/watch?v=lWtN2NI9_Hw"
-          }
-        },
-        "faq_zMmkgX": {
-          "type": "faq",
-          "settings": {
-            "question": "What Are Biodegradable Golf Balls Made Of?",
-            "answer": "",
-            "youtube_url": "https:\/\/www.youtube.com\/watch?v=F3O3VdL-62w"
-          }
-        },
-        "faq_Mr7AbW": {
-          "type": "faq",
-          "settings": {
-            "question": "Do Biodegradable Golf Balls Dissolve on Land?",
-            "answer": "",
-            "youtube_url": "https:\/\/www.youtube.com\/watch?v=gIg8nisjtqA"
-          }
-        },
-        "faq_Xw9abF": {
-          "type": "faq",
-          "settings": {
-            "question": "How Long Biodegradable Golf Balls Take to Dissolve?",
-            "answer": "",
-            "youtube_url": "https:\/\/www.youtube.com\/watch?v=5v8QXrQLaaI"
-          }
-        },
-        "faq_6hBdNP": {
-          "type": "faq",
-          "settings": {
-            "question": "What Are Biodegradable Golf Balls? | Sustainable Golf For a Sustainable Future",
-            "answer": "",
-            "youtube_url": "https:\/\/www.youtube.com\/watch?v=qND_we1iOG4"
-          }
         }
       },
       "block_order": [
@@ -229,27 +135,15 @@
         "faq_A6pAVX",
         "faq_rD3LHn",
         "faq_jbnQ96",
-        "faq_H3VtHC",
-        "faq_bpfnTN",
-        "faq_PL7xaT",
-        "faq_9xTHha",
-        "faq_zjXAtp",
-        "faq_TgkCi9",
-        "faq_Yqe3bf",
-        "faq_XTWwNH",
-        "faq_gRj3pX",
-        "faq_zMmkgX",
-        "faq_Mr7AbW",
-        "faq_Xw9abF",
-        "faq_6hBdNP"
+        "faq_H3VtHC"
       ],
       "settings": {
         "margin_top": 16,
         "margin_bottom": 100,
-        "title": "Wholesale offer",
-        "subtitle": "Sustainable Solution for Your Business",
+        "title": "Wholesale Biodegradable Golf Balls",
+        "subtitle": "Bulk Tiered Pricing Available",
         "form_title": "WHOLESALE INQUIRY",
-        "description": "<p>We are proud to offer you an innovative and sustainable solution for your golf business. Our biodegradable balls are made from materials that easily decompose in water, meaning they leave no unwanted waste in the environment.<\/p><p>This eco-friendly approach not only helps protect the environment but also brings many benefits to your business. The balls are of high quality and deliver excellent performance during play. Through our wholesale offer, you can acquire these balls in larger quantities at competitive prices. Additionally, as a wholesale customer, you will have access to our outstanding customer service and flexible ordering options. Join us in supporting sustainability in the golf industry while gaining advantages for your wholesale business.<\/p>"
+        "description": "<p>Wholesale and Distributor pricing available upon request. Please fill out the form on the page to get a quote.<br\/><br\/><strong>Bulk No Packaging Wholesale:<\/strong><br\/>We offer tiered bulk pricing on orders over 1,000 balls. <br\/><br\/><strong>Retail Packaging Wholesale:<br\/><\/strong>If you're looking to resell, dropship, or distribute BGB Biodegradable Golf Balls® we offer discounts for verified businesses on quantity tiered pricing.<br\/><br\/><strong>Personalization \/ Branding Available:<\/strong><br\/>We do all of our own in-house golf ball personalization. If you require logos or markings for brand awareness, corporate sustainable gifting, or any other reason please make sure to email or <a href=\"\/pages\/contact-us\" title=\"Contact\">contact us<\/a> at hello@biodegradablegolfballs.com for more information.<br\/><br\/><strong>Frequently Asked Questions:<br\/><\/strong><em>We have help resource pages available for the following.<\/em><\/p><ul><li><a href=\"\/pages\/custom-biodegradable-golf-balls\" title=\"Custom Printing\">Custom Order Lead Times & Print Specifications<\/a><\/li><li><a href=\"\/pages\/shipping-information-usa\" title=\"Shipping Information - USA\">Shipping USA<\/a><\/li><li><a href=\"\/pages\/shipping-information-canada\" title=\"Shipping Information - Canada\">Shipping Canada<\/a><\/li><li><a href=\"\/pages\/shipping-information-international\" title=\"Shipping Information - International\">International Shipping<\/a><\/li><\/ul>"
       }
     }
   },

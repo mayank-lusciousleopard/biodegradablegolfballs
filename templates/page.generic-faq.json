@@ -1,0 +1,108 @@
+{
+  "sections": {
+    "collapsible_content_nnDk7z": {
+      "type": "collapsible-content",
+      "blocks": {
+        "collapsible_row_JKqBwB": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "How Long Do Biodegradable Golf Balls Take To Dissolve?",
+            "icon": "question_mark",
+            "row_content": "<p>Only about 2 weeks when submerged in water! If the water is warmer it may speed up the process & if it’s cold it may take a bit longer.<\/p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_hCNHpJ": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Why Are Biodegradable Golf Balls So Expensive?",
+            "icon": "question_mark",
+            "row_content": "<p>Our biodegradable golf balls are very competitively priced, if not the best price on the market. We are always looking to create the best product at the cheapest price point for our customers.<\/p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_UfPh4K": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Will They Dissolve On Land?",
+            "icon": "question_mark",
+            "row_content": "<p>Yup! Generally, they’ll take 6 months to a year but the biome they’re dissolving in will dictate how long it takes. If the region you’re in is very wet with lots of precipitation it may take a shorter amount of time. A hotter, drier climate may take longer.<\/p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_dMYLHz": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Where To buy Biodegradable Golf Balls",
+            "icon": "question_mark",
+            "row_content": "<p>Currently, we’re the world’s top manufacturer of biodegradable golf balls! Currently, you can purchase our product from our website www.biodegradablegolfballs.com, <a href=\"https:\/\/amazon.com\/biodegradablegolfballs\">Amazon USA<\/a>, or <a href=\"https:\/\/amazon.ca\/biodegradablegolfballs\">Amazon Canada.<\/a><\/p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_8AytiC": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "What Are Biodegradable Golf Balls Made From?",
+            "icon": "question_mark",
+            "row_content": "<p>Currently, we’re the world’s top manufacturer of biodegradable golf balls! Currently, you can purchase our product from our website www.biodegradablegolfballs.com, <a href=\"https:\/\/amazon.com\/biodegradablegolfballs\">Amazon USA<\/a>, or <a href=\"https:\/\/amazon.ca\/biodegradablegolfballs\">Amazon Canada.<\/a><\/p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_tBPTr3": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Where To buy Biodegradable Golf Balls",
+            "icon": "question_mark",
+            "row_content": "<p>Currently, we’re the world’s top manufacturer of biodegradable golf balls! Currently, you can purchase our product from our website www.biodegradablegolfballs.com, <a href=\"https:\/\/amazon.com\/biodegradablegolfballs\">Amazon USA<\/a>, or <a href=\"https:\/\/amazon.ca\/biodegradablegolfballs\">Amazon Canada.<\/a><\/p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_praAhJ": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Where To buy Biodegradable Golf Balls",
+            "icon": "question_mark",
+            "row_content": "<p>Currently, we’re the world’s top manufacturer of biodegradable golf balls! Currently, you can purchase our product from our website www.biodegradablegolfballs.com, <a href=\"https:\/\/amazon.com\/biodegradablegolfballs\">Amazon USA<\/a>, or <a href=\"https:\/\/amazon.ca\/biodegradablegolfballs\">Amazon Canada.<\/a><\/p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_c4hDnr": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Where To buy Biodegradable Golf Balls",
+            "icon": "question_mark",
+            "row_content": "<p>Currently, we’re the world’s top manufacturer of biodegradable golf balls! Currently, you can purchase our product from our website www.biodegradablegolfballs.com, <a href=\"https:\/\/amazon.com\/biodegradablegolfballs\">Amazon USA<\/a>, or <a href=\"https:\/\/amazon.ca\/biodegradablegolfballs\">Amazon Canada.<\/a><\/p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "collapsible_row_JKqBwB",
+        "collapsible_row_hCNHpJ",
+        "collapsible_row_UfPh4K",
+        "collapsible_row_dMYLHz",
+        "collapsible_row_8AytiC",
+        "collapsible_row_tBPTr3",
+        "collapsible_row_praAhJ",
+        "collapsible_row_c4hDnr"
+      ],
+      "settings": {
+        "caption": "",
+        "heading": "Frequently Asked Questions",
+        "heading_size": "h0",
+        "heading_alignment": "left",
+        "layout": "none",
+        "color_scheme": "",
+        "container_color_scheme": "",
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 36,
+        "padding_bottom": 100
+      }
+    }
+  },
+  "order": [
+    "collapsible_content_nnDk7z"
+  ]
+}

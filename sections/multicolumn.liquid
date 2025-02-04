@@ -24,7 +24,7 @@
 -%}
 
 <div class='bg-{{ section.settings.color_scheme }} py-{{ section.settings.padding_top }} px-[16px] md:px-[80px]  section-{{ section.id }}-padding'>
-    <div class='max-w-screen-xl mx-auto'>
+    <div class='mx-auto'>
         {%- unless section.settings.title == blank -%}
             <div class='text-center mb-6'>
                 <h2 class='text-{{ section.settings.heading_size }} font-bold {{ section.settings.heading_size }}'>{{ section.settings.title }}</h2>

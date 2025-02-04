@@ -212,7 +212,7 @@
                         {% endfor %}
                     </div>
 
-                    <div class='col-span-4 flex flex-col gap-[24px]'>
+                    <div class='rte col-span-4 flex flex-col gap-[24px]'>
                         {{ section.settings.description }}
                     </div>
                 </div>
@@ -230,8 +230,8 @@
                     >
                     <input
                         type='text'
-                        name='company'
-                        placeholder='Company'
+                        name='country'
+                        placeholder='Country'
                         class='py-[6px] h-[48px] px-[16px] rounded-[8px] bg-surface-primary border-tertiary border-[1px] outline-none shadow-none w-full'
                     >
                     <input
@@ -259,7 +259,12 @@
                         class='py-[6px] h-[80px] px-[16px] rounded-[8px] bg-surface-primary border-tertiary border-[1px] outline-none shadow-none w-full resize-none'
                     ></textarea>
                 </div>
-
+              {% comment %}
+                <label class="my-newsletter-checkbox" for="my-news">
+                    <input type="checkbox" name="my-news" id="my-news"/>
+                    <span>Do you need a logo or customization added?</span>
+                  </label>
+                  {% endcomment %}
                 <button
                     type='submit'
                     class='w-fit bg-surface-primary-active text-text-secondary-active font-bold text-[16px] rounded-[8px] px-[24px] py-[12px]'

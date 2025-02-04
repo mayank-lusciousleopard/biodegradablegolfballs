@@ -88,46 +88,6 @@
         "padding_top": 40,
         "padding_bottom": 52
       }
-    },
-    "action_cards_section_knd37L": {
-      "type": "action-cards-section",
-      "blocks": {
-        "card_qEHhEr": {
-          "type": "card",
-          "settings": {
-            "title": "Card Title",
-            "subtitle": "",
-            "button_text": ""
-          }
-        },
-        "card_Nmhykp": {
-          "type": "card",
-          "settings": {
-            "title": "Card Title",
-            "subtitle": "",
-            "button_text": ""
-          }
-        },
-        "card_TRrFnT": {
-          "type": "card",
-          "settings": {
-            "title": "Card Title",
-            "subtitle": "",
-            "button_text": ""
-          }
-        }
-      },
-      "block_order": [
-        "card_qEHhEr",
-        "card_Nmhykp",
-        "card_TRrFnT"
-      ],
-      "settings": {
-        "title": "Action Cards",
-        "card_count": 3,
-        "margin_top": 0,
-        "margin_bottom": 100
-      }
     }
   },
   "order": [
@@ -138,7 +98,6 @@
     "info_box_section_tnVt3F",
     "custom_liquid_qCxbHH",
     "custom_liquid_GtLyW7",
-    "custom_liquid_JwWjdw",
-    "action_cards_section_knd37L"
+    "custom_liquid_JwWjdw"
   ]
 }

@@ -4,3 +4,12 @@
 .multicolumn-list__item .rte ul {
     list-style: disc;
 }
+p a {
+    text-decoration: underline;
+}
+.rte ul {
+    list-style: disc;
+}
+.rte a {
+    text-decoration: underline;
+}
