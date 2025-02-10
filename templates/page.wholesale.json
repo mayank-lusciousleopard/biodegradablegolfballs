@@ -63,7 +63,8 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/0336c57d-d4ea-48d9-bb9a-cec61eb59a74.jpg",
             "title": "Resellers & Distros",
-            "subtitle": "Looking to resell our biodegradable golf balls?"
+            "subtitle": "Looking to resell our biodegradable golf balls?",
+            "link": "shopify:\/\/pages\/biodegradable-golf-balls-bulk"
           }
         },
         "image_text_dhmbUQ": {
@@ -71,7 +72,8 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/20210901_113240.jpg",
             "title": "Corporate Gifting",
-            "subtitle": "Custom Printed Event Gifts"
+            "subtitle": "Custom Printed Event Gifts",
+            "link": "shopify:\/\/pages\/sustainable-corporate-gifts"
           }
         },
         "faq_ztaiaM": {

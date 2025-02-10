@@ -163,7 +163,7 @@
     <div class='flex flex-col gap-[24px]'>
       <p class='text-text-primary font-bold text-[32px]'>{{ section.settings.title }}</p>
 
-      <div class='grid grid-cols-2 md:grid-cols-4'>
+      <div class='grid grid-cols-2 md:grid-cols-4 gap-[16px]'>
         <div class='bg-surface-background rounded-[16px] px-[24px] py-[16px] flex items-center justify-center gap-[8px] flex-col'>
           {% render 'icon-present' %}
           <p class='text-text-primary text-[14px] font-bold text-center'>Great as a gift</p>
@@ -174,7 +174,7 @@
         </div>
         <div class='bg-surface-background rounded-[16px] px-[24px] py-[16px] flex items-center justify-center gap-[8px] flex-col'>
           {% render 'icon-truck' %}
-          <p class='text-text-primary text-[14px] font-bold text-center'>2-3 days delivery</p>
+          <p class='text-text-primary text-[14px] font-bold text-center'>2-3 Day Turnaround</p>
         </div>
         <div class='bg-surface-background rounded-[16px] px-[24px] py-[16px] flex items-center justify-center gap-[8px] flex-col'>
           {% render 'icon-discount-small' %}
@@ -407,7 +407,7 @@
       </div>
     </div>
     {% comment %} IMAGE PREVIEW PC {% endcomment %}
-    <div class='hidden lg:!flex bg-surface-background relative items-center justify-center rounded-[16px] max-h-[500px] mt-[32px] md:mt-0 p-[20px]'>
+    <div class='hidden lg:!flex bg-surface-background relative items-center justify-center rounded-[16px] max-h-[500px] mt-[32px] md:mt-0 p-[20px] ' style="display: flex;justify-content: flex-start;">
       <p class='absolute top-[10px] left-[10px] md:top-[30px] md:left-[32px] font-bold text-[20px] text-text-primary'>
         {{ section.settings.preview_title }}
       </p>
@@ -419,10 +419,10 @@
         width='100%'
         height='100%'>
 
-      <p class='absolute left-[125px] font-medium text-[18px] text-text-primary'>.75"</p>
-      <p class='absolute top-[120px] font-medium text-[18px] text-text-primary'>.75"</p>
+      <p class='absolute left-[125px] font-medium text-[18px] text-text-primary' style="left:50px;">.75"</p>
+      <p class='absolute top-[120px] font-medium text-[18px] text-text-primary' style="left:170px;">.75"</p>
 
-      <div class='absolute size-[200px]  rounded-lg  '>
+      <div class='absolute size-[200px]  rounded-lg' style="left:90px;">
         <img
           src='{{ 'border-view.png' | asset_url }}'
           alt='Golf ball'
@@ -430,7 +430,7 @@
           width='100%'
           height='100%'>
       </div>
-      <div class='absolute size-[197px] rounded-lg'>
+      <div class='absolute size-[197px] rounded-lg' style="left:92px;">
         <div class='relative'>
           <img
             src=''

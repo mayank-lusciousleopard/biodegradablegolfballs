@@ -96,6 +96,17 @@
                   >
                     {{ block.settings.row_content }}
                     {{ block.settings.page.content }}
+                    {% if block.settings.youtube_url != blank %}
+                            <div class='relative w-full h-[496px]' style='max-width: 100%;margin-top: 15px;'>
+                                <iframe
+                                    src='https://www.youtube.com/embed/{{ block.settings.youtube_url | split: 'v=' | last }}'
+                                    class='w-full h-full rounded-t-lg'
+                                    frameborder='0'
+                                    allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
+                                    allowfullscreen
+                                ></iframe>
+                            </div>
+                        {% endif %}
                   </div>
                 </details>
               </div>
@@ -482,7 +493,13 @@
           "type": "page",
           "id": "page",
           "label": "t:sections.collapsible_content.blocks.collapsible_row.settings.page.label"
-        }
+        },
+                {
+                    "type": "text",
+                    "id": "youtube_url",
+                    "label": "YouTube Video URL",
+                    "info": "Example: https://www.youtube.com/watch?v=XXXXXXXXXXXX"
+                }
       ]
     }
   ],

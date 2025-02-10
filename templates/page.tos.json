@@ -1,0 +1,157 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "privacy_policy_KfbWda": {
+      "type": "privacy-policy",
+      "blocks": {
+        "content_section_d6jF6q": {
+          "type": "content_section",
+          "settings": {
+            "section_title": "1. Company Information",
+            "section_content": "<ul><li><strong>Business Name: <\/strong>BIODEGRADABLE GOLF CANADA INC.<\/li><li><strong>Business Address: <\/strong>3200 E Broadway<\/li><li>Bay 2, Vancouver, BC V5M 1Z8<\/li><li><strong>Email: <\/strong>hello@biodegradablegolfballs.com<\/li><li><strong>Phone:<\/strong> 1 (604) 600-4347<\/li><li><strong>Jurisdiction:<\/strong> British Columbia, Canada<\/li><\/ul>"
+          }
+        },
+        "content_section_cxAntq": {
+          "type": "content_section",
+          "settings": {
+            "section_title": "2. Acceptance of Terms",
+            "section_content": "<p>By browsing, accessing, or purchasing from our website, you agree to be bound by these Terms of Service. If you do not agree to these terms, please do not use our website.<\/p>"
+          }
+        },
+        "content_section_n3RUVy": {
+          "type": "content_section",
+          "settings": {
+            "section_title": "3. Product Information and Disclaimers",
+            "section_content": "<p>Our products are designed for <strong>novelty purposes only<\/strong> and are <strong>not intended for professional or competitive use<\/strong>.<\/p><p><strong>Environmental Disclaimer:<\/strong> We hold no liability for how you use the product. It is your responsibility to verify local regulations in your province, state, or country before use.<\/p><p><strong>Guarantee of Performance:<\/strong> These are novelty golf balls and will perform approximately <strong>30% less effectively than standard green-use balls<\/strong>. They are <strong>not a replacement<\/strong> for traditional golf balls.<\/p>"
+          }
+        },
+        "content_section_MydHtM": {
+          "type": "content_section",
+          "settings": {
+            "section_title": "4. Payment Terms",
+            "section_content": "<p>We accept the following payment methods:<\/p><ul><li>Credit Card (Visa, Mastercard)<\/li><li>PayPal<\/li><li>Visa Debit<\/li><li>Cheque (Orders processed after clearing)<\/li><\/ul>"
+          }
+        },
+        "content_section_nh7nqf": {
+          "type": "content_section",
+          "settings": {
+            "section_title": "Refunds and Exchanges:",
+            "section_content": "<p>30-day refund policy for products returned in <strong>original, untampered packaging<\/strong>.<br\/><br\/>$10.00 restocking fee applies to all returns.<br\/><br\/>24 hours of placement unless they're custom orders. Personalized golf ball orders must be cancelled within 6 hours after order is placed.<br\/><\/p>"
+          }
+        },
+        "content_section_fiKnbV": {
+          "type": "content_section",
+          "settings": {
+            "section_title": "5. Shipping and Delivery",
+            "section_content": "<p><strong>Shipping Carriers:<\/strong><\/p><p>UPS, USPS, Canada Post, FedEx, Purolator, Canpar.<\/p><p><strong>International Shipping:<\/strong><br\/>Duties and customs fees are the responsibility of the customer.<\/p><p><strong>Lost or Damaged Shipments:<\/strong><\/p><p>We are <strong>not liable<\/strong> for lost, stolen, or damaged shipments. not liable for lost, stolen, or damaged shipments.<br\/><\/p><p><strong>Local Pick-Up:<\/strong><\/p><p>Local pick-up is <strong>not available<\/strong>.<br\/><\/p>"
+          }
+        },
+        "content_section_hTTKii": {
+          "type": "content_section",
+          "settings": {
+            "section_title": "6. Intellectual Property",
+            "section_content": "<p>BGB Biodegradable Golf Balls is a <strong>registered trademark<\/strong> in the United States (US Serial Number: 97671719). All <strong>media, designs, and content<\/strong> on this website are owned by Biodegradable Golf Canada Inc. and may <strong>not be copied, reproduced, or resold<\/strong> without written permission.<\/p>"
+          }
+        },
+        "content_section_MMnfXR": {
+          "type": "content_section",
+          "settings": {
+            "section_title": "7. User Responsibilities",
+            "section_content": "<ul><li>Users <strong>may not resell products<\/strong> without written authorization.<\/li><li>Users must verify that <strong>images uploaded for customizations<\/strong> are owned by them or that they have obtained the necessary rights to use them.<\/li><\/ul>"
+          }
+        },
+        "content_section_wDXzhk": {
+          "type": "content_section",
+          "settings": {
+            "section_title": "8. Limitation of Liability",
+            "section_content": "<p>Biodegradable Golf Canada Inc. is <strong>not responsible for injuries, damages, or accidents<\/strong> resulting from product use.<\/p><p><strong>Maximum Liability:<\/strong> Our liability is limited to the <strong>total purchase amount<\/strong> of the order.<\/p>"
+          }
+        },
+        "content_section_yw4yfp": {
+          "type": "content_section",
+          "settings": {
+            "section_title": "9. Data Privacy",
+            "section_content": "<p>We collect and store personal data to fulfill orders and improve services. Any images uploaded for customization must be owned or licensed by the customer. By uploading images, you grant us permission to <strong>reuse designs for marketing purposes<\/strong>.<\/p>"
+          }
+        },
+        "content_section_BdqcTD": {
+          "type": "content_section",
+          "settings": {
+            "section_title": "10. Modifications to Terms",
+            "section_content": "<p>We reserve the right to <strong>update or modify these terms at any time<\/strong>. Changes will be posted on this page, and continued use of the site constitutes acceptance of the revised terms.<\/p>"
+          }
+        },
+        "content_section_FXTLH7": {
+          "type": "content_section",
+          "settings": {
+            "section_title": "11. No Warranty",
+            "section_content": "<p>We <strong>do not offer warranties<\/strong> on products. All products are sold <strong>as-is<\/strong> without guarantees of performance.<\/p>"
+          }
+        },
+        "content_section_W38Eb3": {
+          "type": "content_section",
+          "settings": {
+            "section_title": "12. Custom Orders and Printing Discrepancies",
+            "section_content": "<p>We strive to meet all custom printing requests but cannot guarantee exact matches due to the nature of the printing process. Customers <strong>assume responsibility<\/strong> for ensuring all uploaded images are legal and owned by them. Printed balls can be different than the uploaded version. You understand that the print can be different from the original image you uploaded. <\/p>"
+          }
+        },
+        "content_section_AT3b9X": {
+          "type": "content_section",
+          "settings": {
+            "section_title": "13. Governing Law and Disputes",
+            "section_content": "<p>These Terms of Service are governed by the laws of <strong>British Columbia, Canada<\/strong>. Any disputes shall be resolved through <strong>arbitration or mediation<\/strong> before proceeding to litigation.<\/p>"
+          }
+        },
+        "content_section_FKF9JK": {
+          "type": "content_section",
+          "settings": {
+            "section_title": "14. Force Majeure",
+            "section_content": "<p>We are not liable for delays or failures caused by events beyond our control, including but not limited to <strong>natural disasters, strikes, and pandemics<\/strong>.<\/p>"
+          }
+        },
+        "content_section_8hYURC": {
+          "type": "content_section",
+          "settings": {
+            "section_title": "Contact Information",
+            "section_content": "<p>For questions about these Terms of Service, please contact us at:<br\/><\/p><ul><li><strong>Email: <\/strong><a>hello@biodegradablegolfballs.com<\/a><\/li><li><strong>Phone:<\/strong> 1 (604) 600-4347<\/li><li><strong>Address:<\/strong> 3200 E Broadway Bay 2, Vancouver, BC V5M 1Z8<\/li><\/ul>"
+          }
+        }
+      },
+      "block_order": [
+        "content_section_d6jF6q",
+        "content_section_cxAntq",
+        "content_section_n3RUVy",
+        "content_section_MydHtM",
+        "content_section_nh7nqf",
+        "content_section_fiKnbV",
+        "content_section_hTTKii",
+        "content_section_MMnfXR",
+        "content_section_wDXzhk",
+        "content_section_yw4yfp",
+        "content_section_BdqcTD",
+        "content_section_FXTLH7",
+        "content_section_W38Eb3",
+        "content_section_AT3b9X",
+        "content_section_FKF9JK",
+        "content_section_8hYURC"
+      ],
+      "settings": {
+        "main_title": "Terms Of Service",
+        "subtitle": "Last Updated: January 7, 2025",
+        "section_margin_top": 32,
+        "section_margin_bottom": 32
+      }
+    }
+  },
+  "order": [
+    "main",
+    "privacy_policy_KfbWda"
+  ]
+}

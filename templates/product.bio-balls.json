@@ -50,10 +50,10 @@
         "padding_bottom": 28
       }
     },
-    "multicolumn_LFe9LU": {
-      "type": "multicolumn",
+    "normal_multicolumn_MpgFVw": {
+      "type": "normal-multicolumn",
       "blocks": {
-        "column_36bmQk": {
+        "column_JNkGp6": {
           "type": "column",
           "settings": {
             "title": "Is it Safe to hit BGB Biodegradable Golf Balls® into Water?",
@@ -62,7 +62,7 @@
             "link": ""
           }
         },
-        "column_xCcGUK": {
+        "column_hCK3RJ": {
           "type": "column",
           "settings": {
             "title": "Why Use Dissolvable Golf Balls?",
@@ -71,7 +71,7 @@
             "link": ""
           }
         },
-        "column_y7MyFy": {
+        "column_eXN4EA": {
           "type": "column",
           "settings": {
             "title": "What These Are Not For:",
@@ -82,19 +82,19 @@
         }
       },
       "block_order": [
-        "column_36bmQk",
-        "column_xCcGUK",
-        "column_y7MyFy"
+        "column_JNkGp6",
+        "column_hCK3RJ",
+        "column_eXN4EA"
       ],
       "settings": {
-        "title": "",
+        "title": "Our Biodegradable Golf Balls",
         "heading_size": "h1",
         "image_width": "full",
         "image_ratio": "adapt",
         "columns_desktop": 3,
         "column_alignment": "left",
         "background_style": "primary",
-        "button_label": "Button label",
+        "button_label": "",
         "button_link": "",
         "color_scheme": "",
         "columns_mobile": "1",
@@ -161,7 +161,7 @@
         "image_ratio": "adapt",
         "desktop_layout": "image_second",
         "padding_top": 36,
-        "padding_bottom": 36
+        "padding_bottom": 88
       }
     }
   },
@@ -169,7 +169,7 @@
     "main",
     "1722892051ab072ec8",
     "related-products",
-    "multicolumn_LFe9LU",
+    "normal_multicolumn_MpgFVw",
     "collapsible_content_Jqhm4n"
   ]
 }

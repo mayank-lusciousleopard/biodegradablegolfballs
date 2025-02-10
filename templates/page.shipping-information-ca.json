@@ -12,8 +12,8 @@
       "settings": {
         "custom_class": "",
         "redirect_url": "",
-        "image": "shopify:\/\/shop_images\/UnitedStates_ShippingInformation_Biodegradable-Golf-Balls.jpg",
-        "mobile_image": "shopify:\/\/shop_images\/UnitedStates_ShippingInformation_Biodegradable-Golf-Balls.jpg",
+        "image": "shopify:\/\/shop_images\/Canadian-Shipping-Times_Biodegradable-Golf-Balls_0c4c6009-9f20-4b8e-964a-678a51dcb307.jpg",
+        "mobile_image": "shopify:\/\/shop_images\/Canadian-Shipping-Times_Biodegradable-Golf-Balls_0c4c6009-9f20-4b8e-964a-678a51dcb307.jpg",
         "variant_id": "",
         "image_overlay_opacity": 0,
         "image_height": "adapt",
@@ -33,8 +33,8 @@
         "column_CPEHxw": {
           "type": "column",
           "settings": {
-            "title": "<em>West Coast - USA<\/em>",
-            "text": "<p><strong>Standard Shipping:<\/strong><\/p><ul><li><em>Cost: $9.99<\/em><\/li><li><em>Approx: 3 - 8 Business Days<\/em><\/li><\/ul><p><strong><br\/>Express Shipping:<\/strong><\/p><ul><li><em>Cost: $14.99<\/em><\/li><li><em>Approx: 2 - 3 Business Days<\/em><\/li><\/ul><p><strong><br\/>Overnight Shipping:<\/strong><\/p><ul><li><em>Cost: $39.99<\/em><\/li><li><em>Approx: 1 - 2 Day Shipping<\/em><\/li><\/ul><p><em><br\/>*Free Standard shipping over $99.99<\/em><\/p>",
+            "title": "<em>Western Canada<\/em>",
+            "text": "<p><strong>Standard Shipping :<\/strong><\/p><ul><li><em>Cost: $9.99<\/em><\/li><li><em>Approx: 3 - 7 Business Days<\/em><\/li><\/ul><p><em><br\/><\/em><strong>Express Shipping:<\/strong><\/p><ul><li><em>Cost: $14.99<\/em><\/li><li><em>Approx: 1 - 2 Business Days<\/em><\/li><\/ul><p><em><br\/>Provinces Include:<\/em><\/p><ul><li>British Columbia<\/li><li>Alberta<\/li><li>Saskatchewan<\/li><li>Manitoba<\/li><\/ul><p><em><br\/>*Free Standard shipping over $99.9<\/em><\/p>",
             "link_label": "",
             "link": ""
           }
@@ -42,8 +42,8 @@
         "column_zxcqkF": {
           "type": "column",
           "settings": {
-            "title": "<em>Mid West \/ South West - USA<\/em>",
-            "text": "<p><strong>Standard Shipping:<\/strong><\/p><ul><li><em>Cost: $9.99<\/em><\/li><li><em>Approx: 3 - 8 Business Days<\/em><\/li><\/ul><p><strong><br\/>Express Shipping:<\/strong><\/p><ul><li><em>Cost: $16.99<\/em><\/li><li><em>Approx: 2- 4 Business Days<\/em><\/li><\/ul><p><strong><br\/>Overnight Shipping:<\/strong><\/p><ul><li><em>Cost: $39.99<\/em><\/li><li><em>Approx: 1- 2 Day Shipping<\/em><\/li><\/ul><p><em><br\/>*Free Standard shipping over $99.99<\/em><\/p>",
+            "title": "<em>Eastern Canada<\/em>",
+            "text": "<p><strong>Standard Shipping:<\/strong><\/p><ul><li><em>Cost: $9.99<\/em><\/li><li><em>Approx: 4 - 7 Business Days<\/em><\/li><\/ul><p><strong><br\/>Express Shipping:<\/strong><\/p><ul><li><em>Cost: $17.50<\/em><\/li><li><em>Approx: 1 - 3 Business Days<\/em><\/li><\/ul><p><em><br\/>Provinces Include:<\/em><\/p><ul><li>Ontario<\/li><li>Quebec<\/li><li>New Brunswick<\/li><li>Newfoundland<\/li><li>Nova Scotia<\/li><li>Prince Edward Island<\/li><\/ul><p><em><br\/>*Free Standard shipping over $99.99<\/em><\/p>",
             "link_label": "",
             "link": ""
           }
@@ -51,8 +51,8 @@
         "column_PYfWnM": {
           "type": "column",
           "settings": {
-            "title": "<em>East Coast \/ Southern - USA<\/em>",
-            "text": "<p><strong>Standard Shipping:<\/strong><\/p><ul><li><em>Cost: $9.99<\/em><\/li><li><em>Approx: 5 - 9 Business Days<\/em><\/li><\/ul><p><strong><br\/>Express Shipping:<\/strong><\/p><ul><li><em>Cost: $17.99<\/em><\/li><li><em>Approx: 3 - 5 Business Days<\/em><\/li><\/ul><p><strong><br\/>Overnight Shipping<\/strong><\/p><ul><li><em>Cost: $39.99<\/em><\/li><li><em>Approx: 1 - 3 Business Days<\/em><\/li><\/ul><p><em><br\/>*Free Standard shipping over $99.99<\/em><\/p>",
+            "title": "<em>Territories<\/em>",
+            "text": "<p><strong>Standard Shipping:<\/strong><\/p><ul><li><em>Cost: $19.99<\/em><\/li><li><em>Approx: 3 - 9 Business Days<\/em><\/li><\/ul><p><em><br\/>Territories Include:<\/em><\/p><ul><li>Yukon<\/li><li>Northwest Territories<\/li><li>Nunavut<\/li><\/ul><p><em><br\/>*Free Standard shipping over $99.99<\/em><\/p>",
             "link_label": "",
             "link": ""
           }
@@ -64,7 +64,7 @@
         "column_PYfWnM"
       ],
       "settings": {
-        "title": "Shipping Zones \/ Information",
+        "title": "Canadian Shipping Zones \/ Information",
         "heading_size": "h1",
         "image_width": "full",
         "image_ratio": "adapt",

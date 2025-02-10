@@ -65,14 +65,14 @@
 {% endschema %}
 
 <section class="generic-content" style="margin-top: {{ section.settings.section_margin_top }}px; margin-bottom: {{ section.settings.section_margin_bottom }}px;">
-  <div class="container mx-auto px-4 py-8">
+  <div class="page-width scroll-trigger animate--slide-in mx-auto px-4 py-8">
     <h1 class="text-3xl font-bold mb-4">{{ section.settings.main_title }}</h1>
     <h2 class="text-xl mb-8">{{ section.settings.subtitle }}</h2>
 
     {% for block in section.blocks %}
       <div class="content-section mb-12">
         <h3 class="text-2xl font-semibold mb-4">{{ block.settings.section_title }}</h3>
-        <div class="section-content mb-4">
+        <div class="rte section-content mb-4">
           {{ block.settings.section_content }}
         </div>
         {% if block.settings.section_image %}

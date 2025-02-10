@@ -1,0 +1,209 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "multirow_3AKKmA": {
+      "type": "multirow",
+      "blocks": {
+        "media_Cp7kzz": {
+          "type": "media",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Sustainanble_golf_products.jpg",
+            "caption": "Testing the image caption",
+            "heading": "Testing the header for card",
+            "text": "Testing the description text for the card",
+            "button_link": "shopify:\/\/pages\/shipping-information-usa",
+            "button_label": "Link to shipping"
+          }
+        },
+        "media_hcb8hU": {
+          "type": "media",
+          "settings": {
+            "caption": "",
+            "heading": "",
+            "text": "",
+            "button_link": "",
+            "button_label": ""
+          }
+        },
+        "media_qMfkND": {
+          "type": "media",
+          "settings": {
+            "caption": "",
+            "heading": "",
+            "text": "",
+            "button_link": "",
+            "button_label": ""
+          }
+        },
+        "media_w6iU74": {
+          "type": "media",
+          "settings": {
+            "caption": "",
+            "heading": "",
+            "text": "",
+            "button_link": "",
+            "button_label": ""
+          }
+        }
+      },
+      "block_order": [
+        "media_Cp7kzz",
+        "media_hcb8hU",
+        "media_qMfkND",
+        "media_w6iU74"
+      ],
+      "disabled": true,
+      "settings": {
+        "columns_mobile": "2",
+        "columns_tablet": "3",
+        "columns_desktop": "4",
+        "image_height": "medium",
+        "desktop_image_width": "small",
+        "heading_size": "h1",
+        "row_color_scheme": "#cf3d3d"
+      }
+    },
+    "privacy_policy_pbALkT": {
+      "type": "privacy-policy",
+      "settings": {
+        "main_title": "Custom Printing FAQ",
+        "subtitle": "Frequently Asked Questions about customizing your biodegradable golf balls.",
+        "section_margin_top": 32,
+        "section_margin_bottom": 32
+      }
+    },
+    "collapsible_content_9476M6": {
+      "type": "collapsible-content",
+      "blocks": {
+        "collapsible_row_pKw4TR": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "What image formats do you accept?",
+            "icon": "question_mark",
+            "row_content": "<p>Upload an image in <strong>JPG or PNG format<\/strong> (maximum <strong>5 MB file size<\/strong>). Use a <strong>high-resolution image (300 DPI or higher)<\/strong> for the best results.<\/p>",
+            "page": "",
+            "youtube_url": ""
+          }
+        },
+        "collapsible_row_PJn6Nh": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "How large will my image be on the golf ball?",
+            "icon": "question_mark",
+            "row_content": "<p>The <strong>maximum print area is 0.75\" x 0.75\"<\/strong> to ensure a high-quality print that lasts during play. If you submit a <strong>square photo<\/strong>, we will <strong>crop it into a circle<\/strong> to fit the ball.<\/p>",
+            "page": "",
+            "youtube_url": ""
+          }
+        },
+        "collapsible_row_diJCgF": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Can I upload a logo or text instead of a picture?",
+            "icon": "question_mark",
+            "row_content": "<p>Yes! If you need <strong>custom graphics, text, or logo adjustments<\/strong>, email <a><strong>hello@biodegradablegolfballs.com<\/strong><\/a> with your request. We can add text, edit logos, perform photo manipulation, and create custom designs. All graphic work is done <strong>in-house<\/strong>, so feel free to request!<\/p>",
+            "page": "",
+            "youtube_url": ""
+          }
+        },
+        "collapsible_row_UjUNHE": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Do you print copyrighted or trademarked images?",
+            "icon": "question_mark",
+            "row_content": "<p>No, we <strong>only print images you own the rights to.<\/strong> We cannot print professional sports logos, brand logos, or other copyrighted material.<br\/><br\/>We can refuse the right to print an image for any reason.<\/p>",
+            "page": "",
+            "youtube_url": ""
+          }
+        },
+        "collapsible_row_X7QzmY": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "How long does printing take?",
+            "icon": "question_mark",
+            "row_content": "<p>Custom orders are typically processed in <strong>2 - 3 business days.<\/strong><\/p>",
+            "page": "",
+            "youtube_url": ""
+          }
+        },
+        "collapsible_row_6j7XA4": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Can I expedite my order? Are rush orders available?",
+            "icon": "question_mark",
+            "row_content": "<p>Yes, we offer <strong>rush processing and expedited shipping<\/strong>. Please <strong>email us<\/strong> for details on availability and additional costs.<\/p>",
+            "page": "",
+            "youtube_url": ""
+          }
+        },
+        "collapsible_row_eiWVTz": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Can I see a preview before printing?",
+            "icon": "question_mark",
+            "row_content": "<p>We do not offer <strong>automated previews<\/strong>, but our team will optimize your image for the best print quality. If you require <strong>a print mock-up for approval<\/strong>, please request it when placing your order. <strong>For orders not submitted through our web form, we charge a setup fee of $100.<\/strong><\/p>",
+            "page": "",
+            "youtube_url": ""
+          }
+        },
+        "collapsible_row_BTmNJh": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "What happens if my uploaded image is low quality?",
+            "icon": "question_mark",
+            "row_content": "<p>If your image is <strong>low resolution<\/strong>, we will contact you to provide a <strong>higher-quality file<\/strong> to ensure the best possible print.<\/p>",
+            "page": "",
+            "youtube_url": ""
+          }
+        },
+        "collapsible_row_F4Pepd": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Do you offer bulk discounts for custom-printed golf balls?",
+            "icon": "question_mark",
+            "row_content": "<p>Yes! We offer <strong>discounts for large tournament orders, corporate gifts, and wholesale purchases.<\/strong> Contact us for a <strong>custom quote<\/strong>. Our <strong>wholesale pricing for custom-printed orders starts at 1,008 balls.<\/strong><\/p>",
+            "page": "",
+            "youtube_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "collapsible_row_pKw4TR",
+        "collapsible_row_PJn6Nh",
+        "collapsible_row_diJCgF",
+        "collapsible_row_UjUNHE",
+        "collapsible_row_X7QzmY",
+        "collapsible_row_6j7XA4",
+        "collapsible_row_eiWVTz",
+        "collapsible_row_BTmNJh",
+        "collapsible_row_F4Pepd"
+      ],
+      "settings": {
+        "caption": "",
+        "heading": "",
+        "heading_size": "h1",
+        "heading_alignment": "center",
+        "layout": "none",
+        "color_scheme": "",
+        "container_color_scheme": "",
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 36,
+        "padding_bottom": 100
+      }
+    }
+  },
+  "order": [
+    "main",
+    "multirow_3AKKmA",
+    "privacy_policy_pbALkT",
+    "collapsible_content_9476M6"
+  ]
+}

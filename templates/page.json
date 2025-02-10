@@ -274,67 +274,6 @@
         "padding_bottom": 36
       }
     },
-    "multirow_3AKKmA": {
-      "type": "multirow",
-      "blocks": {
-        "media_Cp7kzz": {
-          "type": "media",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Sustainanble_golf_products.jpg",
-            "caption": "Testing the image caption",
-            "heading": "Testing the header for card",
-            "text": "Testing the description text for the card",
-            "button_link": "shopify:\/\/pages\/shipping-information-usa",
-            "button_label": "Link to shipping"
-          }
-        },
-        "media_hcb8hU": {
-          "type": "media",
-          "settings": {
-            "caption": "",
-            "heading": "",
-            "text": "",
-            "button_link": "",
-            "button_label": ""
-          }
-        },
-        "media_qMfkND": {
-          "type": "media",
-          "settings": {
-            "caption": "",
-            "heading": "",
-            "text": "",
-            "button_link": "",
-            "button_label": ""
-          }
-        },
-        "media_w6iU74": {
-          "type": "media",
-          "settings": {
-            "caption": "",
-            "heading": "",
-            "text": "",
-            "button_link": "",
-            "button_label": ""
-          }
-        }
-      },
-      "block_order": [
-        "media_Cp7kzz",
-        "media_hcb8hU",
-        "media_qMfkND",
-        "media_w6iU74"
-      ],
-      "settings": {
-        "columns_mobile": "2",
-        "columns_tablet": "3",
-        "columns_desktop": "4",
-        "image_height": "medium",
-        "desktop_image_width": "small",
-        "heading_size": "h1",
-        "row_color_scheme": "#cf3d3d"
-      }
-    },
     "image_with_text_3wt44r": {
       "type": "image-with-text",
       "blocks": {
@@ -388,7 +327,6 @@
     "collage_9GeA6K",
     "collection_list_yTbJCt",
     "multicolumn_wDBFkW",
-    "multirow_3AKKmA",
     "image_with_text_3wt44r"
   ]
 }

@@ -27,10 +27,10 @@
         "general_heading": "General \/ Wholesale \/ Custom Printing Inquires",
         "general_phone": "+6046004347",
         "general_email": "hello@biodegradablegolfballs.com",
-        "content_creator_heading": "Content Creator",
+        "content_creator_heading": "Content Creator \/ Social Media - Dyllan Gallant",
         "content_creator_email": "dyllan@biodegradablegolfballs.com",
-        "social_media_heading": "Social Media",
-        "social_media_email": "dyllan@biodegradablegolfballs.com",
+        "social_media_heading": "Print Specialist - Robin Biglin",
+        "social_media_email": "rob@biodegradablegolfballs.com",
         "warehouse_heading": "Canadian Warehouse",
         "warehouse_address": "3200 E Broadway (Loading Bay 1), Vancouver, BC, Canada V5M1Z8",
         "map_embed_path": "?pb=!1m14!1m8!1m3!1d83331.48765307572!2d-123.1184374!3d49.2553801!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xfccee886b1d7e86!2sBiodegradable+Golf+Balls!5e0!3m2!1sen!2sca!4v1524198203861",
@@ -50,6 +50,7 @@
             "alignment": "center",
             "margin_bottom": 96,
             "background_color": "",
+            "feed_id": "",
             "html_area": ""
           }
         }
