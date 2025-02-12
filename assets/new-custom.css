@@ -13,7 +13,16 @@ p a {
 .rte a {
     text-decoration: underline;
 }
-
+.article-template__content .break-words {
+    font-size: 1.6rem;
+    max-width: 100%;
+    color: rgb(var(--color-foreground));
+    opacity: 1;
+    line-height: 1.6;
+}
+.article-template__content .break-words h3 {
+    margin: 0 !important;
+}
 
 @media screen and (max-width: 767px){
   div#mobile-menu a {
