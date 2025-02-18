@@ -180,7 +180,7 @@
                         {% endif %}
                     {% endfor %}
                 </div>
-                <div class='grid grid-cols-2 sm:grid-cols-2 gap-[16px] md:gap-[64px]'>
+                <div class='my-whole-block grid grid-cols-2 sm:grid-cols-2 gap-[16px] md:gap-[64px]'>
                     <div class='w-full col-span-4 grid grid-cols-1 md:grid-cols-2 gap-[16px]'>
                         {% for block in section.blocks %}
                             {% if block.type == 'image_text' %}
@@ -289,7 +289,7 @@
             </form>
         </div>
     </div>
-    <div class='mx-4'>
+    <div class='mx-4 px-[16px] md:px-[80px] mb-[100px] mt-[0px]'>
         <div class='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6'>
             {% for block in section.blocks %}
                 {% if block.type == 'faq' %}
