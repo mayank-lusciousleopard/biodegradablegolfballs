@@ -1,0 +1,40 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "custom_css": [],
+      "settings": {
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "rich_text_U3chEV": {
+      "type": "rich-text",
+      "settings": {
+        "content": "<h1><strong>Resellers & Distributors<\/strong><\/h1><p>Partner with BGB Biodegradable Golf Balls®<\/p><p>Are you looking to offer a <strong>unique, eco-friendly golf product<\/strong> in your market?<\/p><p> We’re actively seeking <strong>distributors, resellers, and franchise partners<\/strong> in these international markets, including:<\/p><ul><li>Germany<\/li><li>United Kingdom<\/li><li>Australia<\/li><li>Maldives<\/li><li>And others! Reach out to find more info.<\/li><\/ul><p>BGB Biodegradable Golf Balls® are <strong>in-demand worldwide<\/strong> as more golfers, resorts, and businesses look for <strong>eco friendly outdoor activities<\/strong>.<br\/><br\/>We offer <strong>wholesale pricing, distributor opportunities, and drop shipping.<\/strong><\/p>",
+        "margin_top": 20,
+        "margin_bottom": 20,
+        "margin_left": 0,
+        "margin_right": 0,
+        "text_size": 18
+      }
+    },
+    "rich_text_xAgEkD": {
+      "type": "rich-text",
+      "settings": {
+        "content": "<h3><strong>Why Partner with Us?<\/strong><\/h3><p>✔ <strong>Exclusive Distributor Pricing<\/strong> – Competitive margins for resellers<br\/>✔ <strong>Drop Shipping Available<\/strong> – No need for inventory; we fulfill orders for you<br\/>✔ <strong>Sustainable & Unique Product<\/strong> – A high-demand product in the golf industry<br\/>✔ <strong>Franchise Opportunities<\/strong> – Expand BGB Biodegradable Golf Balls® in your country<\/p><h3><strong>Get Started Today<\/strong><\/h3><p>If you’re interested in <strong>reselling, distribution, or franchising<\/strong>, we’d love to hear from you. <a href=\"\/pages\/contact-us\" title=\"Contact\">Contact us<\/a> for more details on pricing, exclusivity, and how we can work together.<\/p>",
+        "margin_top": 20,
+        "margin_bottom": 100,
+        "margin_left": 0,
+        "margin_right": 0,
+        "text_size": 18
+      }
+    }
+  },
+  "order": [
+    "main",
+    "rich_text_U3chEV",
+    "rich_text_xAgEkD"
+  ]
+}

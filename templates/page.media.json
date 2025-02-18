@@ -1,0 +1,54 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "collage_kaPzPL": {
+      "type": "collage",
+      "blocks": {
+        "image_nUEE9L": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/biodegradable-golf-balls-oregon.jpg"
+          }
+        },
+        "image_WjzHiA": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/The_world_s_most_popular_pack_size_of_biodegradable_golf_balls.jpg"
+          }
+        },
+        "image_UUKama": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/24-pack-bio-golf-balls.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "image_nUEE9L",
+        "image_WjzHiA",
+        "image_UUKama"
+      ],
+      "settings": {
+        "heading": "BGB Biodegradable Golf Balls® are a hit all around the world!",
+        "heading_size": "h2",
+        "desktop_layout": "left",
+        "mobile_layout": "column",
+        "card_styles": "product-card-wrapper",
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 100
+      }
+    }
+  },
+  "order": [
+    "main",
+    "collage_kaPzPL"
+  ]
+}

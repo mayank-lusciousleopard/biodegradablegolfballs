@@ -87,7 +87,7 @@
             "title": "Custom Printing",
             "subtitle": "Design custom printed bio balls for events, gifts, and more.",
             "button_text": "Personalize your balls",
-            "link": ""
+            "link": "shopify:\/\/pages\/custom-biodegradable-golf-balls"
           }
         }
       },
@@ -131,50 +131,6 @@
         "swipe_on_mobile": false,
         "padding_top": 0,
         "padding_bottom": 0
-      }
-    },
-    "rich_text_TErTda": {
-      "type": "rich-text",
-      "settings": {
-        "content": "<h3>What Happens to the Golf Balls You Hit into the Water?<\/h3><p><br\/>Did you ever wonder if the balls Jim Carrey hit into the water in The Truman Show are still at the bottom of the manmade ocean somewhere? Or what about the countless golf balls your uncle launched into the lake at the cabin over the years?<br\/><br\/><em><strong>The answer is simple:<\/strong><\/em><strong> they’re still there - and will be for hundreds, if not thousands, of years.<\/strong><br\/><br\/>Traditional golf balls do not break down naturally, leading to environmental damage, microplastic pollution, and harm to aquatic life. That’s why we set out to change the game - literally.<\/p>",
-        "margin_top": 20,
-        "margin_bottom": 0,
-        "margin_left": 0,
-        "margin_right": 0,
-        "text_size": 18
-      }
-    },
-    "rich_text_mhagRa": {
-      "type": "rich-text",
-      "settings": {
-        "content": "<h2>Introducing BGB Biodegradable Golf Balls®<\/h2><p>We’ve pioneered a solution that makes waterfront golf sustainable. Our bestselling water <strong>dissolving golf balls<\/strong> are designed to break down completely when exposed to precipitation. When our golf balls are submerged in water they will dissolve within 2 to 4 weeks depending on water temperature and movement.<br\/><br\/>Made from a biodegradable, non-toxic, marine-safe formula, you can now create a driving range, anywhere. <\/p>",
-        "margin_top": 20,
-        "margin_bottom": 0,
-        "margin_left": 0,
-        "margin_right": 0,
-        "text_size": 18
-      }
-    },
-    "rich_text_VkVQw4": {
-      "type": "rich-text",
-      "settings": {
-        "content": "<h3>A New Driving Range is Born<\/h3><p>From waterfront driving ranges to yacht golf, the standard has been set: You need to use BGB Biodegradable Golf Balls®. Luxury boat owners, beach resorts, and waterfront properties are embracing the use of BGB Biodegradable Golf Balls® and creating a new activity of water front driving ranges.<br\/><br\/>We’re proud to supply our biodegradable golf balls internationally, whether you’re looking for:<br\/><\/p><ul><li>Last-minute sustainable corporate gift<\/li><li>Fun activity for a weekend getaway<\/li><li>Unique experiences for a yacht party or beach resort<\/li><\/ul><p>No matter where you are, we’ve got you covered. We offer in-house personalization on our golf balls and discounted wholesale tiers. If you’re curious about wholesale options please make sure to contact us for pricing.<\/p>",
-        "margin_top": 20,
-        "margin_bottom": 0,
-        "margin_left": 0,
-        "margin_right": 0,
-        "text_size": 18
-      }
-    },
-    "rich_text_L6LdQi": {
-      "type": "rich-text",
-      "settings": {
-        "content": "<h3>What Happens on Land?<\/h3><p>Even if our golf balls don’t land in water, they still break down naturally. However, on land the time it takes to biodegrade varies based on climate conditions:<br\/><\/p><ul><li><strong>High precipitation areas:<\/strong> 6 to 12 months<\/li><li><strong>Dry, arid regions:<\/strong> 12+ months\u2028<\/li><\/ul><h3>Trusted Worldwide<\/h3><p>BGB Biodegradable Golf Balls® have been used across every continent, by celebrities, Fortune 500 companies, and outdoor enthusiasts of all backgrounds. Whether you’re an avid golfer looking to practice your swings, an event organizer looking for personalized sustainable gifts, or just someone looking to have a bit of fun without harming the environment, our golf balls provide an eco-friendly outdoor activity that delivers both fun and a guilt free experience.<\/p>",
-        "margin_top": 20,
-        "margin_bottom": 0,
-        "margin_left": 0,
-        "margin_right": 0,
-        "text_size": 18
       }
     },
     "balls_info_section_JUYyt7": {
@@ -221,27 +177,7 @@
       ],
       "settings": {
         "margin_top": "0px",
-        "margin_bottom": "128px"
-      }
-    },
-    "custom_liquid_niMBmx": {
-      "type": "custom-liquid",
-      "disabled": true,
-      "settings": {
-        "custom_liquid": "{% assign faqs_json = '\n     How many weeks does it take to dissolve when submerged in water:Our golf balls start dissolving after 24 hours and depending on the temperature of the water, how fast it is moving (or if it is stagnant), and if it is fully submerged or not will generally dissolve within 2 - 4 weeks;\n     Can I use these golf balls as an alternative to traditional golf course use balls:These balls are designed for a specific purpose and are ideal for environmentally friendly practices but may not perform exactly like traditional golf balls in all settings\n    ' %}\n\n{% render 'faq', faqs: faqs_json, class:'mt-[64px] md:mt-[128px]' %}",
-        "color_scheme": "",
-        "padding_top": 40,
-        "padding_bottom": 52
-      }
-    },
-    "custom_liquid_w73PmD": {
-      "type": "custom-liquid",
-      "disabled": true,
-      "settings": {
-        "custom_liquid": "{% render 'instagram-preview' class:'mt-[64px] md:mt-[128px]'%}",
-        "color_scheme": "",
-        "padding_top": 0,
-        "padding_bottom": 0
+        "margin_bottom": "36px"
       }
     },
     "rich_text_FzYrVy": {
@@ -250,7 +186,7 @@
         "content": "<h2>Follow us on Instagram<\/h2>",
         "margin_top": 60,
         "margin_bottom": 0,
-        "margin_left": 60,
+        "margin_left": 0,
         "margin_right": 0,
         "text_size": 18
       }
@@ -325,10 +261,54 @@
       "settings": {
         "title": "What People Are Saying",
         "margin_top": 36,
-        "margin_bottom": 100,
+        "margin_bottom": 36,
         "columns": "3",
         "columns_mobile": "1",
         "swipe_on_mobile": false
+      }
+    },
+    "rich_text_TErTda": {
+      "type": "rich-text",
+      "settings": {
+        "content": "<h3>What Happens to the Golf Balls You Hit into the Water?<\/h3><p><br\/>Did you ever wonder if the balls Jim Carrey hit into the water in The Truman Show are still at the bottom of the manmade ocean somewhere? Or what about the countless golf balls your uncle launched into the lake at the cabin over the years?<br\/><br\/><em><strong>The answer is simple:<\/strong><\/em><strong> they’re still there - and will be for hundreds, if not thousands, of years.<\/strong><br\/><br\/><a href=\"\/blogs\/eco-blog\/when-you-lose-a-regular-golf-ball-how-long-does-it-persist-in-the-environment\" title=\"\/blogs\/eco-blog\/when-you-lose-a-regular-golf-ball-how-long-does-it-persist-in-the-environment\">Traditional golf balls<\/a> do not break down naturally, leading to environmental damage, microplastic pollution, and harm to aquatic life. That’s why we set out to change the game - literally.<\/p>",
+        "margin_top": 20,
+        "margin_bottom": 0,
+        "margin_left": 0,
+        "margin_right": 0,
+        "text_size": 18
+      }
+    },
+    "rich_text_mhagRa": {
+      "type": "rich-text",
+      "settings": {
+        "content": "<h2>Introducing BGB Biodegradable Golf Balls®<\/h2><p>We’ve pioneered a solution that makes waterfront golf sustainable. Our bestselling <a href=\"\/collections\/biodegradable-golf-balls\" title=\"\/collections\/biodegradable-golf-balls\"><strong>water dissolving golf balls<\/strong><\/a> are designed to break down completely when exposed to precipitation. When our golf balls are submerged in water they will dissolve within 2 to 4 weeks depending on water temperature and movement.<br\/><br\/>Made from a biodegradable, non-toxic, marine-safe formula, you can now create a driving range, anywhere. <\/p>",
+        "margin_top": 20,
+        "margin_bottom": 0,
+        "margin_left": 0,
+        "margin_right": 0,
+        "text_size": 18
+      }
+    },
+    "rich_text_VkVQw4": {
+      "type": "rich-text",
+      "settings": {
+        "content": "<h3>A New Driving Range is Born<\/h3><p>From waterfront driving ranges to yacht golf, the standard has been set: You need to use BGB Biodegradable Golf Balls®. Luxury boat owners, beach resorts, and waterfront properties are embracing the use of <a href=\"\/collections\/biodegradable-golf-balls\" title=\"\/collections\/biodegradable-golf-balls\">biodegradable golf balls<\/a> and creating a new activity of water front driving ranges.<br\/><br\/>We’re proud to supply our biodegradable golf balls internationally, whether you’re looking for:<br\/><\/p><ul><li>Last-minute sustainable corporate gift<\/li><li>Fun activity for a weekend getaway<\/li><li>Unique experiences for a yacht party or beach resort<\/li><\/ul><p>No matter where you are, we’ve got you covered. We offer in-house personalization on our golf balls and discounted wholesale tiers. If you’re curious about wholesale options please make sure to contact us for pricing.<\/p>",
+        "margin_top": 20,
+        "margin_bottom": 0,
+        "margin_left": 0,
+        "margin_right": 0,
+        "text_size": 18
+      }
+    },
+    "rich_text_L6LdQi": {
+      "type": "rich-text",
+      "settings": {
+        "content": "<h3>What Happens on Land?<\/h3><p>Even if our golf balls don’t land in water, they still break down naturally. However, on land the time it takes to biodegrade varies based on climate conditions:<br\/><\/p><ul><li><strong>High precipitation areas:<\/strong> 6 to 12 months<\/li><li><strong>Dry, arid regions:<\/strong> 12+ months\u2028<\/li><\/ul><h3>Trusted Worldwide<\/h3><p>BGB Biodegradable Golf Balls® have been used across every continent, by celebrities, Fortune 500 companies, and outdoor enthusiasts of all backgrounds. Whether you’re an avid golfer looking to practice your swings, an event organizer looking for personalized sustainable gifts, or just someone looking to have a bit of fun without harming the environment, our golf balls provide an eco-friendly outdoor activity that delivers both fun and a guilt free experience.<\/p>",
+        "margin_top": 20,
+        "margin_bottom": 100,
+        "margin_left": 0,
+        "margin_right": 0,
+        "text_size": 18
       }
     }
   },
@@ -338,15 +318,13 @@
     "custom_liquid_G8Y4Pf",
     "action_cards_section_MVFmqU",
     "featured_collection",
+    "balls_info_section_JUYyt7",
+    "rich_text_FzYrVy",
+    "17300634985de8c4a0",
+    "customer_reviews_section_DxVLgf",
     "rich_text_TErTda",
     "rich_text_mhagRa",
     "rich_text_VkVQw4",
-    "rich_text_L6LdQi",
-    "balls_info_section_JUYyt7",
-    "custom_liquid_niMBmx",
-    "custom_liquid_w73PmD",
-    "rich_text_FzYrVy",
-    "17300634985de8c4a0",
-    "customer_reviews_section_DxVLgf"
+    "rich_text_L6LdQi"
   ]
 }

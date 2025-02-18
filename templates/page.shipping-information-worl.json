@@ -1,0 +1,102 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "page_width_image_banner_KF9PbU": {
+      "type": "page-width-image-banner",
+      "settings": {
+        "custom_class": "",
+        "redirect_url": "",
+        "image": "shopify:\/\/shop_images\/world-map_shipping_be81a1de-c519-4da4-a8eb-715d18e11f7e.png",
+        "mobile_image": "shopify:\/\/shop_images\/world-map_shipping_be81a1de-c519-4da4-a8eb-715d18e11f7e.png",
+        "variant_id": "",
+        "image_overlay_opacity": 0,
+        "image_height": "adapt",
+        "desktop_content_position": "middle-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
+    "normal_multicolumn_HTNUQD": {
+      "type": "normal-multicolumn",
+      "blocks": {
+        "column_CPEHxw": {
+          "type": "column",
+          "settings": {
+            "title": "<em>International Shipping<\/em>",
+            "text": "<p><strong>Standard International:<\/strong><\/p><ul><li><em>Cost: $50<\/em><\/li><li><em>Approx: 6 - 10 Business Days<\/em><\/li><\/ul><p><strong><br\/>Express Shipping:<\/strong><\/p><p><em>Express shipping is available by request. Please email in at hello@biodegradablegolfballs.com for an express quote.<\/em><\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_zxcqkF": {
+          "type": "column",
+          "settings": {
+            "title": "<em>International Wholesale Orders<\/em>",
+            "text": "<p><strong>Shipping Wholesale Orders Internationally:<\/strong><br\/>We ship bulk \/ wholesale orders internationally. Please fill out our <a href=\"\/pages\/wholesale-biodegradable-golf-balls\" title=\"\/pages\/wholesale-biodegradable-golf-balls\">wholesale form<\/a> and make sure to add which country you are shipping too and approx quantities. <br\/><br\/>Allow us 1 business day to get you a shipping quote.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_CPEHxw",
+        "column_zxcqkF"
+      ],
+      "settings": {
+        "title": "International Shipping",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 2,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "privacy_policy_CYJT6X": {
+      "type": "privacy-policy",
+      "blocks": {
+        "content_section_Cb4a3W": {
+          "type": "content_section",
+          "settings": {
+            "section_title": "Order Cut Off 12:00PM PT",
+            "section_content": "<ul><li>Orders placed <strong>before 12:00PM PT<\/strong> will be processed the next business day.<\/li><li>Orders placed on Friday's after 12:00PM PT will go out the next following business day <em>(Usually Monday)<\/em>.<\/li><\/ul>"
+          }
+        }
+      },
+      "block_order": [
+        "content_section_Cb4a3W"
+      ],
+      "settings": {
+        "main_title": "Order Processing",
+        "subtitle": "",
+        "section_margin_top": 32,
+        "section_margin_bottom": 32
+      }
+    }
+  },
+  "order": [
+    "main",
+    "page_width_image_banner_KF9PbU",
+    "normal_multicolumn_HTNUQD",
+    "privacy_policy_CYJT6X"
+  ]
+}

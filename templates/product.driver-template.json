@@ -2,31 +2,18 @@
   "sections": {
     "main": {
       "type": "main-product",
-      "blocks": {
-        "custom_section_JRpU6e": {
-          "type": "custom_section",
-          "settings": {
-            "section_title": "Custom Section Title",
-            "section_content": "Add your custom content here.",
-            "section_image": "shopify:\/\/shop_images\/UV_Printer.jpg",
-            "section_video": "shopify:\/\/files\/videos\/1.mp4"
-          }
-        }
-      },
-      "block_order": [
-        "custom_section_JRpU6e"
-      ],
       "settings": {
         "margin_top": 0,
         "margin_bottom": 0,
-        "description_title": "B52 Bomber",
-        "description_text_1": "We make revolutionary golf balls that dissolve in water. These balls are designed to allow people to play on water, on a yacht, or near the sea, without burdening the planet. With our products, you can enjoy the game in harmony with nature. Play sustainably. Have fun!",
-        "description_text_2": "We make revolutionary golf balls that dissolve in water. These balls are designed to allow people to play on water, on a yacht, or near the sea, without burdening the planet.",
-        "description_image": "shopify:\/\/shop_images\/b52-driver-002.jpg"
+        "description_title": "Golf Driver - Bullet B52 Bomber",
+        "description_text_1": "The B52 Bomber 460cc Driver is designed to maximize distance and forgiveness off the tee, giving golfers the confidence to unleash their best drives. With a strategically positioned fixed weight low and back, it delivers a higher moment of inertia (MOI) for optimal launch and explosive power. The oversized 460cc Titanium Matrix head expands the sweet spot, minimizing mishits and keeping shots straighter and more consistent. Its graphite Uniflex shaft adapts to all swing types, providing a perfect balance of control and power, while the soft rubber pro-line grip enhances feel and stability. Available in a 10.5° loft and complete with a protective headcover, the B52 Bomber is built for golfers who want to take their game to new heights.",
+        "description_text_2": "",
+        "description_image": "shopify:\/\/shop_images\/b52-driver-003-600x600.jpg"
       }
     },
     "1722892051ab072ec8": {
       "type": "apps",
+      "disabled": true,
       "settings": {
         "include_margins": true
       }
